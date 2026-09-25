@@ -95,3 +95,20 @@ header>div button{min-width:42px}
 .menuClose svg{width:1rem}
 .deleteLog svg{width:.72rem}
 @media(hover:hover){header nav button:hover .btnIcon,.heroActions button:hover .btnIcon,.bottom button:hover .bottomIcon{opacity:1}}
+
+/* Quick check-in: purpose-led selection cards */
+.pulseHelp{max-width:660px;margin:.35rem 0 1.3rem;line-height:1.55;opacity:.66}
+.pulseChoices{grid-template-columns:repeat(2,1fr);gap:.7rem}
+.pulseChoices button{position:relative;min-height:104px;padding:1rem 1.05rem;border-radius:18px;display:grid;grid-template-columns:44px 1fr auto;align-items:center;justify-items:start;gap:.9rem;text-align:start;background:rgba(255,255,255,.58)}
+.pulseChoices button:hover{transform:none;background:rgba(255,255,255,.88);border-color:rgba(23,23,23,.28)}
+.pulseIcon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:#171b18;color:#f7f4ee}
+.pulseIcon svg{width:17px;height:17px}
+.pulseCopy{display:flex;flex-direction:column;gap:.28rem}
+.pulseCopy b{font-size:1rem}
+.pulseCopy small{font-size:.78rem;line-height:1.35;opacity:.58;font-weight:500}
+.pulseChoices .picked{transform:none;background:#171b18;color:#fff;border-color:#171b18;box-shadow:none}
+.pulseChoices .picked .pulseIcon{background:#f7f4ee;color:#171b18}
+.pulseChoices .picked .pulseCopy small{opacity:.72}
+.pulseCheck{width:.85rem;height:.85rem;opacity:.8}
+.pulseResult{display:flex;align-items:center;gap:.35rem;flex-wrap:wrap}
+@media(max-width:700px){.pulseChoices{grid-template-columns:1fr}.pulseChoices button{min-height:88px}.pulseHelp{font-size:.92rem}}
