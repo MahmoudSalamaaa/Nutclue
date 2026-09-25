@@ -60,3 +60,25 @@ aside button{display:flex;align-items:center;gap:.65rem}
 aside .btnArrow{margin-inline-start:auto}
 @media(max-width:700px){header nav .btnIcon{display:none}.heroActions button{flex:1;min-width:145px}.bottom{padding:6px}.bottom button{min-height:50px}.bottom button.on{box-shadow:0 4px 12px rgba(23,23,23,.12)}}
 @media(prefers-reduced-motion:reduce){button,a,.btnArrow{transition:none!important}}
+
+/* NutClue contextual controls — calm, tactile, editorial */
+header nav button,header>div button{gap:.35rem;border-radius:10px;color:inherit;box-shadow:none!important}
+header nav button:hover,header>div button:hover{transform:none;background:rgba(23,23,23,.045)}
+.btnIcon{width:auto;height:auto;border-radius:0;background:transparent;font-size:.82em;opacity:.58}
+.heroActions button,.patternLab>button,.storyIntro button,.snapshot>button,.questionPreview button,.tracker>button,.schoolCard button,.content>a{box-shadow:none;border-radius:14px}
+.heroActions button:hover,.patternLab>button:hover,.storyIntro button:hover,.snapshot>button:hover,.questionPreview button:hover,.tracker>button:hover:not(:disabled),.schoolCard button:hover,.content>a:hover{box-shadow:none;transform:translateY(-1px)}
+.heroActions button:first-child,.tracker>button,.snapshot>button,.questionPreview button{background:var(--ink);color:var(--bg);border:1px solid var(--ink)}
+.heroActions .ghost{border:1px solid var(--line)!important;background:transparent!important}
+.pulseResult button,.bodyPrompt button{border:0;background:transparent;color:inherit;font-weight:850;padding:.45rem .25rem;box-shadow:none}
+.pulseResult button:hover,.bodyPrompt button:hover{transform:none;text-decoration:underline;text-underline-offset:4px}
+.microDeck button{border-radius:14px;box-shadow:none;background:rgba(255,255,255,.5);text-align:start;justify-content:space-between}
+.microDeck button:hover{box-shadow:none;background:rgba(255,255,255,.82);transform:none}
+.card{box-shadow:none;border-radius:18px}.card:hover{box-shadow:none;transform:none;border-color:rgba(23,23,23,.28);background:rgba(255,255,255,.78)}
+.deleteLog{border-radius:10px!important;box-shadow:none!important}
+.bottom{box-shadow:0 8px 28px rgba(23,23,23,.08)}
+.bottom button{border-radius:12px}
+.bottom button.on{box-shadow:none!important}
+.bottomIcon{font-size:.92rem;opacity:.7}
+aside button{border-radius:10px}
+aside button:hover{transform:none;background:rgba(23,23,23,.04)}
+@media(max-width:700px){.heroActions button{border-radius:14px}.bottom button{min-height:52px}.bottomIcon{font-size:1rem}}
