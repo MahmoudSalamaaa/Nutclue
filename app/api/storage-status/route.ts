@@ -1,12 +1,35 @@
 import { NextResponse } from "next/server";
-import { hasDatabase } from "../../../lib/db";
+import { database, hasDatabase } from "../../../lib/db";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
-  return NextResponse.json({
-    databaseConfigured: hasDatabase(),
-    healthDataStorage: "device",
-    cloudHealthSyncEnabled: false,
-  });
+  if (!hasDatabase()) {
+    return NextResponse.json({
+      databaseConfigured: false,
+      databaseReachable: false,
+      healthDataStorage: "device",
+      cloudHealthSyncEnabled: false,
+    });
+  }
+
+  try {
+    const sql = database();
+    const result = await sql`select current_database() as database, now() as checked_at`;
+    return NextResponse.json({
+      databaseConfigured: true,
+      databaseReachable: true,
+      database: result[0]?.database ?? "postgres",
+      checkedAt: result[0]?.checked_at ?? null,
+      healthDataStorage: "device",
+      cloudHealthSyncEnabled: false,
+    });
+  } catch {
+    return NextResponse.json({
+      databaseConfigured: true,
+      databaseReachable: false,
+      healthDataStorage: "device",
+      cloudHealthSyncEnabled: false,
+    }, { status: 503 });
+  }
 }
