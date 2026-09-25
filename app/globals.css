@@ -268,3 +268,17 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .entryHint{margin:0;padding:.8rem 1rem;border-radius:14px;background:#f6f8fb;color:#66798e;font-size:.82rem;line-height:1.45}
 .historyIcon.meal{background:#fff1df;color:#9a632d}.historyIcon.water{background:#e8f6ff;color:#347aa5}.historyIcon.sleep{background:#f0edff;color:#6658a7}.historyIcon.medication{background:#eaf8f1;color:#3f8064}.historyIcon.feeling{background:#fff4e8;color:#a56b38}
 @media(max-width:600px){.recordChoicesRich{grid-template-columns:1fr}.recordChoicesRich button{min-height:72px}}
+
+
+/* Live Today snapshot + explainable clues */
+.todaySnapshot{margin-top:1.4rem;padding:1rem;border:1px solid #e0e8f1;border-radius:22px;background:rgba(255,255,255,.72)}
+.todaySnapshot .sectionTitle,.cluePanel .sectionTitle{display:flex;justify-content:space-between;align-items:end;gap:1rem}
+.todaySnapshot .sectionTitle small,.cluePanel .sectionTitle small{font-size:.72rem;color:#7a8b9d;font-weight:700}
+.snapshotGrid{display:grid;grid-template-columns:repeat(4,1fr);gap:.55rem}
+.snapshotGrid button{border:0;border-radius:16px;background:#f6f8fb;padding:.8rem;text-align:start;color:#40536a;display:grid;gap:.18rem}
+.snapshotGrid b{font-size:1.35rem}.snapshotGrid span{font-size:.72rem;font-weight:800;color:#718398}
+.clueCard{display:grid;grid-template-columns:42px 1fr;gap:.85rem;padding:1rem;border:1px solid #dce8f2;border-radius:20px;background:linear-gradient(135deg,#f5fbff,#fbf8ff)}
+.clueCard>svg{width:18px;height:18px;padding:12px;border-radius:14px;background:#fff;color:#6578ce}
+.clueCard b{font-size:1rem}.clueCard p{margin:.3rem 0 .65rem;color:#687b90;line-height:1.45;font-size:.86rem}
+.clueCard details{font-size:.76rem;color:#66798e}.clueCard summary{cursor:pointer;font-weight:850;color:#526fd0;margin-bottom:.4rem}
+@media(max-width:600px){.snapshotGrid{grid-template-columns:1fr 1fr}.todaySnapshot .sectionTitle,.cluePanel .sectionTitle{align-items:flex-start;flex-direction:column;gap:.15rem}}
