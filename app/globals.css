@@ -30,8 +30,6 @@ button,a,input,select,textarea{font:inherit}button,a{touch-action:manipulation}b
 
 .dangerAction{border:0;border-radius:999px;padding:.9rem 1.15rem;font:inherit;font-weight:850;background:#171717;color:#f7f4ee;cursor:pointer}.dangerAction:focus-visible{outline:3px solid currentColor;outline-offset:4px}@media(max-width:600px){.legal{padding-bottom:5rem}.footerLinks{gap:.75rem 1rem}}
 
-.dangerAction{border:0;border-radius:999px;padding:.9rem 1.15rem;font:inherit;font-weight:850;background:#171717;color:#f7f4ee;cursor:pointer}.dangerAction:focus-visible{outline:3px solid currentColor;outline-offset:4px}@media(max-width:600px){.legal{padding-bottom:5rem}.footerLinks{gap:.75rem 1rem}}
-
 .contextNote{width:100%}.log{position:relative}.logNote{display:block;opacity:.68;max-width:38ch}.deleteLog{min-width:2.5rem;min-height:2.5rem;border-radius:50%;font-size:1.1rem}
 
 @media(prefers-contrast:more){button,a,input,select,textarea{outline-offset:3px}.card,.tracker,.snapshot,.detail{border-width:2px!important}}
