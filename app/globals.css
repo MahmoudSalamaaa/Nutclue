@@ -232,3 +232,15 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .profileForm.progressive input:focus-visible,.profileForm.progressive textarea:focus-visible{outline:3px solid currentColor;outline-offset:2px}
 @media (max-width:640px){.profileForm.progressive textarea{min-height:108px}.profileProgress{overflow-x:auto;scroll-snap-type:x proximity}.profileProgress button{scroll-snap-align:start;min-width:128px}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+
+/* Today: action-first mobile dashboard */
+.quickRecord>button{display:grid;grid-template-columns:auto 1fr auto;align-items:center;text-align:start;gap:1rem}
+.quickArrow{opacity:.55;font-size:.9rem}
+.homeQuickGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem}
+.homeQuickGrid>button{min-height:104px;display:flex;align-items:center;gap:.8rem;text-align:start;padding:1rem;border-radius:20px}
+.homeQuickGrid>button span:last-child{display:grid;gap:.22rem}
+.homeQuickGrid small{opacity:.66;line-height:1.3}
+.homeQuickIcon{width:42px;height:42px;flex:0 0 42px;border-radius:14px;display:grid;place-items:center;font-weight:900;letter-spacing:-.04em;background:rgba(255,255,255,.7)}
+.homeQuickIcon.glucose{font-size:1.05rem}.homeQuickIcon.bp{font-size:.8rem}.homeQuickIcon.note{font-size:1rem}
+@media(max-width:700px){.newHome{padding-bottom:7rem}.homeQuickGrid{grid-template-columns:1fr}.homeQuickGrid>button{min-height:76px}.todayTop h1{max-width:14ch}.quickRecord>button{min-height:86px}}
