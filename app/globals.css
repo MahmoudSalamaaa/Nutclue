@@ -282,3 +282,13 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .clueCard b{font-size:1rem}.clueCard p{margin:.3rem 0 .65rem;color:#687b90;line-height:1.45;font-size:.86rem}
 .clueCard details{font-size:.76rem;color:#66798e}.clueCard summary{cursor:pointer;font-weight:850;color:#526fd0;margin-bottom:.4rem}
 @media(max-width:600px){.snapshotGrid{grid-template-columns:1fr 1fr}.todaySnapshot .sectionTitle,.cluePanel .sectionTitle{align-items:flex-start;flex-direction:column;gap:.15rem}}
+
+
+/* Appointment brief */
+.visitWeekStats{display:grid;grid-template-columns:repeat(4,1fr);gap:.6rem;margin-top:.35rem}
+.visitWeekStats>div{padding:.9rem;border-radius:16px;background:#f6f8fb;display:grid;gap:.15rem}
+.visitWeekStats b{font-size:1.4rem;color:#30465e}.visitWeekStats span{font-size:.7rem;color:#728398;font-weight:750}
+.visitContext{font-size:.75rem;color:#7a8a9b;margin:.75rem 0 0;line-height:1.45}
+.visitList>div{grid-template-columns:10px 1fr auto;align-items:center}.visitDot{width:8px;height:8px;border-radius:50%;background:#9aaabd}
+.visitDot.meal{background:#d29a5e}.visitDot.water{background:#65a9d2}.visitDot.sleep{background:#8275bd}.visitDot.medication{background:#63a284}.visitDot.feeling{background:#d7a065}
+@media(max-width:650px){.visitWeekStats{grid-template-columns:1fr 1fr}.visitList>div{grid-template-columns:8px 1fr}.visitList time{grid-column:2}}
