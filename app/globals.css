@@ -35,3 +35,28 @@ button,a,input,select,textarea{font:inherit}button,a{touch-action:manipulation}b
 .contextNote{width:100%}.log{position:relative}.logNote{display:block;opacity:.68;max-width:38ch}.deleteLog{min-width:2.5rem;min-height:2.5rem;border-radius:50%;font-size:1.1rem}
 
 @media(prefers-contrast:more){button,a,input,select,textarea{outline-offset:3px}.card,.tracker,.snapshot,.detail{border-width:2px!important}}
+
+/* Unified premium action system */
+button,a{transition:transform .18s ease,box-shadow .18s ease,background-color .18s ease,border-color .18s ease,opacity .18s ease}
+button{cursor:pointer}
+button:disabled{cursor:not-allowed}
+header nav button,header>div button,.heroActions button,.pulseResult button,.bodyPrompt button,.patternLab>button,.storyIntro button,.snapshot>button,.questionPreview button,.tracker>button,.detailActions button,.detailActions a,.microDeck button,.schoolCard button,.content>a,.errorActions button,.errorActions a{display:inline-flex;align-items:center;justify-content:center;gap:.55rem}
+.btnIcon{width:1.45em;height:1.45em;display:inline-grid;place-items:center;flex:0 0 auto;border-radius:50%;font-size:.9em;line-height:1;background:color-mix(in srgb,currentColor 9%,transparent)}
+.btnArrow{display:inline-block;transition:transform .18s ease}
+[dir="rtl"] .btnArrow{transform:scaleX(-1)}
+button:hover:not(:disabled),.content>a:hover,.detailActions a:hover,.errorActions a:hover{transform:translateY(-2px)}
+button:active:not(:disabled),.content>a:active,.detailActions a:active,.errorActions a:active{transform:translateY(0) scale(.98)}
+.heroActions button,.patternLab>button,.storyIntro button,.snapshot>button,.questionPreview button,.tracker>button,.schoolCard button,.content>a{border-radius:999px;padding:.82rem 1.08rem;font-weight:850;box-shadow:0 7px 20px rgba(23,23,23,.08)}
+.heroActions button:hover,.patternLab>button:hover,.storyIntro button:hover,.snapshot>button:hover,.questionPreview button:hover,.tracker>button:hover:not(:disabled),.schoolCard button:hover,.content>a:hover{box-shadow:0 12px 28px rgba(23,23,23,.13)}
+.card{border:1px solid var(--line);border-radius:22px;background:var(--card);padding:1.15rem;box-shadow:0 4px 18px rgba(23,23,23,.035)}
+.card:hover{box-shadow:0 14px 34px rgba(23,23,23,.09);border-color:color-mix(in srgb,var(--ink) 28%,var(--line))}
+.card span{display:inline-flex;align-items:center;gap:.4rem}
+.microDeck button{box-shadow:0 4px 14px rgba(23,23,23,.04)}
+.deleteLog{display:inline-grid!important;place-items:center;border:1px solid var(--line);background:transparent;color:inherit}
+.deleteLog:hover{background:rgba(23,23,23,.07)}
+.bottom button{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.18rem}
+.bottomIcon{font-size:1.05rem;line-height:1}
+aside button{display:flex;align-items:center;gap:.65rem}
+aside .btnArrow{margin-inline-start:auto}
+@media(max-width:700px){header nav .btnIcon{display:none}.heroActions button{flex:1;min-width:145px}.bottom{padding:6px}.bottom button{min-height:50px}.bottom button.on{box-shadow:0 4px 12px rgba(23,23,23,.12)}}
+@media(prefers-reduced-motion:reduce){button,a,.btnArrow{transition:none!important}}
