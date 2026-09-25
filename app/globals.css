@@ -194,3 +194,12 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .shortcutGrid span{display:flex;flex-direction:column;gap:.3rem}.shortcutGrid small{opacity:.62;line-height:1.35}
 .privacyStrip{display:flex;gap:.5rem 1rem;align-items:center;flex-wrap:wrap;border:1px solid #d7eee7;border-radius:18px;background:#effaf6}.privacyStrip span{opacity:.68}
 @media(max-width:700px){.trackIntro{padding:1rem .2rem 1.4rem}.trackIntro h1{font-size:2.6rem}.shortcutGrid{grid-template-columns:1fr}.homeShortcuts,.privacyStrip{margin-inline:0}.glucoseDiary{gap:.8rem}.glucoseIntro{padding:1.25rem}.glucoseIntro h2{font-size:2.25rem}.glucoseComposer{padding:1rem}.glucoseToday,.glucosePatterns,.visitSummary{padding:1rem}.otherTracking{margin-top:2rem}}
+
+/* Visit preparation */
+.visitSteps{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;margin:1.5rem 0}
+.visitSteps>div{min-height:100px;border:1px solid #dfe8f3;border-radius:18px;background:#fff;padding:1rem;display:flex;align-items:center;gap:.8rem}
+.visitSteps b{width:34px;height:34px;flex:0 0 34px;border-radius:11px;background:#edf3ff;color:#526fd0;display:grid;place-items:center}
+.visitSteps span{font-weight:800}.visitRecordBtn{border:0;border-radius:14px;background:#526fd0;color:#fff;padding:.8rem 1rem;font-weight:850;display:flex;gap:.6rem;align-items:center}
+.doctorCard{margin-top:2rem;padding:1.25rem;border:1px solid #dfe8f3;border-radius:20px;background:linear-gradient(145deg,#fff,#f3f8ff)}
+.doctorCard small{font-size:.67rem;letter-spacing:.09em;font-weight:850;opacity:.55}.doctorCard h3{font-size:1.4rem;margin:.6rem 0 .25rem}.doctorCard p{margin:.2rem 0 1rem}.doctorCard a{display:inline-flex;width:max-content}
+@media(max-width:700px){.visitSteps{grid-template-columns:1fr}.visitSteps>div{min-height:72px}}
