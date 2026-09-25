@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
 const isPages=process.env.GITHUB_PAGES==="true";
-const nextConfig:NextConfig={
+const nextConfig:NextConfig=isPages?{
   output:"export",
   trailingSlash:true,
   images:{unoptimized:true},
-  ...(isPages?{basePath:"/Nutclue",assetPrefix:"/Nutclue/"}:{})
-};
+  basePath:"/Nutclue",
+  assetPrefix:"/Nutclue/"
+}:{};
 export default nextConfig;
