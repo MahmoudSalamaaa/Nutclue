@@ -33,3 +33,5 @@ export async function GET() {
     }, { status: 503 });
   }
 }
+
+// production database connectivity probe
