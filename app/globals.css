@@ -82,3 +82,18 @@ header nav button:hover,header>div button:hover{transform:none;background:rgba(2
 aside button{border-radius:10px}
 aside button:hover{transform:none;background:rgba(23,23,23,.04)}
 @media(max-width:700px){.heroActions button{border-radius:14px}.bottom button{min-height:52px}.bottomIcon{font-size:1rem}}
+
+/* Refined icon-button language */
+.btnIcon{width:.92rem!important;height:.92rem!important;opacity:.72;flex:none}
+.btnArrow{width:.72rem;height:.72rem;opacity:.55;margin-inline-start:.12rem}
+header nav button{padding:.58rem .72rem;font-size:.86rem}
+header nav button .btnIcon{width:.78rem!important;height:.78rem!important}
+header>div button{min-width:42px}
+.heroActions button{gap:.62rem;padding:.88rem 1.18rem}
+.heroActions button .btnIcon{opacity:.9}
+.microDeck button{position:relative;padding:1rem 1.05rem}
+.bottomIcon{width:1rem;height:1rem;opacity:.72}
+.bottom button.on .bottomIcon{opacity:1}
+.menuClose svg{width:1rem}
+.deleteLog svg{width:.72rem}
+@media(hover:hover){header nav button:hover .btnIcon,.heroActions button:hover .btnIcon,.bottom button:hover .bottomIcon{opacity:1}}
