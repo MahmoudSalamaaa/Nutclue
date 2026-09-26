@@ -345,3 +345,5 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .libraryOverview{display:grid;grid-template-columns:repeat(4,1fr);gap:.55rem;margin:.8rem 0 1rem}.libraryOverview>div{padding:.8rem;border:1px solid #e1e8ef;border-radius:16px;background:#fff;display:grid;gap:.12rem}.libraryOverview strong{font-size:1.2rem;color:#334e68}.libraryOverview span{font-size:.65rem;color:#7b8c9d;font-weight:750}@media(max-width:650px){.libraryOverview{grid-template-columns:1fr 1fr}}
 
 .foodSourceNote{margin:.65rem 0 1rem;padding:.8rem;border-radius:15px;background:#f6f8fb;border:1px solid #e2e8ef;display:grid;gap:.2rem}.foodSourceNote b{font-size:.7rem;color:#4c6277}.foodSourceNote span{font-size:.66rem;line-height:1.45;color:#7b8c9d}
+
+.quickDiscover{display:grid;grid-template-columns:repeat(5,1fr);gap:.5rem;margin:0 0 .85rem}.quickDiscover button{border:1px solid #e0e7ee;background:#fff;border-radius:16px;padding:.72rem;text-align:start;display:grid;gap:.12rem}.quickDiscover b{font-size:.7rem;color:#40566c}.quickDiscover span{font-size:.61rem;color:#8796a5}@media(max-width:760px){.quickDiscover{grid-template-columns:repeat(2,1fr)}}
