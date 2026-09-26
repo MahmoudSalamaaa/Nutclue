@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
   output: "export",
   images: { unoptimized: true },
   trailingSlash: true,
+  env: { NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/Nutclue" : "" },
   ...(isGitHubPages
     ? { basePath: "/Nutclue", assetPrefix: "/Nutclue/" }
     : {}),
