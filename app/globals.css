@@ -308,3 +308,5 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .entryDelete{margin-top:.45rem;padding:.3rem .55rem;opacity:.72}
 .savedActions{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
 @media(max-width:600px){.historyTools{align-items:flex-start;flex-direction:column;gap:.35rem}}
+
+.localPrivacy{display:grid;gap:.2rem;padding:.8rem 1rem;margin-bottom:1rem;border-radius:16px;background:#f5f8fb;color:#60758b}.localPrivacy b{font-size:.78rem}.localPrivacy span{font-size:.7rem;line-height:1.45;color:#7c8c9c}
