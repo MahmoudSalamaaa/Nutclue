@@ -1,1 +1,0 @@
-import Link from "next/link";export default function NotFound(){return <main className="errorPage"><div><p className="eyebrow">404 · LOST CLUE</p><h1>This path doesn't lead anywhere yet.</h1><p>The page may have moved, or the address may not be quite right. Your locally saved NutClue entries are not affected.</p><Link href="/">Return to NutClue →</Link></div></main>}
