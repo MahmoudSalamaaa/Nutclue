@@ -292,3 +292,12 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .visitList>div{grid-template-columns:10px 1fr auto;align-items:center}.visitDot{width:8px;height:8px;border-radius:50%;background:#9aaabd}
 .visitDot.meal{background:#d29a5e}.visitDot.water{background:#65a9d2}.visitDot.sleep{background:#8275bd}.visitDot.medication{background:#63a284}.visitDot.feeling{background:#d7a065}
 @media(max-width:650px){.visitWeekStats{grid-template-columns:1fr 1fr}.visitList>div{grid-template-columns:8px 1fr}.visitList time{grid-column:2}}
+
+
+/* Weekly story + day-grouped history */
+.historyStory{display:grid;grid-template-columns:1.2fr .8fr .8fr 2fr;gap:.7rem;margin:1rem 0 1.15rem;padding:1rem;border:1px solid #e0e7ef;border-radius:22px;background:#fff}
+.historyStory>div{display:grid;align-content:center;padding:.7rem;border-radius:15px;background:#f7f9fb}
+.historyStory small{font-size:.62rem;letter-spacing:.08em;color:#8796a6;font-weight:850}.historyStory b{font-size:1.35rem;color:#30465e}.historyStory span{font-size:.68rem;color:#718398;font-weight:750}
+.historyStory>p{margin:0;align-self:center;color:#687b90;font-size:.8rem;line-height:1.5}
+.historyDays{display:grid;gap:1.1rem}.historyDay{display:grid;gap:.55rem}.historyDayHead{display:flex;justify-content:space-between;align-items:center;padding:0 .2rem}.historyDayHead b{font-size:.9rem;color:#40536a}.historyDayHead span{font-size:.68rem;color:#8a99a8;font-weight:800}
+@media(max-width:700px){.historyStory{grid-template-columns:1fr 1fr}.historyStory>p{grid-column:1/-1}.historyStory>div:first-child{grid-column:1/-1}}
