@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: 20
       - run: npm install
+      - name: Disable server-only API for static export
+        run: rm -rf app/api
       - run: npm run build
         env:
           GITHUB_PAGES: "true"
