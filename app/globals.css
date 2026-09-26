@@ -301,3 +301,10 @@ aside{background:rgba(255,255,255,.97);border:1px solid #dce7f2}aside button:hov
 .historyStory>p{margin:0;align-self:center;color:#687b90;font-size:.8rem;line-height:1.5}
 .historyDays{display:grid;gap:1.1rem}.historyDay{display:grid;gap:.55rem}.historyDayHead{display:flex;justify-content:space-between;align-items:center;padding:0 .2rem}.historyDayHead b{font-size:.9rem;color:#40536a}.historyDayHead span{font-size:.68rem;color:#8a99a8;font-weight:800}
 @media(max-width:700px){.historyStory{grid-template-columns:1fr 1fr}.historyStory>p{grid-column:1/-1}.historyStory>div:first-child{grid-column:1/-1}}
+
+.historyTools{display:flex;align-items:center;gap:.7rem;margin:.15rem 0 .85rem}
+.historyTools button,.entryDelete,.undoSave{border:1px solid #dbe4ed;background:#fff;color:#52677e;border-radius:12px;padding:.55rem .75rem;font-weight:800;font-size:.72rem;cursor:pointer}
+.historyTools span{font-size:.68rem;color:#8a99a8}
+.entryDelete{margin-top:.45rem;padding:.3rem .55rem;opacity:.72}
+.savedActions{display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center}
+@media(max-width:600px){.historyTools{align-items:flex-start;flex-direction:column;gap:.35rem}}
