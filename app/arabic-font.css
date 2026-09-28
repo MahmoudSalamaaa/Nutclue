@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap");
+
+.siteAr,
+.siteAr button,
+.siteAr input,
+.siteAr textarea,
+.siteAr select,
+.kidsAr,
+.kidsAr button,
+.authPage:dir(rtl),
+.privacyPage:dir(rtl),
+.parentPage:dir(rtl){font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif}
+
+.siteAr h1,.siteAr h2,.siteAr h3,.siteAr h4,.siteAr p,.siteAr label,
+.siteAr .magHero h1,.siteAr .magStatement h2,.siteAr .magFeature h2,
+.siteAr .magTitle h2,.siteAr .magJournal h2,.siteAr .magFinal h2,
+.siteAr .pageHero h1,.siteAr .libraryGrid h2,.siteAr .about h1,
+.siteAr .journeyStrip b,.siteAr .magCards h3,.siteAr .callout h2,
+.siteAr .journal h3,.siteAr .siteMapHero h1,
+.kidsAr h1,.kidsAr h2,.kidsAr h3,.kidsAr p{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif;letter-spacing:-.025em}
+
+.siteAr .magHero h1,.siteAr .pageHero h1,.siteAr .siteMapHero h1{font-weight:800;line-height:.95}
+.siteAr p,.siteAr label,.siteAr button{line-height:1.6}
+
