@@ -1,5 +1,6 @@
 import {neon} from "@neondatabase/serverless";
 import {auth} from "../../../lib/auth/server";
+// The Vercel Neon integration may apply a project-specific prefix.
 function db(){const url=process.env.DATABASE_URL||process.env.POSTGRES_URL||process.env.NutClueDB_DATABASE_URL||process.env.NutClueDB_POSTGRES_URL;if(!url)throw new Error("Database is not configured");return neon(url)}
 async function user(){const result=await auth.getSession();return "data" in result&&result.data?.user?result.data.user:null}
 async function ensure(sql:any){await sql`CREATE TABLE IF NOT EXISTS public.entries (id text PRIMARY KEY DEFAULT md5(random()::text || clock_timestamp()::text), user_id text NOT NULL, type text NOT NULL, value text NOT NULL, at timestamptz NOT NULL, created_at timestamptz NOT NULL DEFAULT now()); CREATE INDEX IF NOT EXISTS entries_user_at_idx ON public.entries (user_id, at DESC)`}
