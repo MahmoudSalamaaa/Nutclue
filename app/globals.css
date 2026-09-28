@@ -90,3 +90,33 @@ button{touch-action:manipulation}.nav,.mobileNav{-webkit-backdrop-filter:blur(14
   .lunchShelf button,.ingredientRail button{min-width:0!important;width:100%!important}
 }
 @media(max-width:370px){.mobileNav span{font-size:.46rem}.mobileNav b{font-size:.95rem}.gameWorldTabs button{padding:.6rem!important}.foodShelf>div,.lunchShelf,.ingredientRail{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+
+/* Bilingual/RTL finishing pass: keep direction natural without duplicating layouts. */
+.siteAr{font-family:Arial,"Noto Sans Arabic",sans-serif}
+.siteAr button,.siteAr input,.siteAr textarea{font-family:inherit}
+.siteAr .footerNav section,.siteAr .footerBottom,.siteAr .journalTools,.siteAr .confirmBar{direction:rtl}
+.siteAr .footerNav button,.siteAr .footerBottom button{text-align:right}
+.siteAr .footerBottom button{justify-self:start}
+.siteAr .visitSheet aside{border-right:0;border-left:1px solid var(--line)}
+.siteAr .foodNumbers span+span{border-left:0;border-right:1px solid var(--line);padding-left:0;padding-right:.75rem}
+.siteAr .entryActions{justify-content:flex-start}
+.siteAr .entryDelete{margin-left:0;margin-right:auto}
+.siteAr .journalTools>div{margin-right:0;margin-left:auto}
+.siteAr .confirmBar span{margin-right:0;margin-left:auto}
+.siteAr .logDetail small{right:auto;left:.8rem}
+.siteAr .skipLink{left:auto;right:1rem}
+.siteAr .exploreBridge,.siteAr .atlasBridge{direction:rtl}
+.siteAr .missionAnswers button,.siteAr .gameWorldTabs button,.siteAr .foodShelf button{text-align:right}
+.siteAr .plateControls{flex-direction:row-reverse}
+.siteAr .visitFact{direction:rtl}
+.siteAr .visitFact small{margin-left:0!important;margin-right:auto!important}
+@media(max-width:800px){
+  .mobileNav{padding-left:max(4px,env(safe-area-inset-left));padding-right:max(4px,env(safe-area-inset-right));padding-bottom:env(safe-area-inset-bottom);height:calc(76px + env(safe-area-inset-bottom))}
+  .mobileNav button{min-width:0;overflow:hidden}
+  .mobileNav span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .siteAr .visitSheet aside{border-left:0}
+  .siteAr .foodNumbers span+span{border-right:0;padding-right:0}
+  .siteAr .plateControls{flex-direction:column}
+  .siteAr .footerBottom button{justify-self:end}
+}
+
