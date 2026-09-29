@@ -236,7 +236,7 @@ main{background:var(--cream);min-height:100vh}
  --line:#d5cabc;--focus:#7b3148;--danger:#9b2f3f;--success:#286246;
  --shadow:0 18px 48px rgba(18,56,47,.11);
 }
-body,main,.page{color:var(--ink)!important}
+body,main,.page{color:var(--ink)}
 p,li,label,.fieldHint,.muted,.helper,.hint{color:var(--muted)}
 h1,h2,h3,h4,h5,h6,strong,b{color:var(--ink)}
 a{color:var(--roseDeep)}
@@ -245,16 +245,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 input,select,textarea{background:var(--paper)!important;color:var(--ink)!important;border:1px solid #b9aea0!important;border-radius:14px!important}
 input::placeholder,textarea::placeholder{color:#68776f!important;opacity:1!important}
 input:focus,select:focus,textarea:focus{border-color:var(--focus)!important;box-shadow:0 0 0 3px rgba(123,49,72,.12)!important}
-.nav{color:var(--ink)!important}.nav>nav button,.authLink{color:var(--forest)!important}.nav>nav button:hover,.nav>nav button.active{background:#eadfd5!important;color:var(--roseDeep)!important}.globalLang{background:#e9ded3!important}.globalLang button{color:var(--forest)!important}.globalLang button.on{background:var(--forest)!important;color:#fff!important}
-.nav .logBtn{background:var(--roseDeep)!important;color:#fff!important}.nav .logBtn:hover{background:#64293b!important}
-.bloomHero,.bloomHero h1,.bloomHero h2,.bloomHero p{color:#fff!important}.bloomHero .magHeroCopy p{color:#f2f5f3!important}.bloomHero .magHeroNav{color:#fff4df!important}.bloomHero .magHeroCopy small{color:#f4ddb2!important}.bloomHero .magHeroCopy h1 em{color:#ffd9d0!important}.magButtons button:first-child{background:#ffd9d0!important;color:#12382f!important}.magButtons button:last-child{color:#fff!important;border-color:#fff!important}.magButtons button:last-child:hover{background:#fff!important;color:#12382f!important}
-.homePulse h2,.journeyStrip b,.magStatement h2,.magFeatureCopy h2,.magTitle h2,.magCards h3,.pageHero h1{color:var(--forest)!important}.homePulse p,.journeyStrip small,.magStatement p,.magFeatureCopy p,.magCards p,.pageHero p{color:var(--muted)!important}.homePulse small,.journeyStrip button span,.magFeatureCopy small,.magTitle span,.magCards small,.pageHero>small,.pageHero h1 em{color:var(--roseDeep)!important}
+.nav{color:var(--ink)}.nav>nav button,.authLink{color:var(--forest)}.nav>nav button:hover,.nav>nav button.active{background:#eadfd5!important;color:var(--roseDeep)!important}.globalLang{background:#e9ded3}.globalLang button{color:var(--forest)}.globalLang button.on{background:var(--forest);color:#fff}
+.nav .logBtn{background:var(--roseDeep);color:#fff}.nav .logBtn:hover{background:#64293b!important}
+.bloomHero,.bloomHero h1,.bloomHero h2,.bloomHero p{color:#fff}.bloomHero .magHeroCopy p{color:#f2f5f3}.bloomHero .magHeroNav{color:#fff4df}.bloomHero .magHeroCopy small{color:#f4ddb2}.bloomHero .magHeroCopy h1 em{color:#ffd9d0}.magButtons button:first-child{background:#ffd9d0!important;color:#12382f!important}.magButtons button:last-child{color:#fff!important;border-color:#fff!important}.magButtons button:last-child:hover{background:#fff!important;color:#12382f!important}
+.homePulse h2,.journeyStrip b,.magStatement h2,.magFeatureCopy h2,.magTitle h2,.magCards h3,.pageHero h1{color:var(--forest)}.homePulse p,.journeyStrip small,.magStatement p,.magFeatureCopy p,.magCards p,.pageHero p{color:var(--muted)!important}.homePulse small,.journeyStrip button span,.magFeatureCopy small,.magTitle span,.magCards small,.pageHero>small,.pageHero h1 em{color:var(--roseDeep)!important}
 .journeyStrip>button,.magCards>button,.libraryGrid>button,.exploreStarts button,.quickPicks button,.visitOverview>div,.savedQuestions,.lensCard{color:var(--ink)!important;background:var(--paper)!important;border-color:var(--line)!important}.journeyStrip>button:hover,.magCards>button:hover,.libraryGrid>button:hover{border-color:#aa7b82!important}
 .exploreBridge,.exploreBridge h2,.exploreBridge p{color:#fff!important}.exploreBridge p{color:#e9f0ec!important}.exploreBridge button{background:#ffd9d0!important;color:#12382f!important}
 .magJournalCopy,.magJournalCopy h2,.magJournalCopy p,.magJournalLinks button{color:#fff!important}.magJournalCopy p{color:#e7efeb!important}.magJournalCopy>span{color:#f4ddb2!important}.magJournalLinks button:hover{background:#fff!important;color:var(--forest)!important}
 .magFinal,.magFinal h2{color:var(--forest)!important}.magFinal span{color:var(--roseDeep)!important}.magFinal button{background:var(--forest)!important;color:#fff!important}
 .signatureFooter,.signatureFooter h2,.signatureFooter button{color:#fff!important}.footerStatement p{color:#e8efeb!important}.footerStatement small{color:#f4ddb2!important}.footerStatement h2 em,.footerWordmark span{color:#ffd9d0!important}.footerNav section>span{color:#f1bdc0!important}.footerNav button{color:#fff!important}.footerNav button:hover{color:#ffe1d8!important;text-decoration:underline;text-underline-offset:4px}.footerBottom{color:#edf3ef!important}
-.mobileNav button{color:#4f6259!important}.mobileNav button.active{color:var(--roseDeep)!important}
+.mobileNav button{color:#4f6259}.mobileNav button.active{color:var(--roseDeep)}
 .kidsWorld,.kidsPanel,.kidsGroupGrid article,.handGrid article,.egyptGrid article{color:var(--ink)!important}.kidsWorld p,.kidsPanel p,.kidsGroupGrid p,.handGrid p,.egyptGrid p{color:var(--muted)!important}.kidsNum{background:var(--roseDeep)!important;color:#fff!important}
 .rangeSwitch span{color:var(--muted)!important}.rangeSwitch button{color:var(--forest)!important}.rangeSwitch button.on{background:var(--forest)!important;color:#fff!important}
 ::selection{background:#f0c5c2;color:#102f27}
