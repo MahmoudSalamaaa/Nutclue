@@ -1,0 +1,21 @@
+/* Production UX hardening: one quiet layer for every route. */
+:root{color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+img{max-width:100%;height:auto}
+button,a,input,textarea,select{touch-action:manipulation}
+button:disabled{cursor:not-allowed}
+button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #ef715c;outline-offset:3px}
+[aria-busy="true"]{cursor:progress}
+.emptyState{min-height:9rem;display:grid;place-items:center;text-align:center;align-content:center;gap:.35rem;padding:2rem 1rem}
+.emptyState p{max-width:42rem;margin:0;color:#61736c}
+.siteAr .emptyState,.siteAr .authCard,.siteAr .privacyCard,.siteAr .parentCard{font-family:"Tajawal","Noto Sans Arabic",Tahoma,sans-serif}
+.siteAr input,.siteAr textarea,.siteAr select{font-size:16px}
+@media(max-width:800px){
+ body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+ .mobileNav{padding-bottom:env(safe-area-inset-bottom)}
+ .siteAr .journalTools,.siteAr .confirmBar{margin-inline:1rem}
+ .siteAr .journalTools{gap:.75rem}
+ .siteAr .authCard,.siteAr .privacyCard,.siteAr .parentCard{padding:1.25rem}
+ .siteAr .authCard h1,.siteAr .privacyCard h1,.siteAr .parentCard h1{line-height:1.25}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
