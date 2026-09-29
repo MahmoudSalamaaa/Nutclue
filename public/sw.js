@@ -1,5 +1,5 @@
 const CACHE="ilama-bloom-v3";
-const LEGACY_PREFIXES=["nutclue-","ilama-bloom-"];
+const LEGACY_PREFIXES=["ilama-bloom-"];
 const OFFLINE=["/manifest.webmanifest"];
 
 self.addEventListener("install",event=>{
