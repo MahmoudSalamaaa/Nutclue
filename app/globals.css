@@ -299,3 +299,37 @@ button{cursor:pointer}
 @media(max-width:1000px){.globalLang{margin-inline-start:auto!important}.nav .authLink{order:4}}
 @media(max-width:800px){.globalLang{display:flex!important}.nav>nav{display:none!important}.mobileNav{z-index:60!important}.magEdit{padding-inline:1rem!important}.magCards{display:grid!important;grid-template-columns:1fr!important}.magJournal{display:grid!important;grid-template-columns:1fr!important}.magJournalPhoto{min-height:320px!important}.magJournalCopy{padding:2rem 1.2rem!important}}
 @media(max-width:420px){.brandLogo{width:118px!important}.globalLang{gap:0!important}.globalLang button{padding:.28rem .42rem!important}.authLink{display:none!important}}
+
+
+/* ===== ILAMA BLOOM ACCESSIBLE COLOR & UX AUTHORITY ===== */
+:root{
+ --forest:#12382f;--forest2:#245044;--rose:#8f3f54;--roseDeep:#743246;
+ --blush:#d9a0a2;--petal:#f1c9c0;--cream:#fbf7ef;--paper:#fffdf9;
+ --sage:#71845f;--sand:#ead8b3;--ink:#142f28;--muted:#53665e;
+ --line:#d5cabc;--focus:#7b3148;--danger:#9b2f3f;--success:#286246;
+ --shadow:0 18px 48px rgba(18,56,47,.11);
+}
+body,main,.page{color:var(--ink)!important}
+p,li,label,.fieldHint,.muted,.helper,.hint{color:var(--muted)}
+h1,h2,h3,h4,h5,h6,strong,b{color:var(--ink)}
+a{color:var(--roseDeep)}
+button{color:var(--ink)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--focus)!important;outline-offset:3px!important}
+input,select,textarea{background:var(--paper)!important;color:var(--ink)!important;border:1px solid #b9aea0!important;border-radius:14px!important}
+input::placeholder,textarea::placeholder{color:#68776f!important;opacity:1!important}
+input:focus,select:focus,textarea:focus{border-color:var(--focus)!important;box-shadow:0 0 0 3px rgba(123,49,72,.12)!important}
+.nav{color:var(--ink)!important}.nav>nav button,.authLink{color:var(--forest)!important}.nav>nav button:hover,.nav>nav button.active{background:#eadfd5!important;color:var(--roseDeep)!important}.globalLang{background:#e9ded3!important}.globalLang button{color:var(--forest)!important}.globalLang button.on{background:var(--forest)!important;color:#fff!important}
+.nav .logBtn{background:var(--roseDeep)!important;color:#fff!important}.nav .logBtn:hover{background:#64293b!important}
+.bloomHero,.bloomHero h1,.bloomHero h2,.bloomHero p{color:#fff!important}.bloomHero .magHeroCopy p{color:#f2f5f3!important}.bloomHero .magHeroNav{color:#fff4df!important}.bloomHero .magHeroCopy small{color:#f4ddb2!important}.bloomHero .magHeroCopy h1 em{color:#ffd9d0!important}.magButtons button:first-child{background:#ffd9d0!important;color:#12382f!important}.magButtons button:last-child{color:#fff!important;border-color:#fff!important}.magButtons button:last-child:hover{background:#fff!important;color:#12382f!important}
+.homePulse h2,.journeyStrip b,.magStatement h2,.magFeatureCopy h2,.magTitle h2,.magCards h3,.pageHero h1{color:var(--forest)!important}.homePulse p,.journeyStrip small,.magStatement p,.magFeatureCopy p,.magCards p,.pageHero p{color:var(--muted)!important}.homePulse small,.journeyStrip button span,.magFeatureCopy small,.magTitle span,.magCards small,.pageHero>small,.pageHero h1 em{color:var(--roseDeep)!important}
+.journeyStrip>button,.magCards>button,.libraryGrid>button,.exploreStarts button,.quickPicks button,.visitOverview>div,.savedQuestions,.lensCard{color:var(--ink)!important;background:var(--paper)!important;border-color:var(--line)!important}.journeyStrip>button:hover,.magCards>button:hover,.libraryGrid>button:hover{border-color:#aa7b82!important}
+.exploreBridge,.exploreBridge h2,.exploreBridge p{color:#fff!important}.exploreBridge p{color:#e9f0ec!important}.exploreBridge button{background:#ffd9d0!important;color:#12382f!important}
+.magJournalCopy,.magJournalCopy h2,.magJournalCopy p,.magJournalLinks button{color:#fff!important}.magJournalCopy p{color:#e7efeb!important}.magJournalCopy>span{color:#f4ddb2!important}.magJournalLinks button:hover{background:#fff!important;color:var(--forest)!important}
+.magFinal,.magFinal h2{color:var(--forest)!important}.magFinal span{color:var(--roseDeep)!important}.magFinal button{background:var(--forest)!important;color:#fff!important}
+.signatureFooter,.signatureFooter h2,.signatureFooter button{color:#fff!important}.footerStatement p{color:#e8efeb!important}.footerStatement small{color:#f4ddb2!important}.footerStatement h2 em,.footerWordmark span{color:#ffd9d0!important}.footerNav section>span{color:#f1bdc0!important}.footerNav button{color:#fff!important}.footerNav button:hover{color:#ffe1d8!important;text-decoration:underline;text-underline-offset:4px}.footerBottom{color:#edf3ef!important}
+.mobileNav button{color:#4f6259!important}.mobileNav button.active{color:var(--roseDeep)!important}
+.kidsWorld,.kidsPanel,.kidsGroupGrid article,.handGrid article,.egyptGrid article{color:var(--ink)!important}.kidsWorld p,.kidsPanel p,.kidsGroupGrid p,.handGrid p,.egyptGrid p{color:var(--muted)!important}.kidsNum{background:var(--roseDeep)!important;color:#fff!important}
+.rangeSwitch span{color:var(--muted)!important}.rangeSwitch button{color:var(--forest)!important}.rangeSwitch button.on{background:var(--forest)!important;color:#fff!important}
+::selection{background:#f0c5c2;color:#102f27}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+@media(prefers-contrast:more){:root{--muted:#35483f;--line:#8f8478}.nav,.mobileNav{background:#fffdf9!important}button,input,select,textarea{border-width:2px!important}}
