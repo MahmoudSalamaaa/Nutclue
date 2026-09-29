@@ -189,3 +189,10 @@ html[lang="en"] .pageHero h1{font-family:Inter,Arial,sans-serif;letter-spacing:-
 .libraryGrid>button{border:1px solid #17372d26!important;border-radius:22px!important;background:#fffaf0!important;color:#17372d;padding:1.25rem!important;min-height:180px;text-align:start;box-shadow:5px 5px 0 #dff05f!important}.libraryGrid>button:hover{background:#fff!important;border-color:#17372d!important;box-shadow:7px 7px 0 #17372d!important;transform:translateY(-3px)}
 .page .exploreBridge button{background:#dff05f;color:#17372d;border:1px solid #dff05f;border-radius:999px;box-shadow:3px 3px 0 #fff5}.page .exploreBridge button:hover{background:#f5ff9a;box-shadow:5px 5px 0 #fff7}.footerNav button,.footerBottom button{border:0;background:transparent;box-shadow:none;border-radius:10px;padding:.55rem .7rem}.footerNav button:hover,.footerBottom button:hover{background:#ffffff14;color:#dff05f;box-shadow:none}.mobileNav button{border:0;box-shadow:none}.mobileNav button.active{box-shadow:inset 0 -3px 0 #e95f3d}.mobileNav button.log{box-shadow:inset 0 -3px 0 #dff05f}
 @media(max-width:700px){.nav button{min-height:38px;padding:.5rem .7rem}.nav nav button{padding:.45rem .55rem}.nav .globalLang button{min-height:32px;padding:.35rem .55rem}.libraryGrid>button{min-height:150px;padding:1rem!important;border-radius:18px!important}.page .exploreStarts button,.page .quickPicks button{min-height:48px;font-size:.82rem}.page .exploreBridge button{min-height:48px;width:100%}}
+
+
+/* Typography lock — one intentional family per language */
+.siteAr,.siteAr *{font-family:"Tajawal","Noto Sans Arabic",Tahoma,sans-serif!important}
+.siteAr h1,.siteAr h2,.siteAr h3,.siteAr h4,.siteAr p,.siteAr small,.siteAr label,.siteAr button,.siteAr input,.siteAr textarea,.siteAr select{font-family:"Tajawal","Noto Sans Arabic",Tahoma,sans-serif!important}
+html[lang="en"],html[lang="en"] *{font-family:Inter,Arial,sans-serif!important}
+html[lang="en"] code,html[lang="en"] pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important}
