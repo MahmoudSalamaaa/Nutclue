@@ -427,3 +427,30 @@ button{cursor:pointer}
  .siteAr .bloomArt{right:auto!important;left:-42vw!important}
  .bloomHero:after{font-size:31vw!important;bottom:.03em!important}
 }
+
+
+/* ===== Mobile / RTL / accessibility hardening ===== */
+:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+button,a,input,select,textarea{touch-action:manipulation}
+.siteAr{direction:rtl}
+.siteAr input,.siteAr textarea,.siteAr select{text-align:right}
+.siteAr .mobileNav,.siteAr .gameWorldTabs,.siteAr .missionAnswers{direction:rtl}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+@media(max-width:700px){
+ body{overflow-x:hidden}
+ button,a{min-height:44px}
+ .mobileNav{padding-bottom:max(.35rem,env(safe-area-inset-bottom));overflow-x:auto;overscroll-behavior-inline:contain}
+ .mobileNav button{min-width:58px}
+ .gameWorldTabs{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.55rem!important;overflow:visible!important}
+ .gameWorldTabs button{min-width:0!important;width:100%!important;min-height:88px!important}
+ .missionAnswers{display:grid!important;grid-template-columns:1fr!important}
+ .foodShelf>div,.lunchShelf,.ingredientRail{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .plateRim{min-height:300px!important}
+ .kidsAr .miniGameTitle,.kidsAr .gameMessage{text-align:right}
+}
+@media(max-width:390px){
+ .gameWorldTabs{grid-template-columns:1fr!important}
+ .foodShelf>div,.lunchShelf,.ingredientRail{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
