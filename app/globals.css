@@ -128,16 +128,6 @@ button{touch-action:manipulation}.nav,.mobileNav{-webkit-backdrop-filter:blur(14
 
 
 
-/* Final mobile readability fixes */
-.journeyStrip button{display:grid!important;grid-template-columns:2.7rem minmax(0,1fr)!important;grid-template-areas:"num title" "num desc"!important;align-items:center!important;column-gap:.8rem!important;row-gap:.25rem!important;min-width:0!important;min-height:92px!important;padding:1rem!important;border:1px solid #cfd4d0!important;border-radius:16px!important;background:#f7f7f5!important;box-shadow:3px 3px 0 var(--petal)!important;text-align:start!important}
-.journeyStrip button span{grid-area:num!important;font-size:2rem!important;line-height:1!important;font-weight:950!important;color:var(--forest)!important}
-.journeyStrip button b{grid-area:title!important;min-width:0!important;font-size:1rem!important;line-height:1.35!important;color:var(--forest)!important}
-.journeyStrip button small{grid-area:desc!important;min-width:0!important;font-size:.78rem!important;line-height:1.5!important;color:#53605b!important;white-space:normal!important}
-.magButtons button,.pulseActions button{min-height:46px!important;border-radius:999px!important;padding:.72rem 1rem!important;font-weight:900!important;line-height:1.35!important;white-space:normal!important}
-@media(max-width:640px){.journeyStrip{display:grid!important;grid-template-columns:1fr!important;gap:.7rem!important;padding-inline:1rem!important}.magButtons,.pulseActions{width:100%!important}.magButtons button,.pulseActions button{width:100%!important}}
-.siteAr .journeyStrip button{direction:rtl!important;text-align:right!important}.siteAr .journeyStrip button span{justify-self:start!important}
-
-
 /* Arabic word spacing pass — keep RTL copy breathable without stretching controls */
 .siteAr :where(p,li,small,label,figcaption,.magHeroCopy,.magFeatureCopy,.magJournalCopy,.exploreCard,.guideCard,.logHint){word-spacing:.14em}
 .siteAr :where(h1,h2,h3,h4,.journeyStrip b,.kidsPanel h2){word-spacing:.08em}
@@ -289,6 +279,8 @@ input:focus,select:focus,textarea:focus{border-color:var(--focus)!important;box-
 
 
 
+/* Journey readability */
+.journeyStrip>button{display:grid;grid-template-columns:2.7rem minmax(0,1fr);grid-template-areas:"num title" "num desc";align-items:center;column-gap:.8rem;row-gap:.25rem;min-width:0;min-height:92px;padding:1rem;border:1px solid var(--line);border-radius:16px;background:var(--paper);box-shadow:3px 3px 0 var(--petal);text-align:start}.journeyStrip>button span{grid-area:num;font-size:2rem;line-height:1;font-weight:950;color:var(--forest)}.journeyStrip>button b{grid-area:title;min-width:0;font-size:1rem;line-height:1.35;color:var(--forest)}.journeyStrip>button small{grid-area:desc;min-width:0;font-size:.78rem;line-height:1.5;color:var(--muted);white-space:normal}.siteAr .journeyStrip>button{direction:rtl;text-align:right}@media(max-width:640px){.journeyStrip{display:grid;grid-template-columns:1fr;gap:.7rem;padding-inline:1rem}.magButtons,.pulseActions{width:100%}.magButtons button,.pulseActions button{width:100%;min-height:46px}}
 /* Ilama Bloom canonical component polish */
 *{box-sizing:border-box}
 button,a,input,select,textarea{font:inherit}
