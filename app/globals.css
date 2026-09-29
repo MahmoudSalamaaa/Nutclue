@@ -209,45 +209,6 @@ html[lang="en"] .exploreStarts button:nth-child(1)::after{content:"Carbs"}html[l
 @media(max-width:700px){.exploreStarts button{min-height:48px;padding:.55rem .65rem!important}.exploreStarts button::before{width:26px;height:26px}.exploreStarts button::after{font-size:.78rem}}
 
 
-/* ILAMA BLOOM — brand system 2026 */
-:root{
- --ib-forest:#163b31;--ib-forest-2:#234f40;--ib-rose:#a94f62;--ib-blush:#d89aa0;
- --ib-petal:#e7b8b0;--ib-cream:#fbf6ec;--ib-sand:#ead8b1;--ib-sage:#81966b;
- --ib-ink:#17362d;--ib-line:#d8cec0;
-}
-body{background:var(--ib-cream)!important;color:var(--ib-ink)!important}
-.nav{background:rgba(251,246,236,.94)!important;border-bottom:1px solid var(--ib-line)!important;backdrop-filter:blur(18px)}
-.logo{font-family:Georgia,"Times New Roman",serif!important;letter-spacing:.09em!important;color:var(--ib-forest)!important;background:transparent!important;border:0!important;box-shadow:none!important}
-.logo span{color:var(--ib-rose)!important;font-family:inherit!important}
-.nav .logBtn{background:var(--ib-forest)!important;color:var(--ib-cream)!important;border-color:var(--ib-forest)!important;box-shadow:none!important}
-.nav .globalLang button:first-child,.nav .globalLang button.on{background:var(--ib-petal)!important;color:var(--ib-forest)!important}
-.magHero{min-height:min(82vh,760px)!important;background:var(--ib-forest)!important}
-.magShade{background:linear-gradient(90deg,rgba(14,45,36,.9),rgba(14,45,36,.48) 55%,rgba(14,45,36,.08))!important}
-.magHeroCopy h1,.magStatement h2,.magFeatureCopy h2,.footerStatement h2{font-family:Georgia,"Times New Roman",serif!important}
-.magHeroCopy h1 em,.magStatement em,.footerStatement h2 em{color:var(--ib-petal)!important}
-.magButtons button:first-child,.pulseActions button:first-child,.footerStatement>button{background:var(--ib-rose)!important;color:white!important;border-color:var(--ib-rose)!important}
-.homePulse,.journeyStrip,.magStatement,.magFeature,.page{background:var(--ib-cream)!important}
-.journeyStrip button,.libraryGrid>button,.exploreStarts,.pageHero{background:#fffaf3!important;border-color:var(--ib-line)!important;box-shadow:4px 4px 0 var(--ib-petal)!important}
-.journeyStrip button span,.pageHero h1,.libraryGrid>button{color:var(--ib-forest)!important}
-.pageHero{background:linear-gradient(135deg,#fffaf3,#f3e7df)!important}
-.pageHero:before{background:var(--ib-petal)!important}
-.pageHero>small,.pageHero h1 em{color:var(--ib-rose)!important}
-.exploreBridge,.signatureFooter{background:var(--ib-forest)!important}
-.exploreBridge{box-shadow:8px 8px 0 var(--ib-petal)!important}
-.exploreStarts button:hover,.quickPicks button:hover,.quickPicks button.on{background:var(--ib-petal)!important}
-.footerStatement small,.footerNav button:hover{color:var(--ib-sand)!important}
-.footerNav section>span,.footerWordmark span{color:var(--ib-petal)!important}
-.mobileNav button.active{box-shadow:inset 0 -3px 0 var(--ib-rose)!important}
-@media(max-width:800px){.magShade{background:linear-gradient(0deg,rgba(14,45,36,.92),rgba(14,45,36,.2))!important}}
-
-.brandLogo{width:168px!important;height:54px!important;padding:2px 0!important;display:flex!important;align-items:center!important}
-.brandLogo img{width:100%!important;height:100%!important;object-fit:contain!important;display:block!important}
-.magHeroCopy{max-width:760px!important}.magHeroCopy small{color:var(--ib-sand)!important;letter-spacing:.18em!important}
-.magHeroCopy h1{font-weight:400!important;letter-spacing:-.035em!important}
-.magFeatureImage img,.magHeroImg{filter:saturate(.82) contrast(.96) warm(1)}
-@media(max-width:800px){.brandLogo{width:132px!important;height:46px!important}}
-
-
 /* ===== ILAMA BLOOM UI RESET — single final design authority ===== */
 :root{--forest:#183d32;--forest2:#285343;--rose:#a85264;--blush:#dfa9a8;--petal:#f0cbc2;--cream:#fbf7ef;--paper:#fffdf8;--sage:#84976e;--sand:#e8d5ad;--ink:#18372e;--muted:#65736c;--line:#ddd3c5;--shadow:0 18px 50px rgba(24,61,50,.10)}
 html{background:var(--cream);scroll-behavior:smooth}
@@ -276,29 +237,6 @@ main{background:var(--cream);min-height:100vh}
 @media(max-width:800px){body{padding-bottom:calc(72px + env(safe-area-inset-bottom))}.nav{min-height:64px!important;padding:.45rem .8rem!important}.brandLogo{width:138px!important;height:46px!important}.nav .logBtn{display:none!important}.authLink{font-size:.76rem!important;padding:.4rem!important}.bloomHero{min-height:650px!important}.bloomHero .magHeroCopy{inset-inline:1rem!important;bottom:2rem!important}.bloomHero .magHeroCopy h1{font-size:clamp(3.4rem,16vw,5.7rem)!important}.bloomArt{width:92vw;right:-35vw;top:38%;opacity:.32}.magHeroNav{padding-inline:1rem!important}.footerNav{grid-template-columns:1fr 1fr!important}.footerNav section:last-child{grid-column:1/-1}.footerWordmark{font-size:18vw!important;white-space:normal!important}.footerBottom{grid-template-columns:1fr!important}.footerBottom button{justify-self:start!important}}
 @media(max-width:480px){.globalLang button{font-size:.68rem!important;padding:.3rem .48rem!important}.nav .authLink{max-width:62px;overflow:hidden;text-overflow:ellipsis}.bloomHero{min-height:620px!important}.bloomHero .magHeroCopy p{font-size:.94rem!important}.magButtons{display:grid!important;grid-template-columns:1fr!important}.magButtons button{width:100%!important}.footerNav{grid-template-columns:1fr!important}.footerNav section:last-child{grid-column:auto}.journeyStrip{padding-inline:.8rem!important}}
 .siteAr .bloomHero .magHeroCopy h1{font-family:"Noto Kufi Arabic","Tajawal",Tahoma,sans-serif!important;font-weight:700!important;letter-spacing:0!important;line-height:1.25!important}.siteAr .footerStatement h2{font-family:"Noto Kufi Arabic","Tajawal",Tahoma,sans-serif!important;letter-spacing:0!important;line-height:1.35!important}
-
-
-/* ILAMA BLOOM — CLEAN POLISH LAYER */
-*{box-sizing:border-box}
-button,a,input,select,textarea{font:inherit}
-button{cursor:pointer}
-.nav{max-width:none!important}
-.globalLang{order:3}
-.nav>nav{order:2}
-.brandLogo{order:1}
-.logBtn,.authLink{order:4}
-.magEdit{background:var(--paper)!important;padding:clamp(4rem,8vw,8rem) clamp(1rem,5vw,5rem)!important}
-.magTitle span{color:var(--rose)!important}.magTitle h2{color:var(--forest)!important;font-family:Georgia,"Times New Roman",serif!important}
-.magCards{gap:1.2rem!important}.magCards>button{overflow:hidden!important;background:var(--cream)!important;border:1px solid var(--line)!important;border-radius:28px!important;box-shadow:none!important;transition:transform .22s ease,box-shadow .22s ease!important}.magCards>button:hover{transform:translateY(-5px)!important;box-shadow:var(--shadow)!important}.magCards img{aspect-ratio:4/3!important;object-fit:cover!important}.magCards small{color:var(--rose)!important}.magCards h3{color:var(--forest)!important}
-.magJournal{background:#f1e6dc!important}.magJournalCopy{background:var(--forest)!important;color:white!important}.magJournalCopy>span{color:var(--sand)!important}.magJournalCopy h2{font-family:Georgia,"Times New Roman",serif!important;color:white!important}.magJournalCopy p{color:#e5ece7!important}.magJournalLinks button{color:white!important;border-color:#ffffff38!important}.magJournalLinks button:hover{background:#ffffff12!important}
-.magFinal{background:var(--petal)!important;color:var(--forest)!important}.magFinal span{color:var(--rose)!important}.magFinal h2{font-family:Georgia,"Times New Roman",serif!important}.magFinal button{background:var(--forest)!important;color:white!important;border:0!important;border-radius:999px!important}
-.rangeSwitch{background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:999px!important;padding:.35rem!important}.rangeSwitch button{border:0!important;border-radius:999px!important;background:transparent!important;box-shadow:none!important}.rangeSwitch button.on{background:var(--forest)!important;color:white!important}
-.visitOverview>div,.savedQuestions,.lensCard{background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:24px!important;box-shadow:none!important}
-.kidsLang{display:none!important}
-.siteAr .magTitle h2,.siteAr .magJournalCopy h2,.siteAr .magFinal h2{font-family:"Noto Kufi Arabic","Tajawal",Tahoma,sans-serif!important;letter-spacing:0!important}
-@media(max-width:1000px){.globalLang{margin-inline-start:auto!important}.nav .authLink{order:4}}
-@media(max-width:800px){.globalLang{display:flex!important}.nav>nav{display:none!important}.mobileNav{z-index:60!important}.magEdit{padding-inline:1rem!important}.magCards{display:grid!important;grid-template-columns:1fr!important}.magJournal{display:grid!important;grid-template-columns:1fr!important}.magJournalPhoto{min-height:320px!important}.magJournalCopy{padding:2rem 1.2rem!important}}
-@media(max-width:420px){.brandLogo{width:118px!important}.globalLang{gap:0!important}.globalLang button{padding:.28rem .42rem!important}.authLink{display:none!important}}
 
 
 /* ===== ILAMA BLOOM ACCESSIBLE COLOR & UX AUTHORITY ===== */
@@ -360,3 +298,18 @@ input:focus,select:focus,textarea:focus{border-color:var(--focus)!important;box-
 .siteAr p,.siteAr label,.siteAr button{line-height:1.6}
 
 
+
+
+/* Ilama Bloom canonical component polish */
+*{box-sizing:border-box}
+button,a,input,select,textarea{font:inherit}
+button{cursor:pointer}
+.magEdit{background:var(--paper)!important;padding:clamp(4rem,8vw,8rem) clamp(1rem,5vw,5rem)!important}
+.magTitle span{color:var(--roseDeep)!important}.magTitle h2{color:var(--forest)!important;font-family:Georgia,"Times New Roman",serif!important}
+.magCards{gap:1.2rem!important}.magCards>button{overflow:hidden!important;background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:28px!important;box-shadow:none!important;transition:transform .22s ease,box-shadow .22s ease!important}.magCards>button:hover{transform:translateY(-5px)!important;box-shadow:var(--shadow)!important}.magCards img{aspect-ratio:4/3!important;object-fit:cover!important}
+.magJournal{background:#eee1d7!important}.magJournalCopy{background:var(--forest)!important}
+.magFinal{background:var(--petal)!important}.magFinal button{background:var(--forest)!important;color:#fff!important;border:0!important;border-radius:999px!important}
+.rangeSwitch{background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:999px!important;padding:.35rem!important}.rangeSwitch button{border:0!important;border-radius:999px!important;background:transparent!important;box-shadow:none!important}.rangeSwitch button.on{background:var(--forest)!important;color:#fff!important}
+.visitOverview>div,.savedQuestions,.lensCard{background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:24px!important;box-shadow:none!important}
+.kidsLang{display:none!important}
+@media(max-width:800px){.magEdit{padding-inline:1rem!important}.magCards{display:grid!important;grid-template-columns:1fr!important}.magJournal{display:grid!important;grid-template-columns:1fr!important}.magJournalPhoto{min-height:320px!important}.magJournalCopy{padding:2rem 1.2rem!important}}
