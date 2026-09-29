@@ -293,12 +293,12 @@ input:focus,select:focus,textarea:focus{border-color:var(--focus)!important;box-
 *{box-sizing:border-box}
 button,a,input,select,textarea{font:inherit}
 button{cursor:pointer}
-.magEdit{background:var(--paper)!important;padding:clamp(4rem,8vw,8rem) clamp(1rem,5vw,5rem)!important}
-.magTitle span{color:var(--roseDeep)!important}.magTitle h2{color:var(--forest)!important;font-family:Georgia,"Times New Roman",serif!important}
-.magCards{gap:1.2rem!important}.magCards>button{overflow:hidden!important;background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:28px!important;box-shadow:none!important;transition:transform .22s ease,box-shadow .22s ease!important}.magCards>button:hover{transform:translateY(-5px)!important;box-shadow:var(--shadow)!important}.magCards img{aspect-ratio:4/3!important;object-fit:cover!important}
-.magJournal{background:#eee1d7!important}.magJournalCopy{background:var(--forest)!important}
-.magFinal{background:var(--petal)!important}.magFinal button{background:var(--forest)!important;color:#fff!important;border:0!important;border-radius:999px!important}
-.rangeSwitch{background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:999px!important;padding:.35rem!important}.rangeSwitch button{border:0!important;border-radius:999px!important;background:transparent!important;box-shadow:none!important}.rangeSwitch button.on{background:var(--forest)!important;color:#fff!important}
-.visitOverview>div,.savedQuestions,.lensCard{background:var(--paper)!important;border:1px solid var(--line)!important;border-radius:24px!important;box-shadow:none!important}
-.kidsLang{display:none!important}
-@media(max-width:800px){.magEdit{padding-inline:1rem!important}.magCards{display:grid!important;grid-template-columns:1fr!important}.magJournal{display:grid!important;grid-template-columns:1fr!important}.magJournalPhoto{min-height:320px!important}.magJournalCopy{padding:2rem 1.2rem!important}}
+.magEdit{background:var(--paper);padding:clamp(4rem,8vw,8rem) clamp(1rem,5vw,5rem)}
+.magTitle span{color:var(--roseDeep)}.magTitle h2{color:var(--forest);font-family:Georgia,"Times New Roman",serif}
+.magCards{gap:1.2rem}.magCards>button{overflow:hidden;background:var(--paper);border:1px solid var(--line);border-radius:28px;box-shadow:none;transition:transform .22s ease,box-shadow .22s ease}.magCards>button:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.magCards img{aspect-ratio:4/3;object-fit:cover}
+.magJournal{background:#eee1d7}.magJournalCopy{background:var(--forest)}
+.magFinal{background:var(--petal)}.magFinal button{background:var(--forest);color:#fff;border:0;border-radius:999px}
+.rangeSwitch{background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:.35rem}.rangeSwitch button{border:0;border-radius:999px;background:transparent;box-shadow:none}.rangeSwitch button.on{background:var(--forest);color:#fff}
+.visitOverview>div,.savedQuestions,.lensCard{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:none}
+.kidsLang{display:none}
+@media(max-width:800px){.magEdit{padding-inline:1rem}.magCards{display:grid;grid-template-columns:1fr}.magJournal{display:grid;grid-template-columns:1fr}.magJournalPhoto{min-height:320px}.magJournalCopy{padding:2rem 1.2rem}}
