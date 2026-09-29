@@ -207,3 +207,35 @@ html[lang="en"] code,html[lang="en"] pre{font-family:ui-monospace,SFMono-Regular
 html[lang="en"] .exploreStarts button:nth-child(1)::after{content:"Carbs"}html[lang="en"] .exploreStarts button:nth-child(2)::after{content:"Everyday food"}html[lang="en"] .exploreStarts button:nth-child(3)::after{content:"Labs"}html[lang="en"] .exploreStarts button:nth-child(4)::after{content:"Kids"}
 .exploreStarts button:hover::before{background:#e95f3d;color:#fff}.exploreStarts button:hover::after{color:#17372d}
 @media(max-width:700px){.exploreStarts button{min-height:48px;padding:.55rem .65rem!important}.exploreStarts button::before{width:26px;height:26px}.exploreStarts button::after{font-size:.78rem}}
+
+
+/* ILAMA BLOOM — brand system 2026 */
+:root{
+ --ib-forest:#163b31;--ib-forest-2:#234f40;--ib-rose:#a94f62;--ib-blush:#d89aa0;
+ --ib-petal:#e7b8b0;--ib-cream:#fbf6ec;--ib-sand:#ead8b1;--ib-sage:#81966b;
+ --ib-ink:#17362d;--ib-line:#d8cec0;
+}
+body{background:var(--ib-cream)!important;color:var(--ib-ink)!important}
+.nav{background:rgba(251,246,236,.94)!important;border-bottom:1px solid var(--ib-line)!important;backdrop-filter:blur(18px)}
+.logo{font-family:Georgia,"Times New Roman",serif!important;letter-spacing:.09em!important;color:var(--ib-forest)!important;background:transparent!important;border:0!important;box-shadow:none!important}
+.logo span{color:var(--ib-rose)!important;font-family:inherit!important}
+.nav .logBtn{background:var(--ib-forest)!important;color:var(--ib-cream)!important;border-color:var(--ib-forest)!important;box-shadow:none!important}
+.nav .globalLang button:first-child,.nav .globalLang button.on{background:var(--ib-petal)!important;color:var(--ib-forest)!important}
+.magHero{min-height:min(82vh,760px)!important;background:var(--ib-forest)!important}
+.magShade{background:linear-gradient(90deg,rgba(14,45,36,.9),rgba(14,45,36,.48) 55%,rgba(14,45,36,.08))!important}
+.magHeroCopy h1,.magStatement h2,.magFeatureCopy h2,.footerStatement h2{font-family:Georgia,"Times New Roman",serif!important}
+.magHeroCopy h1 em,.magStatement em,.footerStatement h2 em{color:var(--ib-petal)!important}
+.magButtons button:first-child,.pulseActions button:first-child,.footerStatement>button{background:var(--ib-rose)!important;color:white!important;border-color:var(--ib-rose)!important}
+.homePulse,.journeyStrip,.magStatement,.magFeature,.page{background:var(--ib-cream)!important}
+.journeyStrip button,.libraryGrid>button,.exploreStarts,.pageHero{background:#fffaf3!important;border-color:var(--ib-line)!important;box-shadow:4px 4px 0 var(--ib-petal)!important}
+.journeyStrip button span,.pageHero h1,.libraryGrid>button{color:var(--ib-forest)!important}
+.pageHero{background:linear-gradient(135deg,#fffaf3,#f3e7df)!important}
+.pageHero:before{background:var(--ib-petal)!important}
+.pageHero>small,.pageHero h1 em{color:var(--ib-rose)!important}
+.exploreBridge,.signatureFooter{background:var(--ib-forest)!important}
+.exploreBridge{box-shadow:8px 8px 0 var(--ib-petal)!important}
+.exploreStarts button:hover,.quickPicks button:hover,.quickPicks button.on{background:var(--ib-petal)!important}
+.footerStatement small,.footerNav button:hover{color:var(--ib-sand)!important}
+.footerNav section>span,.footerWordmark span{color:var(--ib-petal)!important}
+.mobileNav button.active{box-shadow:inset 0 -3px 0 var(--ib-rose)!important}
+@media(max-width:800px){.magShade{background:linear-gradient(0deg,rgba(14,45,36,.92),rgba(14,45,36,.2))!important}}
