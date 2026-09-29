@@ -499,3 +499,11 @@ button,a,input,select,textarea{touch-action:manipulation}
  .siteAr :where(p,li,label),.kidsAr :where(p,li,label){line-height:1.85}
  .siteAr button,.kidsAr button{line-height:1.5}
 }
+
+
+/* ===== Evidence-led micro missions ===== */
+.microMissions{padding:clamp(3.5rem,7vw,6.5rem) clamp(1rem,6vw,6rem);background:var(--paper);border-block:1px solid var(--line)}
+.microMissionHead{max-width:720px;margin-bottom:2rem}.microMissionHead small{font-weight:800;letter-spacing:.12em;color:var(--roseDeep)}.microMissionHead h2{font-size:clamp(2rem,4vw,4.2rem);line-height:1.05;margin:.55rem 0;color:var(--forest)}.microMissionHead p{max-width:580px;color:#52665d}
+.microMissionGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}.microMissionGrid button{text-align:left;border:1px solid var(--line);background:var(--cream);padding:1.35rem;min-height:180px;display:flex;flex-direction:column;align-items:flex-start;gap:.65rem;border-radius:18px;color:var(--forest);box-shadow:none}.microMissionGrid button:hover{transform:translateY(-2px);border-color:var(--forest)}.microMissionGrid span{font-size:.72rem;font-weight:800;color:var(--roseDeep)}.microMissionGrid b{font-size:1.08rem}.microMissionGrid small{font-size:.82rem;line-height:1.65;color:#52665d}.siteAr .microMissionGrid button{text-align:right;align-items:flex-start}
+:focus-visible{outline:3px solid var(--roseDeep)!important;outline-offset:3px!important}
+@media(max-width:800px){.microMissionGrid{grid-template-columns:1fr}.microMissionGrid button{min-height:140px}.microMissionHead h2{line-height:1.18}}
