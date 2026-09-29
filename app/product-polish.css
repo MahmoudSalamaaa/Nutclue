@@ -12,6 +12,26 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
 .authPage h1,.privacyPage h1,.parentPage h1,.authPage h2,.privacyPage h2,.parentPage h2{font-family:"Noto Kufi Arabic","Tajawal",Tahoma,sans-serif;line-height:1.35}
 .authPage input,.authPage button,.privacyPage button,.parentPage input,.parentPage select{font-size:16px}
 .authPage .authCard,.privacyPage .privacyCard,.parentPage .parentCard{border-radius:24px;overflow:hidden}
+.accountPage{min-height:100vh;background:#f4f0e5;color:#17362d;padding:clamp(2rem,7vw,7rem) 1rem;font-family:"Tajawal","Noto Sans Arabic",Tahoma,sans-serif}
+.accountCard{max-width:760px;margin:auto;background:#fffaf0;border:1px solid #d9d3c4;border-radius:24px;padding:clamp(1.5rem,5vw,4rem);box-shadow:12px 12px 0 #dff05f}
+.accountCard small{display:block;color:#ef715c;font-size:.68rem;font-weight:950;letter-spacing:.14em}
+.accountCard h1{font-family:"Noto Kufi Arabic","Tajawal",Tahoma,sans-serif;font-size:clamp(2rem,6vw,4rem);line-height:1.35;margin:1rem 0}
+.accountCard p{line-height:1.8;color:#58655f}
+.accountPrimary,.accountLinks a{display:inline-block;text-decoration:none;border-radius:999px;font-weight:900}
+.accountPrimary{margin-top:1rem;background:#17362d;color:#fff;padding:.9rem 1.2rem}
+.accountIdentity{display:grid;gap:.25rem;padding:1rem 0;border-top:1px solid #d9d3c4;border-bottom:1px solid #d9d3c4}
+.accountIdentity span,.accountStats span{font-size:.75rem;color:#61736c}
+.accountStats{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin:1rem 0}
+.accountStats>div{display:grid;gap:.2rem;background:#dff05f;border-radius:18px;padding:1rem}
+.accountStats b{font-size:2rem}
+.accountLinks{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0 2rem}
+.accountLinks a{border:1px solid #17362d;color:#17362d;padding:.7rem .9rem}
+.accountDanger{border:1px solid #e3b0a5;border-radius:18px;background:#fff0eb;padding:1rem}
+.accountDanger p{font-size:.82rem;margin:.35rem 0 .8rem}
+.accountDanger button{border:0;border-radius:999px;background:#a13d32;color:#fff;padding:.75rem 1rem;font-weight:900}
+.accountMessage{min-height:1.5rem;margin:.8rem 0!important;color:#587168!important;font-size:.85rem}
+.accountSignOut{border:1px solid #17362d;border-radius:999px;background:transparent;color:#17362d;padding:.7rem 1rem;font-weight:900;margin-top:1rem}
+.accountBack{display:block;margin-top:1.5rem;color:#ef715c;font-weight:900}
 @media(max-width:800px){
  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
  .mobileNav{padding-bottom:env(safe-area-inset-bottom)}
@@ -19,5 +39,8 @@ button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-vis
  .siteAr .journalTools{gap:.75rem}
  .siteAr .authCard,.siteAr .privacyCard,.siteAr .parentCard,.authPage .authCard,.privacyPage .privacyCard,.parentPage .parentCard{padding:1.25rem}
  .siteAr .authCard h1,.siteAr .privacyCard h1,.siteAr .parentCard h1,.authPage h1,.privacyPage h1,.parentPage h1{line-height:1.35}
+ .accountPage{padding:1rem 1rem 6rem}
+ .accountCard{padding:1.25rem;box-shadow:6px 6px 0 #dff05f}
+ .accountStats{grid-template-columns:1fr}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
