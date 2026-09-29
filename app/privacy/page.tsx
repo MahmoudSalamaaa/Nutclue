@@ -6,16 +6,16 @@ export default function PrivacyPage(){
  return <main className="privacyPage" dir="auto">
   <section className="privacyCard">
    <Link href="/" className="authBrand">NUT<span>CLUE</span></Link>
-   <small>PRIVACY, IN PLAIN LANGUAGE</small>
-   <h1>Your data stays yours.</h1>
-   <p>NutClue keeps public learning and games open to everyone. An account is only needed when you choose to save personal notes, questions or visit context.</p>
-   <h2>What we store</h2>
-   <p>Saved entries are linked to your account and contain the category, the note you wrote and the time you selected. We do not use personal notes for public profiles or leaderboards.</p>
-   <h2>Your controls</h2>
-   <p>You can review, edit and delete entries from your Journal. Contact the project owner if you need an account-level deletion request.</p>
-   <h2>Health boundary</h2>
-   <p>NutClue is educational and organizational. It does not diagnose, interpret results, calculate insulin or replace an individualized care plan.</p>
-   <Link href="/" className="privacyBack">Back to NutClue →</Link>
+   <small>الخصوصية · بكلام واضح</small>
+   <h1>بياناتك تفضل ملكك.</h1>
+   <p>التعلم والألعاب العامة في NutClue متاحة للجميع. الحساب مطلوب فقط عندما تختار حفظ ملاحظاتك أو أسئلتك أو سياق الزيارة.</p>
+   <h2>إيه اللي بنخزنه؟</h2>
+   <p>السجلات المحفوظة ترتبط بحسابك وتشمل التصنيف والملاحظة التي كتبتها والوقت الذي اخترته. لا نستخدم ملاحظاتك في ملف عام أو لوحة ترتيب.</p>
+   <h2>إنت المتحكم</h2>
+   <p>تقدر تراجع وتعدل وتمسح سجلاتك من اليوميات، وتصدر نسخة منها. حذف الحساب أو كل البيانات يتم عبر التواصل مع صاحب المشروع.</p>
+   <h2>الحد الطبي</h2>
+   <p>NutClue تعليمي وتنظيمي. لا يشخّص، ولا يفسر النتائج، ولا يحسب جرعات الإنسولين، ولا يستبدل خطة الرعاية الفردية.</p>
+   <Link href="/" className="privacyBack">العودة إلى NutClue ←</Link>
   </section>
  </main>
 }
