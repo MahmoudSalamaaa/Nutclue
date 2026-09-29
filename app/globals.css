@@ -427,39 +427,3 @@ button{cursor:pointer}
  .siteAr .bloomArt{right:auto!important;left:-42vw!important}
  .bloomHero:after{font-size:31vw!important;bottom:.03em!important}
 }
-
-
-/* ===== Final responsive/accessibility consolidation ===== */
-html{overflow-x:hidden}body{overflow-x:clip}.navIcon{width:21px;height:21px;display:block}
-.mobileNav b{display:grid;place-items:center}.mobileNav button.log .navIcon{width:24px;height:24px}
-.atlasCats{scrollbar-width:none}.atlasCats::-webkit-scrollbar{display:none}
-.atlasGrid article,.miniGame,.gameWorldTabs button{min-width:0}
-.atlasGrid h2,.foodNumbers b,.foodMeta{overflow-wrap:anywhere}
-.gameWorldTabs{align-items:stretch}.gameWorldTabs button{min-height:92px}
-.gameWorldTabs button:focus-visible,.atlasCats button:focus-visible,.foodActions button:focus-visible{outline:3px solid var(--focus)!important;outline-offset:3px!important}
-button:disabled{cursor:not-allowed;opacity:.52}
-@media(max-width:800px){
- .pageHero,.compactHero{padding-inline:1rem!important}
- .atlasCats{display:flex!important;overflow-x:auto!important;overscroll-behavior-inline:contain!important;padding:.8rem 1rem!important;gap:.45rem!important;scroll-snap-type:x proximity}
- .atlasCats button{flex:0 0 auto!important;min-height:44px!important;scroll-snap-align:start}
- .atlasGrid{grid-template-columns:1fr!important;padding-inline:1rem!important}
- .atlasGrid article{border-radius:20px!important}
- .gameWorld,.miniGame,.plateGame{margin-inline:.75rem!important}
- .gameWorldTabs{grid-template-columns:repeat(2,minmax(0,1fr))!important}
- .gameWorldTabs button{padding:.75rem .55rem!important}
- .kidsJump{overflow-x:auto!important;scrollbar-width:none!important;overscroll-behavior-inline:contain}
- .kidsJump::-webkit-scrollbar{display:none}
- .kidsJump button{flex:0 0 min(76vw,290px)!important;min-height:52px!important}
- .kidsPanel{margin-inline:.75rem!important;padding-inline:1rem!important}
-}
-@media(max-width:390px){
- .mobileNav{grid-template-columns:repeat(6,minmax(0,1fr))!important}
- .mobileNav button{padding-inline:0!important}
- .mobileNav span{font-size:.48rem!important}
- .navIcon{width:19px;height:19px}
- .gameWorldTabs{grid-template-columns:1fr 1fr!important}
- .atlasGrid{padding-inline:.75rem!important}
-}
-.siteAr .atlasGrid article,.siteAr .miniGame,.kidsAr .miniGame{text-align:right}
-.siteAr .foodNumbers,.kidsAr .gameMessage{direction:rtl}
-@media(prefers-reduced-motion:reduce){.magCards>button:hover,.journeyStrip>button:hover,.dcActions button:hover,.dcWebsite:hover,.dcContact a:hover{transform:none!important}}
