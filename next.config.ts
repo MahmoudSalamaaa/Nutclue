@@ -9,9 +9,9 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [{ source: "/api/auth/:path*/", destination: "/api/auth/:path*" }];
   },
-  env: { NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/Nutclue" : "" },
+  env: { NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/ilama-bloom" : "" },
   ...(isGitHubPages
-    ? { output: "export", basePath: "/Nutclue", assetPrefix: "/Nutclue/" }
+    ? { output: "export", basePath: "/ilama-bloom", assetPrefix: "/Nutclue/" }
     : {}),
 };
 
