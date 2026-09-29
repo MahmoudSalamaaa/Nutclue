@@ -454,3 +454,48 @@ button,a,input,select,textarea{touch-action:manipulation}
  .gameWorldTabs{grid-template-columns:1fr!important}
  .foodShelf>div,.lunchShelf,.ingredientRail{grid-template-columns:repeat(2,minmax(0,1fr))!important}
 }
+
+
+/* ===== Unified Arabic typography — Ilama Bloom ===== */
+.siteAr,.kidsAr{
+  font-family:"Cairo","Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif!important;
+  font-synthesis:none;
+  text-rendering:optimizeLegibility;
+}
+.siteAr :where(button,input,textarea,select,label),.kidsAr :where(button,input,textarea,select,label){font-family:inherit!important}
+.siteAr :where(h1,h2,h3,h4,h5,h6,.kidsHero h1,.plateGameHead h2,.miniGameTitle h2,.gameWorld h2),
+.kidsAr :where(h1,h2,h3,h4,h5,h6,.kidsHero h1,.plateGameHead h2,.miniGameTitle h2,.gameWorld h2){
+  font-family:"Cairo","Noto Sans Arabic","Segoe UI",Tahoma,Arial,sans-serif!important;
+  font-weight:800!important;
+  line-height:1.28!important;
+  letter-spacing:0!important;
+  word-spacing:.035em!important;
+}
+.siteAr :where(p,li,label,figcaption,.magHeroCopy,.magFeatureCopy,.magJournalCopy,.exploreCard,.guideCard,.logHint),
+.kidsAr :where(p,li,label,figcaption){
+  font-weight:500;
+  line-height:1.9;
+  letter-spacing:0!important;
+  word-spacing:.025em!important;
+}
+.siteAr :where(button,.nav,.mobileNav,.gameWorldTabs,.missionAnswers,.kidsNav),
+.kidsAr :where(button,.gameWorldTabs,.missionAnswers,.kidsNav){
+  font-weight:700;
+  letter-spacing:0!important;
+  word-spacing:0!important;
+  line-height:1.55;
+}
+.siteAr :where(small,.eyebrow,.kicker,.kidsBadge),
+.kidsAr :where(small,.eyebrow,.kicker,.kidsBadge){
+  font-weight:600;
+  line-height:1.7;
+  letter-spacing:0!important;
+  word-spacing:.02em!important;
+}
+.siteAr :where(input,textarea,select){line-height:1.7}
+.siteAr :where([dir="ltr"],.ltr,code,kbd){font-family:inherit;letter-spacing:normal;word-spacing:normal}
+@media(max-width:700px){
+ .siteAr :where(h1,h2,h3),.kidsAr :where(h1,h2,h3){line-height:1.34!important}
+ .siteAr :where(p,li,label),.kidsAr :where(p,li,label){line-height:1.85}
+ .siteAr button,.kidsAr button{line-height:1.5}
+}
