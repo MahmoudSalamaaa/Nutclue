@@ -293,3 +293,15 @@ button{cursor:pointer}
 .visitOverview>div,.savedQuestions,.lensCard{background:var(--paper);border:1px solid var(--line);border-radius:24px;box-shadow:none}
 .kidsLang{display:none}
 @media(max-width:800px){.magEdit{padding-inline:1rem}.magCards{display:grid;grid-template-columns:1fr}.magJournal{display:grid;grid-template-columns:1fr}.magJournalPhoto{min-height:320px}.magJournalCopy{padding:2rem 1.2rem}}
+
+/* Compact global footer + founder contrast */
+.founderCopy h2{color:#fff!important;text-shadow:0 1px 0 rgba(0,0,0,.12)}
+.signatureFooter{padding:2rem clamp(1rem,5vw,4rem) .9rem!important}
+.footerTop{grid-template-columns:1.15fr 1fr!important;gap:clamp(1.5rem,4vw,4rem)!important;align-items:start!important}
+.footerStatement h2{font-size:clamp(2.1rem,4vw,4.25rem)!important;margin:.45rem 0 .75rem!important}
+.footerStatement p{line-height:1.5!important;margin:.5rem 0 1rem!important}
+.footerNav section>span{margin-bottom:.35rem!important}
+.footerNav button{padding:.28rem 0!important}
+.footerWordmark{font-size:clamp(3.8rem,9vw,8rem)!important;margin:2rem 0 .9rem!important;line-height:.78!important}
+.footerBottom{padding-top:.7rem!important}
+@media(max-width:800px){.signatureFooter{padding:1.6rem 1rem calc(5.2rem + env(safe-area-inset-bottom))!important}.footerTop{grid-template-columns:1fr!important;gap:1.5rem!important}.footerStatement h2{font-size:clamp(2rem,10vw,3rem)!important}.footerNav{gap:.65rem!important}.footerWordmark{font-size:15vw!important;margin:1.5rem 0 .75rem!important}.footerBottom{gap:.45rem!important}}
