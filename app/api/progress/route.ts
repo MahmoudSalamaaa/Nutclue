@@ -1,9 +1,8 @@
 import {neon} from "@neondatabase/serverless";
-import {auth} from "../../../lib/auth/server";
+import {currentUser} from "../../../lib/auth/server";
 function db(){const url=process.env.DATABASE_URL||process.env.POSTGRES_URL||process.env.NutClueDB_DATABASE_URL||process.env.NutClueDB_POSTGRES_URL;if(!url)throw new Error("Database is not configured");return neon(url)}
-async function currentUser(){const result=await auth.getSession();return "data" in result&&result.data?.user?result.data.user:null}
+
 async function ensure(sql:any){await sql`CREATE TABLE IF NOT EXISTS public.game_progress (user_id text NOT NULL, game_key text NOT NULL, completed boolean NOT NULL DEFAULT false, score integer NOT NULL DEFAULT 0, updated_at timestamptz NOT NULL DEFAULT now(), PRIMARY KEY (user_id,game_key))`}
 const json=(body:unknown,status=200)=>Response.json(body,{status,headers:{"Cache-Control":"no-store"}});
 export async function GET(){try{const u=await currentUser();if(!u)return json({progress:[],error:"Unauthorized"},401);const sql=db();await ensure(sql);const rows=await sql`SELECT game_key,completed,score,updated_at FROM public.game_progress WHERE user_id=${u.id} ORDER BY updated_at DESC`;return json({progress:rows})}catch(error){console.error("progress GET failed",error);return json({error:"Unable to load progress"},500)}}
 export async function POST(request:Request){try{const u=await currentUser();if(!u)return json({error:"Unauthorized"},401);const body=await request.json();const gameKey=String(body.gameKey||"").trim().slice(0,60),score=Math.max(0,Math.min(10000,Number(body.score)||0)),completed=body.completed===true;if(!gameKey)return json({error:"gameKey is required"},400);const sql=db();await ensure(sql);const rows=await sql`INSERT INTO public.game_progress (user_id,game_key,completed,score) VALUES (${u.id},${gameKey},${completed},${score}) ON CONFLICT (user_id,game_key) DO UPDATE SET completed=${completed},score=${score},updated_at=now() RETURNING game_key,completed,score,updated_at`;return json({progress:rows[0]},201)}catch(error){console.error("progress POST failed",error);return json({error:"Unable to save progress"},500)}}
-
