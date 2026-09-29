@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap");
+
+/* Arabic clarity pass: calm scale, proper RTL rhythm, no clipped headlines. */
+.siteAr,.siteAr button,.siteAr input,.siteAr textarea,.siteAr select{font-family:"Tajawal","Noto Sans Arabic",Tahoma,sans-serif;letter-spacing:0}
+.siteAr{direction:rtl;overflow-x:hidden;color:#17372d}
+.siteAr h1,.siteAr h2,.siteAr h3,.siteAr h4,.siteAr .magHero h1,.siteAr .magStatement h2,.siteAr .magFeature h2,.siteAr .magJournal h2,.siteAr .magTitle h2,.siteAr .pageHero h1,.siteAr .siteMapHero h1,.siteAr .footerStatement h2{font-family:"Noto Kufi Arabic","Tajawal",Tahoma,sans-serif;font-weight:700;letter-spacing:-.045em;line-height:1.25}
+.siteAr p,.siteAr label,.siteAr button,.siteAr small{line-height:1.75}
+.siteAr .nav{direction:rtl}
+.siteAr .nav .logo,.siteAr .globalLang{direction:ltr}
+.siteAr .magHero{min-height:clamp(600px,78vh,820px)}
+.siteAr .magHeroCopy{right:clamp(1rem,6vw,6rem);left:auto;max-width:min(760px,calc(100% - 2rem));text-align:right}
+.siteAr .magHeroNav{direction:rtl}
+.siteAr .magHero h1{font-size:clamp(2.8rem,6vw,6.2rem)!important;line-height:1.18!important;margin:.7rem 0 1.2rem!important;white-space:normal}
+.siteAr .magHeroCopy p{max-width:620px;font-size:clamp(1rem,1.6vw,1.2rem);line-height:1.9;margin-inline-start:0;margin-inline-end:auto}
+.siteAr .magButtons{justify-content:flex-start;direction:rtl}
+.siteAr .homePulse,.siteAr .journeyStrip,.siteAr .magStatement,.siteAr .magFeature,.siteAr .magJournal{direction:rtl}
+.siteAr .homePulse h2{font-family:"Noto Kufi Arabic","Tajawal",sans-serif;font-size:clamp(1.45rem,3vw,2.4rem);line-height:1.45}
+.siteAr .journeyStrip button{text-align:right}
+.siteAr .journeyStrip b{font-family:"Noto Kufi Arabic","Tajawal",sans-serif;font-size:clamp(1rem,2vw,1.35rem);line-height:1.45}
+.siteAr .magStatement h2,.siteAr .magFeature h2,.siteAr .magJournal h2{font-size:clamp(1.9rem,4vw,4.2rem);line-height:1.35!important}
+.siteAr .magStatement p,.siteAr .magFeature p,.siteAr .magJournal p{font-size:1rem;line-height:1.9}
+.siteAr .magCards h3{font-family:"Noto Kufi Arabic","Tajawal",sans-serif;font-size:1.25rem;line-height:1.5}
+.siteAr .footerStatement h2{font-size:clamp(2.5rem,6vw,5.8rem);line-height:1.3}
+.siteAr .footerNav button{text-align:right}
+.siteAr .pageHero h1{font-size:clamp(2.3rem,5vw,5rem)!important;line-height:1.25!important}
+.siteAr .pageHero p{font-size:1rem;line-height:1.9}
+.siteAr .kidsHero h1{font-family:"Noto Kufi Arabic","Tajawal",sans-serif;font-size:clamp(2.6rem,7vw,6.5rem)!important;line-height:1.2!important;letter-spacing:-.06em!important}
+.siteAr .kidsPanel>h2,.kidsAr .kidsPanel>h2{font-family:"Noto Kufi Arabic","Tajawal",sans-serif;font-size:clamp(1.6rem,3vw,3.2rem)!important;line-height:1.4!important}
+.siteAr .kidsGroupGrid h3,.siteAr .handGrid h3,.siteAr .egyptGrid h3{font-size:1rem;line-height:1.55}
+@media(max-width:800px){
+ .siteAr .nav{height:64px;padding-inline:1rem}
+ .siteAr .magHero{min-height:610px;height:auto}
+ .siteAr .magHeroCopy{right:1rem;bottom:2rem;max-width:calc(100% - 2rem)}
+ .siteAr .magHero h1{font-size:clamp(2.45rem,13vw,4.7rem)!important;line-height:1.22!important;margin:.5rem 0 1rem!important}
+ .siteAr .magHeroCopy p{font-size:.95rem;line-height:1.8}
+ .siteAr .magStatement h2,.siteAr .magFeature h2,.siteAr .magJournal h2{font-size:clamp(1.8rem,9vw,3.2rem)!important;line-height:1.4!important}
+ .siteAr .homePulse h2{font-size:1.35rem;line-height:1.55}
+ .siteAr .journeyStrip b{font-size:1.05rem}
+ .siteAr .journeyStrip small{font-size:.78rem;line-height:1.6}
+ .siteAr .footerStatement h2{font-size:clamp(2.4rem,12vw,4.4rem);line-height:1.35}
+ .siteAr .pageHero h1{font-size:clamp(2.2rem,11vw,4rem)!important}
+ .siteAr .kidsHero h1{font-size:clamp(2.35rem,13vw,4.6rem)!important;line-height:1.25!important}
+ .siteAr .kidsPanel>h2,.kidsAr .kidsPanel>h2{font-size:clamp(1.55rem,8vw,2.5rem)!important}
+ .siteAr .kidsPanel p,.kidsAr .kidsPanel p{font-size:.95rem;line-height:1.75}
+}
