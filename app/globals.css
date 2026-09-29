@@ -196,3 +196,14 @@ html[lang="en"] .pageHero h1{font-family:Inter,Arial,sans-serif;letter-spacing:-
 .siteAr h1,.siteAr h2,.siteAr h3,.siteAr h4,.siteAr p,.siteAr small,.siteAr label,.siteAr button,.siteAr input,.siteAr textarea,.siteAr select{font-family:"Tajawal","Noto Sans Arabic",Tahoma,sans-serif!important}
 html[lang="en"],html[lang="en"] *{font-family:Inter,Arial,sans-serif!important}
 html[lang="en"] code,html[lang="en"] pre{font-family:ui-monospace,SFMono-Regular,Consolas,monospace!important}
+
+
+/* Explore topic icons — match the mobile menu glyph language */
+.exploreStarts button{font-size:0;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;padding:.5rem .8rem!important}
+.exploreStarts button::before{display:grid;place-items:center;width:25px;height:25px;border-radius:9px;background:#17372d;color:#dff05f;font-size:1rem;font-weight:900;line-height:1;font-family:Tajawal,"Noto Sans Arabic",Tahoma,sans-serif}
+.exploreStarts button::after{font-size:.82rem;font-weight:850;line-height:1.2}
+.exploreStarts button:nth-child(1)::before{content:"⌁"}.exploreStarts button:nth-child(2)::before{content:"＋"}.exploreStarts button:nth-child(3)::before{content:"✓"}.exploreStarts button:nth-child(4)::before{content:"✦"}
+.siteAr .exploreStarts button:nth-child(1)::after{content:"كربوهيدرات"}.siteAr .exploreStarts button:nth-child(2)::after{content:"أكل يومي"}.siteAr .exploreStarts button:nth-child(3)::after{content:"تحاليل"}.siteAr .exploreStarts button:nth-child(4)::after{content:"أطفال"}
+html[lang="en"] .exploreStarts button:nth-child(1)::after{content:"Carbs"}html[lang="en"] .exploreStarts button:nth-child(2)::after{content:"Everyday food"}html[lang="en"] .exploreStarts button:nth-child(3)::after{content:"Labs"}html[lang="en"] .exploreStarts button:nth-child(4)::after{content:"Kids"}
+.exploreStarts button:hover::before{background:#e95f3d;color:#fff}.exploreStarts button:hover::after{color:#17372d}
+@media(max-width:700px){.exploreStarts button{min-height:48px;padding:.55rem .65rem!important}.exploreStarts button::before{width:26px;height:26px}.exploreStarts button::after{font-size:.78rem}}
