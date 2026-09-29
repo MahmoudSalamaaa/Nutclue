@@ -305,3 +305,15 @@ button{cursor:pointer}
 .footerWordmark{font-size:clamp(3.8rem,9vw,8rem)!important;margin:2rem 0 .9rem!important;line-height:.78!important}
 .footerBottom{padding-top:.7rem!important}
 @media(max-width:800px){.signatureFooter{padding:1.6rem 1rem calc(5.2rem + env(safe-area-inset-bottom))!important}.footerTop{grid-template-columns:1fr!important;gap:1.5rem!important}.footerStatement h2{font-size:clamp(2rem,10vw,3rem)!important}.footerNav{gap:.65rem!important}.footerWordmark{font-size:15vw!important;margin:1.5rem 0 .75rem!important}.footerBottom{gap:.45rem!important}}
+
+/* Footer v2 — genuinely compact, two-column links */
+.signatureFooter{padding-top:1.35rem!important}
+.footerTop{grid-template-columns:minmax(260px,.8fr) minmax(320px,1.2fr)!important;gap:2rem!important}
+.footerNav{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.5rem 1.5rem!important}
+.footerNav section:last-child{grid-column:auto!important}
+.footerNav section>span{margin-bottom:.2rem!important}
+.footerNav button{padding:.2rem 0!important;line-height:1.25!important}
+.footerStatement h2{font-size:clamp(1.8rem,3vw,3.2rem)!important;line-height:.95!important}
+.footerStatement p{font-size:.88rem!important;line-height:1.4!important}
+.footerWordmark{font-size:clamp(3.2rem,7vw,6.5rem)!important;margin:1.15rem 0 .6rem!important}
+@media(max-width:800px){.signatureFooter{padding-top:1.1rem!important}.footerTop{grid-template-columns:1fr!important;gap:1rem!important}.footerNav{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:.45rem 1rem!important}.footerNav section:last-child{grid-column:auto!important}.footerWordmark{font-size:13vw!important;margin:1rem 0 .5rem!important}.footerBottom{font-size:.75rem!important}}
