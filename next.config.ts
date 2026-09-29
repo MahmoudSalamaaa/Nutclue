@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   images: { unoptimized: true },
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
+  async rewrites() {
+    return [{ source: "/api/auth/:path*/", destination: "/api/auth/:path*" }];
+  },
   env: { NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/Nutclue" : "" },
   ...(isGitHubPages
     ? { output: "export", basePath: "/Nutclue", assetPrefix: "/Nutclue/" }
