@@ -5,6 +5,7 @@ const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 const nextConfig: NextConfig = {
   images: { unoptimized: true },
   trailingSlash: true,
+  skipTrailingSlashRedirect: true,
   env: { NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/Nutclue" : "" },
   ...(isGitHubPages
     ? { output: "export", basePath: "/Nutclue", assetPrefix: "/Nutclue/" }
@@ -12,4 +13,3 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
-
