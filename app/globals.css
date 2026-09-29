@@ -333,3 +333,16 @@ button{cursor:pointer}
  .mobileNav span{font-size:.5rem!important}
  .magButtons,.pulseActions{grid-template-columns:1fr!important}
 }
+
+
+/* ===== Route-level consistency: account, privacy, auth ===== */
+.accountPage,.privacyPage,.authPage{min-height:100svh;background:linear-gradient(145deg,#f7eee6 0%,var(--cream) 52%,#e8eee7 100%);color:var(--ink)}
+.accountCard,.privacyCard{width:min(100% - 2rem,760px);margin:clamp(1rem,5vw,4rem) auto;background:rgba(255,253,249,.96);border:1px solid var(--line);border-radius:30px;box-shadow:var(--shadow)}
+.accountCard{padding:clamp(1.35rem,4vw,3rem)}.privacyCard{padding:clamp(1.35rem,4vw,3.5rem)}
+.authBrand{display:inline-flex;align-items:center;min-height:44px;color:var(--forest)!important;text-decoration:none;font:800 1.1rem Georgia,serif;letter-spacing:-.03em}.authBrand span{color:var(--roseDeep)}
+.accountCard>small,.privacyCard>small{display:block;color:var(--roseDeep);font-size:.68rem;font-weight:900;letter-spacing:.12em;margin:.8rem 0}
+.accountCard h1,.privacyCard h1{color:var(--forest);font:400 clamp(2.25rem,6vw,4.6rem)/.96 Georgia,serif;letter-spacing:-.045em;margin:.5rem 0 1rem}
+.privacyCard h2{color:var(--forest);margin-top:2rem}
+.accountPrimary,.privacyBack{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.75rem 1rem;border-radius:999px;background:var(--forest);color:#fff!important;text-decoration:none;font-weight:850;margin-top:1rem}
+.accountPrimary:hover,.privacyBack:hover{background:var(--roseDeep)}
+@media(max-width:600px){.accountCard,.privacyCard{width:100%;margin:0;border:0;border-radius:0;box-shadow:none;min-height:100svh;padding:1.25rem}.accountCard h1,.privacyCard h1{font-size:2.6rem}}
