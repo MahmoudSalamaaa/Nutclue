@@ -3,6 +3,7 @@ import {PostgresDialect} from "kysely";
 import {Pool} from "pg";
 import {headers} from "next/headers";
 
+// Production auth uses the Vercel-linked Neon database.
 const databaseUrl=process.env.DATABASE_URL||process.env.POSTGRES_URL||process.env.NutClueDB_DATABASE_URL||process.env.NutClueDB_POSTGRES_URL;
 const pool=databaseUrl?new Pool({connectionString:databaseUrl,max:5}):null;
 const siteUrl=process.env.BETTER_AUTH_URL||process.env.NEXT_PUBLIC_SITE_URL||"http://localhost:3000";
