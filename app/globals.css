@@ -126,3 +126,13 @@ button{touch-action:manipulation}.nav,.mobileNav{-webkit-backdrop-filter:blur(14
   .siteAr .footerBottom button{justify-self:end}
 }
 
+
+
+/* Final mobile readability fixes */
+.journeyStrip button{display:grid!important;grid-template-columns:2.7rem minmax(0,1fr)!important;grid-template-areas:"num title" "num desc"!important;align-items:center!important;column-gap:.8rem!important;row-gap:.25rem!important;min-width:0!important;min-height:92px!important;padding:1rem!important;border:1px solid #cfd4d0!important;border-radius:16px!important;background:#f7f7f5!important;box-shadow:3px 3px 0 #dff05f!important;text-align:start!important}
+.journeyStrip button span{grid-area:num!important;font-size:2rem!important;line-height:1!important;font-weight:950!important;color:#17362d!important}
+.journeyStrip button b{grid-area:title!important;min-width:0!important;font-size:1rem!important;line-height:1.35!important;color:#17362d!important}
+.journeyStrip button small{grid-area:desc!important;min-width:0!important;font-size:.78rem!important;line-height:1.5!important;color:#53605b!important;white-space:normal!important}
+.magButtons button,.pulseActions button{min-height:46px!important;border-radius:999px!important;padding:.72rem 1rem!important;font-weight:900!important;line-height:1.35!important;white-space:normal!important}
+@media(max-width:640px){.journeyStrip{display:grid!important;grid-template-columns:1fr!important;gap:.7rem!important;padding-inline:1rem!important}.magButtons,.pulseActions{width:100%!important}.magButtons button,.pulseActions button{width:100%!important}}
+.siteAr .journeyStrip button{direction:rtl!important;text-align:right!important}.siteAr .journeyStrip button span{justify-self:start!important}
