@@ -628,3 +628,5 @@ button,a,input,select,textarea{touch-action:manipulation}
 }
 .bloomHero .magHeroNav span{min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important}
 @media(max-width:800px){.bloomHero .magHeroNav{display:none!important}}
+
+/* Deploy latest English hero navigation cleanup */
