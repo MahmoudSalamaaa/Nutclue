@@ -377,3 +377,25 @@ body{background:var(--root-cream);color:var(--root-ink)}
 /* Supplied Dr Dina portrait framing */
 .rootedFounderPhoto img,.founderPortrait img{object-position:center 20%!important}
 @media(max-width:800px){.rootedFounderPhoto img,.founderPortrait img{object-position:center 16%!important}}
+
+/* === Rooted editorial system — sitewide === */
+:root{--rb-cream:#f8f3ec;--rb-paper:#fffdf9;--rb-sage:#65786b;--rb-forest:#263b32;--rb-rose:#b77d7d;--rb-clay:#d7b9a7;--rb-line:#cfc3b6;--rb-muted:#6f756f}
+html{scroll-behavior:smooth}body{background:var(--rb-cream)!important;color:var(--rb-forest)!important}
+main{overflow:hidden}.nav,.mobileNav{background:rgba(248,243,236,.96)!important;border-color:var(--rb-line)!important;backdrop-filter:blur(14px)}
+.pageHero,.compactHero{max-width:none!important;margin:0!important;padding:clamp(6rem,11vw,10rem) max(6vw,calc((100vw - 1240px)/2))!important;background:var(--rb-sage)!important;color:#fff!important;border:0!important;border-radius:0!important;text-align:center}
+.pageHero h1,.compactHero h1{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(3rem,7vw,6.5rem)!important;line-height:.92!important;font-weight:400!important;letter-spacing:-.055em!important;max-width:1000px;margin-inline:auto}
+.pageHero p,.compactHero p{max-width:680px!important;margin:1.5rem auto 0!important;font-size:clamp(1rem,1.5vw,1.25rem)!important;line-height:1.7!important}
+.section,.librarySection,.atlasSection,.journalSection,.lensSection,.visitSection,.kidsSection{padding:clamp(5rem,9vw,9rem) max(6vw,calc((100vw - 1240px)/2))!important}
+.section:nth-of-type(even),.librarySection:nth-of-type(even),.atlasSection:nth-of-type(even),.journalSection:nth-of-type(even),.lensSection:nth-of-type(even),.visitSection:nth-of-type(even){background:var(--rb-paper)!important}
+.sectionTitle,h2{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.035em}.sectionTitle{font-size:clamp(2.5rem,5vw,5rem)!important;line-height:1!important;font-weight:400!important}
+.card,.libraryCard,.atlasCard,.journalCard,.lensCard,.visitCard,.toolCard,.featureCard,.accountCard,.parentCard,.privacyCard{background:var(--rb-paper)!important;border:1px solid var(--rb-line)!important;border-radius:0!important;box-shadow:none!important;padding:clamp(1.5rem,3vw,2.75rem)!important}
+.card h3,.libraryCard h3,.atlasCard h3,.journalCard h3,.lensCard h3,.visitCard h3{font-family:Georgia,'Times New Roman',serif!important;font-size:clamp(1.5rem,2.4vw,2.25rem)!important;font-weight:400!important}
+button,.button,.primaryButton,.accountPrimary,.parentPrimary{border-radius:0!important;text-transform:uppercase!important;letter-spacing:.12em!important;font-size:.78rem!important;font-weight:700!important;min-height:48px!important}
+input,select,textarea{border-radius:0!important;background:var(--rb-paper)!important;border-color:var(--rb-line)!important}
+.accountPage,.parentPage,.privacyPage{background:var(--rb-cream)!important;padding:clamp(7rem,12vw,11rem) 6vw!important;min-height:100vh}
+.accountCard,.parentCard,.privacyCard{max-width:880px!important;margin:auto!important}
+.digitalCardPage{background:var(--rb-cream)!important}.digitalCard{border-radius:0!important;background:var(--rb-paper)!important;border:1px solid var(--rb-line)!important;box-shadow:none!important}
+.siteFooter.unifiedFooter{background:var(--rb-forest)!important;color:#f8f3ec!important;padding:clamp(4rem,8vw,7rem) max(6vw,calc((100vw - 1240px)/2))!important;border:0!important}
+.siteFooter a{color:inherit!important}.rootedHero,.rootedFounder{min-height:min(820px,85vh)}.rootedHeroCopy,.rootedFounderCopy{padding:clamp(3rem,7vw,7rem)!important}
+[dir=rtl] .pageHero h1,[dir=rtl] .compactHero h1,[dir=rtl] .sectionTitle{letter-spacing:0!important}
+@media(max-width:800px){.pageHero,.compactHero{padding:6rem 1.35rem 4.5rem!important}.pageHero h1,.compactHero h1{font-size:clamp(2.7rem,14vw,4.5rem)!important}.section,.librarySection,.atlasSection,.journalSection,.lensSection,.visitSection,.kidsSection{padding:4.5rem 1.25rem!important}.card,.libraryCard,.atlasCard,.journalCard,.lensCard,.visitCard,.toolCard,.featureCard{padding:1.35rem!important}.rootedHero,.rootedFounder{min-height:auto}}
