@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   },
   env: { NEXT_PUBLIC_BASE_PATH: isGitHubPages ? "/ilama-bloom" : "" },
   ...(isGitHubPages
-    ? { output: "export", basePath: "/ilama-bloom", assetPrefix: "/Nutclue/" }
+    ? { output: "export", basePath: "/ilama-bloom", assetPrefix: "/ilama-bloom/" }
     : {}),
 };
 
