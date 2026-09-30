@@ -1,6 +1,7 @@
 /* Ilama Bloom visual repair — 2026-09-30
    Final cascade layer for the established editorial design.
-   Fixes layout/contrast/overflow defects visible in the homepage review PDF. */
+   Fixes layout/contrast/overflow defects visible in the homepage review PDF.
+   Deployment trigger retry — no visual change. */
 
 :root{--ib-forest:#12382f;--ib-rose:#934356;--ib-cream:#fffdf9;--ib-paper:#fbf7ef;--ib-muted:#52665d;--ib-line:#ded2c6}
 
