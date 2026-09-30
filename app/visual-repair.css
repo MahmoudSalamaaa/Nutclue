@@ -299,3 +299,29 @@ textarea{resize:vertical}
 @media(forced-colors:active){
  button,a,input,textarea,select{forced-color-adjust:auto}
 }
+
+
+/* ===== Feminine family hero — approved direction ===== */
+.feminineHero{position:relative!important;min-height:clamp(660px,82svh,860px)!important;overflow:hidden!important;background:#fff8f5!important;color:#40232b!important}
+.feminineHero:before,.feminineHero:after{content:none!important}
+.feminineHeroPhoto{position:absolute;inset:0 48% 0 0;overflow:hidden;z-index:0}
+.feminineHeroPhoto img{width:100%;height:100%;object-fit:cover;object-position:center 38%;filter:saturate(.82) contrast(.94) brightness(1.06)}
+.feminineHeroWash{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(255,248,245,.03) 0 38%,rgba(255,248,245,.76) 51%,#fff8f5 68% 100%),radial-gradient(circle at 88% 32%,rgba(224,137,151,.15),transparent 24%)}
+.feminineHero .magHeroNav{z-index:4!important;color:#9b5261!important;border-bottom-color:rgba(155,82,97,.18)!important}
+.feminineHero .magHeroCopy{z-index:4!important;left:auto!important;right:clamp(4rem,8vw,9rem)!important;bottom:clamp(5rem,10vh,8rem)!important;width:min(620px,44vw)!important;color:#40232b!important}
+.feminineHero .magHeroCopy small{color:#b86677!important;letter-spacing:.13em!important}
+.feminineHero .magHeroCopy h1{font:500 clamp(4.4rem,7vw,7.4rem)/.88 Georgia,serif!important;color:#40232b!important;letter-spacing:-.055em!important;margin:1rem 0 1.25rem!important}
+.feminineHero .magHeroCopy h1 em{color:#d47687!important;font-weight:500!important}
+.feminineHero .magHeroCopy p{max-width:590px!important;color:#69565a!important;font-size:1.03rem!important;line-height:1.75!important}
+.feminineHero .magButtons{display:flex!important;gap:.7rem!important;margin-top:1.45rem!important}
+.feminineHero .magButtons button{border-radius:999px!important;min-height:50px!important;padding:.78rem 1.2rem!important}
+.feminineHero .magButtons button:first-child{background:#cf7181!important;color:#fff!important;border-color:#cf7181!important}
+.feminineHero .magButtons button:last-child{background:rgba(255,255,255,.72)!important;color:#7d4350!important;border:1px solid #e6bcc3!important}
+.feminineHeroTrust{display:flex;gap:1.15rem;flex-wrap:wrap;margin-top:1.45rem;color:#6b7165;font-size:.68rem;font-weight:850;letter-spacing:.04em}
+.feminineHeroNote{position:absolute;z-index:5;right:clamp(1.2rem,3vw,3rem);top:24%;width:min(220px,18vw);padding:1.3rem 1.1rem;background:#f9e7df;border:1px solid rgba(183,108,122,.13);border-radius:45% 55% 48% 52% / 42% 46% 54% 58%;transform:rotate(-2deg);text-align:center;color:#5d3941;box-shadow:0 18px 45px rgba(109,68,74,.08)}
+.feminineHeroNote span{display:block;color:#d47687;font-size:1.5rem}.feminineHeroNote p{font-family:Georgia,serif;font-size:.9rem;line-height:1.55;margin:.35rem 0}
+.feminineHeroFloral{position:absolute;z-index:3;right:2.5%;top:12%;width:140px;height:140px;color:#d47687;opacity:.65}.feminineHeroFloral span{font-size:2.3rem;position:absolute;right:0}.feminineHeroFloral i{font-style:normal;font-size:1.4rem;position:absolute;left:20%;top:42%;color:#8da27d}.feminineHeroFloral b{font-size:1.1rem;position:absolute;right:18%;bottom:4%;color:#e5a08c}
+.siteAr .feminineHero .magHeroCopy{right:auto!important;left:clamp(4rem,8vw,9rem)!important;text-align:right!important}.siteAr .feminineHeroPhoto{inset:0 0 0 48%}.siteAr .feminineHeroWash{transform:scaleX(-1)}.siteAr .feminineHeroNote{right:auto;left:clamp(1.2rem,3vw,3rem)}.siteAr .feminineHeroFloral{right:auto;left:2.5%}.siteAr .feminineHero .magHeroCopy h1{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;font-weight:800!important;line-height:1.16!important;letter-spacing:-.025em!important}
+@media(max-width:1050px){.feminineHeroNote{display:none}.feminineHero .magHeroCopy{width:min(600px,49vw)!important;right:3rem!important}.siteAr .feminineHero .magHeroCopy{left:3rem!important;right:auto!important}}
+@media(max-width:800px){.feminineHero{min-height:calc(100svh - 64px)!important;background:#fff8f5!important}.feminineHeroPhoto,.siteAr .feminineHeroPhoto{inset:0 0 47% 0!important}.feminineHeroPhoto img{object-position:center 32%}.feminineHeroWash{background:linear-gradient(180deg,rgba(255,248,245,0) 0 31%,rgba(255,248,245,.86) 46%,#fff8f5 60% 100%)!important;transform:none!important}.feminineHero .magHeroCopy,.siteAr .feminineHero .magHeroCopy{left:1rem!important;right:1rem!important;bottom:calc(72px + env(safe-area-inset-bottom) + .75rem)!important;width:auto!important;text-align:start!important}.feminineHero .magHeroCopy h1{font-size:clamp(3rem,13vw,4.4rem)!important;line-height:.94!important;margin:.65rem 0 .75rem!important}.siteAr .feminineHero .magHeroCopy h1{font-size:clamp(2.55rem,11vw,3.7rem)!important;line-height:1.14!important}.feminineHero .magHeroCopy p{font-size:.86rem!important;line-height:1.55!important;max-width:100%!important}.feminineHero .magButtons{display:grid!important;grid-template-columns:1fr 1fr!important;margin-top:.85rem!important}.feminineHeroTrust{display:none}.feminineHeroFloral{display:none}}
+@media(max-width:460px){.feminineHeroPhoto,.siteAr .feminineHeroPhoto{bottom:52%!important}.feminineHero .magButtons{grid-template-columns:1fr!important}.feminineHero .magHeroCopy h1{font-size:clamp(2.75rem,12.5vw,3.8rem)!important}.siteAr .feminineHero .magHeroCopy h1{font-size:clamp(2.35rem,10.5vw,3.3rem)!important}}
