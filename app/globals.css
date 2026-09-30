@@ -631,176 +631,18 @@ button,a,input,select,textarea{touch-action:manipulation}
 
 /* Deploy latest English hero navigation cleanup */
 
-
-/* ===== Homepage visual refresh: calm editorial nutrition system ===== */
-:root{
-  --bloom-ink:#173d34;
-  --bloom-deep:#0d2b25;
-  --bloom-cream:#f7f1e7;
-  --bloom-paper:#fffaf2;
-  --bloom-coral:#e98376;
-  --bloom-lime:#dff05f;
-  --bloom-line:#d9cec1;
-}
-body{background:var(--bloom-cream);color:var(--bloom-ink)}
-.nav{
-  min-height:76px!important;
-  padding:.7rem clamp(1rem,5vw,5rem)!important;
-  background:rgba(255,250,242,.92)!important;
-  border-bottom:1px solid var(--bloom-line)!important;
-  box-shadow:0 8px 30px rgba(23,61,52,.04)!important;
-}
-.brandLogo{width:152px!important;height:50px!important}
-.nav>nav{gap:.35rem!important}
-.nav>nav button{padding:.65rem .85rem!important;color:var(--bloom-ink)!important;border-radius:999px!important;font-size:.72rem!important}
-.nav>nav button:hover{background:#eee5d9!important}
-.nav>nav button.active{background:var(--bloom-ink)!important;color:#fff!important;box-shadow:none!important}
-.globalLang{border:1px solid var(--bloom-line)!important;background:transparent!important;border-radius:999px!important}
-.globalLang button{min-height:34px!important;border-radius:999px!important}
-.globalLang button.on{background:var(--bloom-ink)!important;color:#fff!important}
-.logBtn{background:var(--bloom-coral)!important;color:var(--bloom-deep)!important;border-radius:999px!important;padding:.7rem 1rem!important;font-weight:950!important}
-.authLink{color:var(--bloom-ink)!important}
-
-.bloomHero{
-  position:relative!important;
-  isolation:isolate;
-  min-height:clamp(620px,78svh,820px)!important;
-  display:grid!important;
-  align-items:end!important;
-  overflow:hidden!important;
-  padding:clamp(3rem,8vw,7rem) clamp(1.25rem,7vw,7rem)!important;
-  background:
-    radial-gradient(circle at 78% 28%,rgba(233,131,118,.24),transparent 20rem),
-    radial-gradient(circle at 72% 82%,rgba(223,240,95,.18),transparent 24rem),
-    var(--bloom-cream)!important;
-  border-bottom:1px solid var(--bloom-line)!important;
-}
-.bloomHero:before{z-index:-1!important;inset:auto!important;right:-10rem!important;bottom:-16rem!important;width:48rem!important;height:48rem!important;border-radius:50%!important;background:rgba(23,61,52,.07)!important}
-.bloomHero:after{z-index:-1!important;right:-.02em!important;bottom:-.1em!important;color:rgba(23,61,52,.055)!important;font-size:clamp(9rem,22vw,20rem)!important}
-.bloomHero .magHeroNav{top:1.75rem!important;left:clamp(1.25rem,7vw,7rem)!important;right:clamp(1.25rem,7vw,7rem)!important;color:var(--bloom-ink)!important;border-color:rgba(23,61,52,.2)!important}
-.bloomHero .magHeroNav span:last-child{color:var(--bloom-coral)!important}
-.bloomHero .magHeroCopy{
-  position:relative!important;
-  z-index:3!important;
-  left:auto!important;
-  right:auto!important;
-  bottom:auto!important;
-  width:min(680px,62vw)!important;
-  padding-top:5rem!important;
-}
-.bloomHero .magHeroCopy small{color:var(--bloom-coral)!important;font-weight:950!important;letter-spacing:.16em!important}
-.bloomHero .magHeroCopy h1{
-  color:var(--bloom-ink)!important;
-  font-size:clamp(4.5rem,8.5vw,9rem)!important;
-  line-height:.8!important;
-  letter-spacing:-.075em!important;
-  margin:1.2rem 0 1.5rem!important;
-}
-.bloomHero .magHeroCopy h1 em{color:var(--bloom-coral)!important}
-.bloomHero .magHeroCopy p{max-width:510px!important;color:#5d6b64!important;line-height:1.7!important}
-.bloomHero .magButtons{gap:.7rem!important;margin-top:1.8rem!important}
-.bloomHero .magButtons button{min-height:52px!important;border-radius:999px!important;padding:.8rem 1.25rem!important}
-.bloomHero .magButtons button:first-child{background:var(--bloom-ink)!important;color:#fff!important}
-.bloomHero .magButtons button:last-child{background:transparent!important;color:var(--bloom-ink)!important;border:1px solid #a99c8f!important}
-.bloomArt{
-  z-index:1!important;
-  right:clamp(2rem,8vw,9rem)!important;
-  top:16%!important;
-  width:min(31vw,430px)!important;
-  height:min(54vw,570px)!important;
-  opacity:.78!important;
-}
-.bloomArt .bloomStem{background:var(--bloom-ink)!important}
-.bloomArt .petal{background:var(--bloom-coral)!important;box-shadow:0 20px 40px rgba(233,131,118,.22)!important}
-.bloomArt .p2{background:var(--bloom-lime)!important}
-.bloomArt .p3{background:#f3b8a7!important}
-
-.homePulse{
-  padding:1.6rem clamp(1.25rem,7vw,7rem)!important;
-  background:var(--bloom-ink)!important;
-  color:#fff!important;
-}
-.homePulse small{color:var(--bloom-lime)!important}
-.homePulse h2{font-size:clamp(1.5rem,3vw,2.7rem)!important}
-.pulseActions button:first-child{background:var(--bloom-lime)!important;color:var(--bloom-deep)!important;border:0!important}
-.pulseActions button{border-color:#ffffff44!important}
-
-.journeyStrip{
-  max-width:1400px;
-  margin:clamp(2rem,5vw,5rem) auto!important;
-  padding:0 clamp(1rem,5vw,5rem)!important;
-  display:grid!important;
-  grid-template-columns:repeat(3,1fr)!important;
-  gap:1rem!important;
-  background:transparent!important;
-}
-.journeyStrip button{
-  min-height:190px!important;
-  padding:1.4rem!important;
-  display:flex!important;
-  flex-direction:column!important;
-  align-items:flex-start!important;
-  justify-content:space-between!important;
-  border:1px solid var(--bloom-line)!important;
-  border-radius:22px!important;
-  background:var(--bloom-paper)!important;
-  color:var(--bloom-ink)!important;
-  text-align:left!important;
-  transition:transform .2s ease,box-shadow .2s ease,background .2s ease!important;
-}
-.journeyStrip button:hover{transform:translateY(-5px)!important;background:#fff!important;box-shadow:0 18px 35px rgba(23,61,52,.08)!important}
-.journeyStrip span{color:var(--bloom-coral)!important;font-weight:950!important}
-.journeyStrip b{font-size:1.25rem!important}
-.journeyStrip small{color:#68756d!important}
-
-.microMissions,.magEdit,.magStatement,.magFeature,.magJournal{
-  background:var(--bloom-paper)!important;
-  border-color:var(--bloom-line)!important;
-}
-.microMissions{padding:clamp(3rem,7vw,7rem) clamp(1rem,7vw,7rem)!important}
-.microMissionHead h2,.magStatement h2{color:var(--bloom-ink)!important}
-.microMissionHead small,.magEdit small,.magJournal small{color:var(--bloom-coral)!important}
-.microMissionGrid button{border-color:var(--bloom-line)!important;border-radius:20px!important;background:var(--bloom-cream)!important}
-.microMissionGrid button:hover{border-color:var(--bloom-ink)!important;background:#fff!important}
-.magFeature,.magJournal{border-top:1px solid var(--bloom-line)!important}
-.magFeatureCopy,.magJournalCopy{background:var(--bloom-ink)!important;color:#fff!important}
-.magFeatureCopy h2,.magJournalCopy h2{color:#fff!important}
-.magFeatureCopy p,.magJournalCopy p{color:#dbe5df!important}
-.magFeatureCopy button,.magJournalCopy button{background:var(--bloom-lime)!important;color:var(--bloom-deep)!important;border:0!important;border-radius:999px!important}
-.magCards button{border:1px solid var(--bloom-line)!important;border-radius:20px!important;background:var(--bloom-paper)!important;overflow:hidden!important}
-.magCards button:hover{transform:translateY(-4px)!important}
-.signatureFooter{background:var(--bloom-deep)!important}
-.signatureFooter:before{background:var(--bloom-coral)!important}
-.footerStatement small,.footerNav section>span{color:var(--bloom-lime)!important}
-.footerStatement h2 em{color:#ff9f91!important}
-.footerStatement>button{background:var(--bloom-lime)!important}
-
+/* ===== Ilama Bloom stability patch — preserve the established design ===== */
+/* This intentionally neutralizes the abandoned homepage redesign appended previously.
+   Existing component styles above remain the visual source of truth. */
+html{scroll-behavior:smooth}
+body{min-width:0}
+img,svg,video{max-width:100%}
+button,input,select,textarea{font:inherit}
+.nav,.bloomHero,.homePulse,.journeyStrip,.microMissions,.magEdit,.magStatement,.magFeature,.magJournal,.signatureFooter{box-sizing:border-box}
+.bloomHero .magHeroCopy,.bloomHero .magHeroNav,.journeyStrip>*{min-width:0}
 @media(max-width:800px){
-  .nav{min-height:66px!important;padding:.45rem .85rem!important}
-  .brandLogo{width:138px!important;height:46px!important}
-  .bloomHero{
-    min-height:calc(100svh - 66px)!important;
-    display:flex!important;
-    align-items:flex-end!important;
-    padding:2rem 1rem calc(8.5rem + env(safe-area-inset-bottom))!important;
-    background:
-      radial-gradient(circle at 90% 18%,rgba(233,131,118,.24),transparent 13rem),
-      linear-gradient(180deg,#fbf5ea 0%,#f2e6dc 100%)!important;
-  }
-  .bloomHero .magHeroNav{display:none!important}
-  .bloomHero .magHeroCopy{width:100%!important;padding-top:0!important}
-  .bloomHero .magHeroCopy small{font-size:.58rem!important}
-  .bloomHero .magHeroCopy h1{font-size:clamp(3.3rem,15vw,5.2rem)!important;line-height:.86!important;margin:.9rem 0 1rem!important}
-  .bloomHero .magHeroCopy p{font-size:.92rem!important;max-width:100%!important;line-height:1.55!important}
-  .bloomHero .magButtons{display:grid!important;grid-template-columns:1fr!important;margin-top:1.25rem!important}
-  .bloomHero .magButtons button{width:100%!important;min-height:48px!important}
-  .bloomArt{right:-30vw!important;top:13%!important;width:72vw!important;height:58vw!important;opacity:.28!important}
-  .bloomHero:after{font-size:35vw!important;bottom:.1em!important}
-  .homePulse{grid-template-columns:1fr!important;padding:1.4rem 1rem!important;gap:1rem!important}
-  .pulseActions{grid-template-columns:1fr 1fr!important}
-  .journeyStrip{grid-template-columns:1fr!important;margin:1rem 0 3rem!important;padding:0 1rem!important}
-  .journeyStrip button{min-height:128px!important}
-  .microMissions{padding:3.5rem 1rem!important}
-  .microMissionGrid button{min-height:132px!important}
-  .signatureFooter{padding-bottom:6.5rem!important}
+  .nav{width:100%}
+  .bloomHero .magHeroCopy{max-width:100%}
+  .bloomHero .magButtons button{max-width:100%}
+  .journeyStrip{width:100%}
 }
