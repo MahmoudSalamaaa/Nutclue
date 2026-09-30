@@ -103,3 +103,199 @@
  .journeyStrip,.microMissionGrid,.magCards{break-inside:avoid}
  .signatureFooter{background:#142f27!important;color:#f7f0df!important}
 }
+
+
+/* ===== Cohesion pass — large batch, one deployment ===== */
+:root{
+  --ib-radius-sm:14px;--ib-radius-md:20px;--ib-radius-lg:28px;
+  --ib-shadow-soft:0 14px 40px rgba(18,56,47,.07);
+  --ib-content:min(1180px,calc(100% - 2rem));
+}
+html{overflow-x:clip}
+body{margin:0;background:var(--ib-cream);color:var(--ib-forest);overflow-x:clip}
+main{min-width:0}
+button,a,input,textarea,select{font:inherit}
+button{cursor:pointer}
+button:disabled{cursor:not-allowed;opacity:.55}
+img{height:auto}
+:where(.page,.aboutNew,.siteMapPage){min-width:0}
+:where(.pageHero,.compactHero,.siteMapHero,.aboutIntro){overflow-wrap:anywhere}
+:where(.pageHero,.compactHero) p{max-width:68ch}
+:where(.page,.aboutNew,.siteMapPage) :where(input,textarea,select){max-width:100%;box-sizing:border-box}
+:where(input,textarea,select){border:1px solid var(--ib-line);background:#fff;color:var(--ib-forest);border-radius:var(--ib-radius-sm)}
+:where(input,textarea,select):focus{border-color:var(--ib-forest);box-shadow:0 0 0 3px rgba(18,56,47,.09);outline:0}
+textarea{resize:vertical}
+::selection{background:#ead6d9;color:var(--ib-forest)}
+
+/* Header/nav: prevent crowding and accidental horizontal overflow */
+.nav{box-sizing:border-box;width:100%;gap:.55rem}
+.nav>*{min-width:0}
+.nav>nav{min-width:0}
+.nav>nav button,.globalLang button,.authLink,.logBtn{white-space:nowrap}
+.brandLogo img{display:block;max-width:100%;max-height:100%}
+.globalLang{flex:0 0 auto}
+.authLink{flex:0 0 auto}
+@media(min-width:801px) and (max-width:1180px){
+ .nav{padding-inline:1rem!important}
+ .brandLogo{width:132px!important}
+ .nav>nav button{padding-inline:.5rem!important;font-size:.7rem!important}
+ .authLink{font-size:.72rem!important}
+}
+
+/* Shared page rhythm: calmer vertical flow without redesign */
+.pageHero,.siteMapHero,.aboutIntro{box-sizing:border-box}
+.compactHero{padding-top:clamp(3.5rem,7vw,6rem)!important;padding-bottom:clamp(2.5rem,5vw,4.5rem)!important}
+.compactHero h1,.siteMapHero h1,.aboutIntro h1{text-wrap:balance}
+.compactHero p,.siteMapHero p,.aboutIntro>p{text-wrap:pretty}
+.page :where(.emptyState,.confirmBar,.journalTools,.questionPocket,.visitNote){box-sizing:border-box}
+
+/* Buttons: consistent interaction without flattening each section's identity */
+:where(.pulseActions,.magButtons,.magJournalLinks,.logActions,.visitActions,.entryEditActions) button{
+ transition:transform .16s ease,background-color .16s ease,border-color .16s ease,opacity .16s ease;
+}
+@media(hover:hover){
+ :where(.pulseActions,.magButtons,.magJournalLinks,.logActions,.visitActions) button:not(:disabled):hover{transform:translateY(-1px)}
+}
+:where(button,a):focus-visible{outline:3px solid var(--ib-rose)!important;outline-offset:3px!important}
+
+/* Homepage sections: stable width, no orphaned copy or runaway cards */
+.homePulse>*,.magFeature>*,.magJournal>*{min-width:0}
+.homePulse h2,.microMissionHead h2,.magStatement h2,.magFeatureCopy h2,.magJournalCopy h2,.magFinal h2{text-wrap:balance}
+.homePulse p,.microMissionHead p,.magFeatureCopy p,.magJournalCopy p{text-wrap:pretty}
+.journeyStrip>button,.microMissionGrid>button,.magCards>button{box-shadow:var(--ib-shadow-soft)!important}
+.journeyStrip>button,.microMissionGrid>button,.magCards>button{transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease}
+@media(hover:hover){
+ .journeyStrip>button:hover,.microMissionGrid>button:hover,.magCards>button:hover{transform:translateY(-3px)!important;border-color:#b8aa9d!important;box-shadow:0 18px 44px rgba(18,56,47,.11)!important}
+}
+.magCards>button h3{overflow-wrap:anywhere}
+.magCards>button p{overflow-wrap:anywhere}
+.magFeatureCopy button,.magJournalLinks button{min-height:46px}
+.magFinal button{min-height:44px}
+
+/* Log: align storage copy with account-backed persistence and stabilize controls */
+.logBox,.newLog{box-sizing:border-box;max-width:100%}
+.typeTiles{align-items:stretch}
+.typeTiles button{min-width:0;overflow:hidden}
+.typeTiles button span{overflow-wrap:anywhere}
+.quickPicks{display:flex;flex-wrap:wrap}
+.logDetail{display:block;min-width:0}
+.logDetail textarea{width:100%;min-height:120px}
+.storageHint{color:var(--ib-muted);line-height:1.6}
+.logActions{display:flex;gap:.7rem;align-items:center}
+.logActions button{min-height:46px}
+
+/* Journal: long content can never push actions off-screen */
+.journal,.journalDay,.journalDay article,.journalDay article>div{min-width:0}
+.journalDay article{box-sizing:border-box}
+.journalDay article h3{overflow-wrap:anywhere}
+.journalDay article textarea{width:100%;min-height:92px}
+.entryActions{flex:0 0 auto}
+.journalFilters{display:flex;flex-wrap:wrap;gap:.5rem}
+.journalFilters button{min-height:40px}
+.confirmBar{max-width:100%}
+
+/* Visit prep: robust grids and copyable factual summary */
+.visitOverview>*{min-width:0}
+.visitSheet,.visitSheet>*{min-width:0}
+.visitFact{min-width:0}
+.visitFact span{overflow-wrap:anywhere}
+.questionPocket>*{min-width:0}
+.questionPocket input{width:100%}
+.savedQuestions p{overflow-wrap:anywhere}
+
+/* About + sitemap: preserve editorial feel while fixing narrow-screen collisions */
+.founderCard,.founderCard>*{min-width:0}
+.founderPortrait{overflow:hidden}
+.founderPortrait img{display:block;width:100%;height:100%;object-fit:cover}
+.credentialPills{display:flex;flex-wrap:wrap;gap:.5rem}
+.founderPrinciples{min-width:0}
+.aboutFlow{min-width:0}
+.siteMapGrid,.siteMapGrid>*{min-width:0}
+.siteMapGrid button{min-width:0}
+.siteMapGrid button p{overflow-wrap:anywhere}
+
+/* Kids: consolidate the repeated mobile behavior at the final cascade layer */
+.kidsWorld,.kidsHero,.kidsPanel,.kidsMission,.miniGame,.plateGame{box-sizing:border-box;min-width:0}
+.kidsWorld img{max-width:100%}
+.gameWorldTabs{max-width:100%}
+.gameWorldTabs button{min-width:0}
+.foodShelf,.foodShelf>div,.lunchShelf,.ingredientRail,.missionAnswers{min-width:0}
+.foodShelf button,.lunchShelf button,.ingredientRail button,.missionAnswers button{min-width:0}
+.gameMessage,.miniGameTitle,.plateGameHead{overflow-wrap:anywhere}
+
+/* RTL: logical alignment and numerals/English fragments remain stable */
+.siteAr :where(.homePulse,.magFeatureCopy,.magJournalCopy,.compactHero,.aboutIntro,.founderCopy,.siteMapHero,.logBox,.journalTools,.questionPocket){text-align:right}
+.siteAr :where(.logActions,.visitActions,.entryEditActions){direction:rtl}
+.siteAr :where(input,textarea,select){direction:rtl;text-align:right}
+.siteAr .footerNav section{align-items:flex-start}
+.siteAr .footerNav button{text-align:right}
+.siteAr .footerBottom button{justify-self:start}
+
+/* Tablet: one coherent breakpoint after the legacy cascade */
+@media(max-width:1000px){
+ .homePulse{grid-template-columns:1fr!important}
+ .pulseActions{max-width:620px}
+ .magFeatureCopy,.magJournalCopy{padding:clamp(2.5rem,6vw,4.5rem)!important}
+ .founderCard{grid-template-columns:1fr!important}
+ .founderPortrait{max-height:560px}
+}
+
+/* Mobile: eliminate collisions, horizontal scrolling and tiny tap targets */
+@media(max-width:800px){
+ body{padding-bottom:calc(84px + env(safe-area-inset-bottom))!important}
+ .nav>nav,.nav>.logBtn,.nav>.authLink{display:none!important}
+ .nav{justify-content:space-between!important}
+ .globalLang{margin-inline-start:auto}
+ .mobileNav{box-sizing:border-box;left:0!important;right:0!important;width:100%!important;max-width:100vw!important;overflow:hidden!important}
+ .mobileNav button{min-width:0!important;min-height:58px!important}
+ .bloomHero{overflow:hidden!important}
+ .bloomHero .magHeroCopy,.siteAr .bloomHero .magHeroCopy{max-height:calc(100% - 90px);overflow:visible}
+ .homePulse,.journeyStrip,.microMissions,.magStatement,.magEdit,.magFinal{box-sizing:border-box;width:100%}
+ .pulseActions{grid-template-columns:1fr!important}
+ .journeyStrip>button{grid-template-columns:auto minmax(0,1fr)!important}
+ .magCards>button{border-radius:22px!important}
+ .magFeatureImage,.magJournalPhoto{min-height:280px!important;max-height:460px}
+ .logActions{display:grid;grid-template-columns:1fr 1fr}
+ .logActions button{width:100%}
+ .journalTools{display:grid!important;grid-template-columns:1fr!important;gap:.65rem!important}
+ .journalTools button{width:100%}
+ .journalDay article{grid-template-columns:auto minmax(0,1fr) auto!important}
+ .visitActions{display:grid!important;grid-template-columns:1fr!important}
+ .visitActions button{width:100%}
+ .questionPocket{grid-template-columns:1fr!important}
+ .questionPocket>div:last-child{display:grid!important;grid-template-columns:1fr!important;gap:.6rem}
+ .questionPocket button{width:100%}
+ .aboutFlow{display:grid!important;grid-template-columns:1fr!important;gap:.5rem!important}
+ .aboutFlow i{display:none!important}
+ .aboutFlow span{width:100%;box-sizing:border-box}
+ .founderPrinciples{grid-template-columns:1fr!important}
+ .siteMapGrid{grid-template-columns:1fr!important}
+ .signatureFooter{max-width:100vw}
+ .footerNav{grid-template-columns:1fr 1fr!important}
+ .footerWordmark{max-width:100%;overflow:hidden}
+}
+@media(max-width:520px){
+ .brandLogo{width:126px!important}
+ .globalLang button{padding-inline:.55rem!important}
+ .bloomHero .magHeroCopy h1{font-size:clamp(2.9rem,14vw,4.15rem)!important}
+ .siteAr .bloomHero .magHeroCopy h1{font-size:clamp(2.45rem,11.7vw,3.6rem)!important}
+ .bloomHero .magHeroCopy p{font-size:.84rem!important}
+ .typeTiles{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .journalDay article{grid-template-columns:1fr!important}
+ .journalDay article time{margin-bottom:.25rem}
+ .entryActions{justify-self:stretch;display:flex;justify-content:flex-end}
+ .visitOverview{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .footerNav{grid-template-columns:1fr!important}
+ .footerNav section:last-child{grid-column:auto!important}
+ .footerBottom{grid-template-columns:1fr!important}
+ .footerBottom button{justify-self:start!important}
+}
+
+/* Motion/accessibility */
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+}
+@media(forced-colors:active){
+ button,a,input,textarea,select{forced-color-adjust:auto}
+}
