@@ -399,3 +399,41 @@ input,select,textarea{border-radius:0!important;background:var(--rb-paper)!impor
 .siteFooter a{color:inherit!important}.rootedHero,.rootedFounder{min-height:min(820px,85vh)}.rootedHeroCopy,.rootedFounderCopy{padding:clamp(3rem,7vw,7rem)!important}
 [dir=rtl] .pageHero h1,[dir=rtl] .compactHero h1,[dir=rtl] .sectionTitle{letter-spacing:0!important}
 @media(max-width:800px){.pageHero,.compactHero{padding:6rem 1.35rem 4.5rem!important}.pageHero h1,.compactHero h1{font-size:clamp(2.7rem,14vw,4.5rem)!important}.section,.librarySection,.atlasSection,.journalSection,.lensSection,.visitSection,.kidsSection{padding:4.5rem 1.25rem!important}.card,.libraryCard,.atlasCard,.journalCard,.lensCard,.visitCard,.toolCard,.featureCard{padding:1.35rem!important}.rootedHero,.rootedFounder{min-height:auto}}
+
+/* === Editorial composition pass 02: core product routes === */
+.page:not(.kidsPage){background:var(--rb-cream)!important}
+.page>.pageHero+*{position:relative}
+.exploreStarts{display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:0!important;margin:0!important;padding:0 max(6vw,calc((100vw - 1240px)/2))!important;background:var(--rb-paper)!important;border-bottom:1px solid var(--rb-line)!important}
+.exploreStarts button{min-height:110px!important;background:transparent!important;color:var(--rb-forest)!important;border:0!important;border-inline-end:1px solid var(--rb-line)!important;font-family:Georgia,'Times New Roman',serif!important;font-size:1.15rem!important;text-transform:none!important;letter-spacing:0!important}
+.resultMeta{padding:3rem max(6vw,calc((100vw - 1240px)/2)) 1rem!important;background:var(--rb-cream)!important;color:var(--rb-muted)!important;letter-spacing:.1em!important;text-transform:uppercase!important;font-size:.72rem!important}
+.libraryGrid{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;padding:0 max(6vw,calc((100vw - 1240px)/2)) 7rem!important;background:var(--rb-cream)!important}
+.libraryGrid>article{min-height:390px!important;border:1px solid var(--rb-line)!important;border-radius:0!important;background:var(--rb-paper)!important;padding:clamp(2rem,4vw,4rem)!important;box-shadow:none!important;display:flex!important;flex-direction:column!important}
+.libraryGrid>article:nth-child(4n+2),.libraryGrid>article:nth-child(4n+3){background:#e8ddd2!important}
+.libraryGrid article>span{font-family:Georgia,serif!important;font-size:clamp(3rem,5vw,5.5rem)!important;color:var(--rb-clay)!important;line-height:1!important}
+.libraryGrid h2{font-size:clamp(2rem,3.4vw,3.5rem)!important;line-height:1!important;font-weight:400!important}
+.libraryGrid article>button{margin-top:auto!important;align-self:flex-start!important;background:transparent!important;color:var(--rb-forest)!important;border:0!important;border-bottom:1px solid currentColor!important;padding:.7rem 0!important}
+.exploreBridge{display:grid!important;grid-template-columns:1.5fr .5fr!important;align-items:end!important;gap:4rem!important;background:var(--rb-forest)!important;color:#fff!important;padding:clamp(5rem,9vw,9rem) max(6vw,calc((100vw - 1240px)/2))!important}
+.exploreBridge h2{font-size:clamp(2.8rem,5vw,5.2rem)!important;line-height:.98!important;font-weight:400!important}
+.lensLayout{display:grid!important;grid-template-columns:1.05fr .95fr!important;gap:0!important;max-width:1240px!important;margin:0 auto!important;padding:clamp(5rem,8vw,8rem) 0!important}
+.lensCard,.lensResult{border-radius:0!important;box-shadow:none!important;border:1px solid var(--rb-line)!important;padding:clamp(2rem,5vw,5rem)!important}
+.lensCard{background:var(--rb-paper)!important}.lensResult{background:#e3d2c6!important;color:var(--rb-forest)!important;display:flex!important;flex-direction:column!important;justify-content:center!important}
+.lensResult strong{font-family:Georgia,serif!important;font-size:clamp(5rem,11vw,10rem)!important;font-weight:400!important;line-height:.8!important}
+.lensResult h2{font-size:clamp(2rem,4vw,4rem)!important;font-weight:400!important}
+.lensStep{border-top:1px solid var(--rb-line)!important;padding-top:1.5rem!important;margin-top:2rem!important}
+.lensStep>span{font-family:Georgia,serif!important;font-size:2.4rem!important;color:var(--rb-rose)!important}
+.lensNote{max-width:1240px!important;margin:0 auto 8rem!important;padding:2rem 0!important;border-block:1px solid var(--rb-line)!important;background:transparent!important}
+.foodAtlasPage .pageHero,.journalPage .pageHero,.visitPage .pageHero{background:#6d7e70!important}
+.foodAtlasGrid,.atlasGrid,.journalGrid,.visitLayout{gap:0!important}
+.atlasCard,.foodCard,.journalCard,.visitCard{border-radius:0!important;box-shadow:none!important}
+.kidsPage{background:#f7efe4!important}.kidsPage .pageHero{background:#b88476!important}
+.kidsPage h1,.kidsPage h2,.kidsPage h3{font-family:Georgia,'Times New Roman',serif!important}
+.kidsGroupGrid{display:grid!important;grid-template-columns:repeat(5,1fr)!important;gap:0!important}
+.kidsGroupGrid article{border:1px solid var(--rb-line)!important;border-radius:0!important;background:#fffaf4!important;padding:2rem 1.25rem!important;box-shadow:none!important}
+.kidsGroupGrid article>b{font-size:2.4rem!important}.kidsTip{border-radius:0!important;border:1px solid var(--rb-line)!important;background:#e8ddd2!important}
+.siteMapHero{background:var(--rb-sage)!important;color:white!important;padding:clamp(7rem,12vw,11rem) max(6vw,calc((100vw - 1240px)/2))!important}
+.siteMapHero h1{font-family:Georgia,serif!important;font-size:clamp(4rem,9vw,8rem)!important;line-height:.9!important;font-weight:400!important}
+.siteMapGrid{padding:clamp(5rem,8vw,8rem) max(6vw,calc((100vw - 1240px)/2))!important;background:var(--rb-cream)!important}
+.siteMapGrid section>button{border-radius:0!important;border-bottom:1px solid var(--rb-line)!important;background:transparent!important}
+@media(max-width:800px){
+.exploreStarts{grid-template-columns:repeat(2,1fr)!important;padding:0!important}.exploreStarts button{min-height:82px!important}.libraryGrid{grid-template-columns:1fr!important;padding:0 1.25rem 4rem!important}.libraryGrid>article{min-height:300px!important}.exploreBridge{grid-template-columns:1fr!important;gap:2rem!important;padding:4.5rem 1.25rem!important}.lensLayout{grid-template-columns:1fr!important;padding:3rem 1.25rem!important}.lensNote{margin:0 1.25rem 4rem!important}.kidsGroupGrid{grid-template-columns:1fr 1fr!important}.siteMapGrid{padding:4rem 1.25rem!important}
+}
