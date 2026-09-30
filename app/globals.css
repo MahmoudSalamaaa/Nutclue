@@ -615,3 +615,16 @@ button,a,input,select,textarea{touch-action:manipulation}
 /* Keep mobile navigation scoped to mobile breakpoints */
 .mobileNav{display:none!important}
 @media(max-width:800px){.mobileNav{display:grid!important}}
+
+
+/* Hero utility row: keep it clean on desktop, remove redundant row on mobile */
+.bloomHero .magHeroNav{
+  display:flex!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:1rem!important;
+  white-space:nowrap!important;
+  overflow:hidden!important;
+}
+.bloomHero .magHeroNav span{min-width:0!important;overflow:hidden!important;text-overflow:ellipsis!important}
+@media(max-width:800px){.bloomHero .magHeroNav{display:none!important}}
