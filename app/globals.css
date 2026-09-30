@@ -516,3 +516,76 @@ button,a,input,select,textarea{touch-action:manipulation}
 /* Persistent game catalog + compact mobile refinements */
 .gameWorldTabs button{content-visibility:auto;contain-intrinsic-size:120px}.nutritionCard button,.lunchShelf button,.ingredientRail button,.missionAnswers button{touch-action:manipulation}.storageHint{max-width:62ch}.kidsWorld button:focus-visible,.logPage button:focus-visible{outline:3px solid currentColor;outline-offset:3px}
 @media(max-width:520px){.gameWorldTabs{grid-template-columns:1fr 1fr}.gameWorldTabs button{min-height:84px}.nutritionCard button{min-height:48px}.lunchShelf,.ingredientRail{grid-template-columns:repeat(2,minmax(0,1fr))}.kidsMission,.miniGame,.plateGame{border-radius:24px}.typeTiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+
+/* Final responsive homepage repair */
+.analyticsConsent{
+  position:fixed;
+  left:clamp(1rem,4vw,2rem);
+  right:clamp(1rem,4vw,2rem);
+  bottom:clamp(1rem,4vw,2rem);
+  z-index:200;
+  width:min(760px,calc(100% - 2rem));
+  margin-inline:auto;
+  display:flex;
+  align-items:center;
+  gap:1rem;
+  padding:.8rem 1rem;
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:18px;
+  background:#142f27;
+  color:#fff;
+  box-shadow:0 16px 40px rgba(20,47,39,.25);
+}
+.analyticsConsent p{margin:0;flex:1;font-size:.8rem;line-height:1.45}
+.analyticsConsent>div{display:flex;gap:.5rem;flex-wrap:wrap}
+.analyticsConsent button{
+  min-height:40px;
+  padding:.55rem .8rem;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:999px;
+  background:transparent;
+  color:#fff;
+  font-size:.76rem;
+  font-weight:800;
+}
+.analyticsConsent button:last-child{border-color:#efb8ae;background:#efb8ae;color:#142f27}
+
+@media(max-width:800px){
+  .bloomHero .magHeroCopy h1{
+    max-width:100%!important;
+    font-size:clamp(2.85rem,13vw,4.2rem)!important;
+    line-height:.92!important;
+    letter-spacing:-.045em!important;
+    overflow-wrap:normal!important;
+  }
+  .siteAr .bloomHero .magHeroCopy h1{
+    font-size:clamp(2.4rem,11.5vw,3.8rem)!important;
+    line-height:1.12!important;
+    letter-spacing:-.02em!important;
+  }
+  .bloomHero .magHeroCopy p{
+    max-width:100%!important;
+    font-size:.88rem!important;
+    line-height:1.5!important;
+  }
+  .bloomHero .magButtons{
+    display:grid!important;
+    grid-template-columns:1fr!important;
+    gap:.55rem!important;
+  }
+  .bloomHero .magButtons button{width:100%;min-height:44px}
+  .bloomHero .magHeroCopy{bottom:1.25rem!important}
+  .analyticsConsent{
+    left:.75rem;
+    right:.75rem;
+    bottom:calc(76px + env(safe-area-inset-bottom));
+    width:auto;
+    display:block;
+    padding:.75rem;
+    border-radius:16px;
+  }
+  .analyticsConsent p{margin-bottom:.6rem;font-size:.72rem;line-height:1.4}
+  .analyticsConsent>div{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
+  .analyticsConsent button{width:100%;font-size:.7rem;line-height:1.2;padding:.55rem .35rem}
+}
