@@ -18,6 +18,7 @@ export const auth=betterAuth({
  baseURL:siteUrl,
  secret:process.env.BETTER_AUTH_SECRET||"ilama-bloom-development-secret-change-me-32-chars",
  trustedOrigins:Array.from(new Set([siteUrl,"https://ilamabloom.com","https://www.ilamabloom.com"])),
+ account:{accountLinking:{enabled:true,trustedProviders:["google","facebook"]}},
  emailAndPassword:{enabled:true},
  socialProviders
 });
