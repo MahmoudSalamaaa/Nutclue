@@ -22,3 +22,20 @@
 .kidsGroupGrid article{transition:transform .2s ease!important}.kidsGroupGrid article:hover{transform:rotate(-1deg) translateY(-4px)!important}
 @media(max-width:800px){.atlasGrid{grid-template-columns:1fr!important;padding:2rem 1.25rem 4rem!important}.atlasGrid article{min-height:330px!important}}
 .siteAr .atlasGrid h2{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important}
+/* Private and utility surfaces */
+.accountPage,.parentPage,.privacyPage{position:relative!important;overflow:hidden!important;background:var(--ib-cream)!important}
+.accountPage:before,.parentPage:before,.privacyPage:before{content:"";position:fixed;left:-10vw;top:-18vw;width:42vw;aspect-ratio:1;border-radius:50% 50% 10% 90%;background:var(--ib-petal-soft);opacity:.65;transform:rotate(24deg)}
+.accountCard,.parentCard,.privacyCard{position:relative!important;z-index:1!important;background:rgba(255,250,243,.94)!important;border:1px solid var(--ib-line)!important;padding:clamp(2.2rem,5vw,5rem)!important}
+.authBrand{font-family:Arial,sans-serif!important;letter-spacing:.16em!important}.authBrand span{color:var(--ib-petal)!important}
+.accountCard>small,.parentCard>small,.privacyCard>small{color:var(--ib-plum)!important;letter-spacing:.15em!important;text-transform:uppercase!important}
+.accountCard h1,.parentCard h1,.privacyCard h1{font:400 clamp(2.8rem,5vw,5.5rem)/.95 Georgia,serif!important;letter-spacing:-.05em!important;color:var(--ib-ink)!important}
+.accountStats{display:grid!important;grid-template-columns:1fr 1fr!important;gap:0!important;border:1px solid var(--ib-line)!important}.accountStats>div{padding:2rem!important}.accountStats>div+div{border-inline-start:1px solid var(--ib-line)!important}.accountStats b{font:400 4rem/1 Georgia,serif!important;color:var(--ib-petal)!important}
+.accountLinks{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:0!important}.accountLinks a{border:1px solid var(--ib-line)!important;padding:1.2rem!important;background:transparent!important}
+.accountDanger{background:#f3e5df!important;border:0!important;border-inline-start:5px solid var(--ib-petal)!important}
+.progressPanel{background:#dce4da!important;border:0!important;border-radius:0!important}
+.privacyCard h2{font:400 2rem/1 Georgia,serif!important;color:var(--ib-plum)!important;border-top:1px solid var(--ib-line)!important;padding-top:2rem!important;margin-top:2.5rem!important}
+.authForm{position:relative!important;background:var(--ib-milk)!important;border:1px solid var(--ib-line)!important;border-radius:0!important;box-shadow:none!important;padding:clamp(2rem,5vw,4rem)!important;overflow:hidden!important}
+.authForm h1{font:400 clamp(2.8rem,5vw,4.8rem)/.95 Georgia,serif!important;letter-spacing:-.05em!important;color:var(--ib-ink)!important}.authForm form>button{background:var(--ib-ink)!important;color:white!important}.authSocial button{border-radius:0!important;background:transparent!important;border:1px solid var(--ib-line)!important}
+.digitalCard{position:relative!important;overflow:hidden!important;background:var(--ib-milk)!important;border-color:var(--ib-line)!important}
+@media(max-width:800px){.accountStats,.accountLinks{grid-template-columns:1fr!important}.accountStats>div+div{border-inline-start:0!important;border-top:1px solid var(--ib-line)!important}.accountPage:before,.parentPage:before,.privacyPage:before{width:85vw}}
+.siteAr .accountCard h1,.siteAr .parentCard h1,.siteAr .privacyCard h1,.siteAr .authForm h1{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important}
