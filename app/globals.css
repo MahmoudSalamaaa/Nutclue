@@ -1045,3 +1045,43 @@ body{background:var(--ib-paper)!important;color:var(--ib-ink)!important}
 .privacyBody article>span{color:var(--ib-gold);font:600 1.25rem Georgia,serif}.privacyBody h2{margin:2.5rem 0 .8rem;font:400 clamp(1.8rem,3vw,3rem)/1 Georgia,serif;color:var(--ib-ink)}.privacyBody p{color:var(--ib-muted);line-height:1.8}
 .siteAr .privacyBody h2{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif;letter-spacing:0}
 @media(max-width:760px){.privacyBody{width:calc(100% - 2rem);grid-template-columns:1fr}.privacyBody article{min-height:auto}.nourioFrame{height:100dvh}}
+
+
+/* ========================================================================
+   ILAMA BLOOM — BRAND REFERENCE PALETTE ONLY
+   Visual structure intentionally unchanged.
+   ======================================================================== */
+:root{
+ --ib-ink:#173d31;
+ --ib-green:#173d31;
+ --ib-green-2:#315b48;
+ --ib-paper:#f5efe5;
+ --ib-cream:#efe5d7;
+ --ib-sand:#dfcbb9;
+ --ib-gold:#a88b55;
+ --ib-rose:#a94f62;
+ --ib-line:rgba(23,61,49,.16);
+ --ib-muted:#66746c;
+ --ib-white:#fbf7ef;
+}
+body,#content,.page,.siteMapPage,.aboutPage,.visitPage,.journalPage,.logPage,.lensPage,.kidsWorld{background:#f5efe5!important}
+.nav{background:rgba(245,239,229,.97)!important}
+.brandLogo{min-width:190px!important;height:68px!important;padding:4px 0!important}
+.brandLogo img{display:block!important;width:185px!important;height:62px!important;object-fit:contain!important;object-position:left center!important}
+.brandLogo:after{display:none!important;content:none!important}
+.siteAr .brandLogo img{object-position:right center!important}
+.pageHero,.siteMapHero,.compactHero,.aboutIntro{background:#efe5d7!important}
+.pageHero h1 em,.siteMapHero h1 em,.compactHero h1 em,.aboutIntro h1 em,.founderCopy>small{color:#a94f62!important}
+.exploreBridge,.lensResult,.gameWorld,.visitSheet aside{background:#173d31!important}
+.kidsHero{background:linear-gradient(120deg,#efe5d7 0%,#e5c7c4 52%,#d9dfcc 100%)!important}
+.kidsHero h1 b{color:#a94f62!important}
+.atlasBridge{background:#173d31!important}
+.unifiedFooter{background:#173d31!important}
+.unifiedFooterBrand em{color:#d39a9f!important}
+.mobileNav{background:rgba(245,239,229,.98)!important}
+.mobileNav button.log,.logBtn,.typeTiles button.on,.globalLang button.on{background:#173d31!important}
+.libraryGrid article,.atlasGrid article,.siteMapGrid>section,.logBox.newLog,.founderCard,.privacyBody article{background:#fbf7ef!important}
+.libraryGrid article:hover,.atlasGrid article:hover{background:#efe5d7!important}
+.savedQuestions,.productBox .boxArt{background:#dfcbb9!important}
+.kidsTip,.kidsLimit,.estimateNote,.kidsLead,.labelSteps,.detectCard,.plateWin,.gameMessage{background:#efe5d7!important}
+@media(max-width:800px){.brandLogo{height:54px!important;min-width:142px!important}.brandLogo img{width:140px!important;height:48px!important}}
