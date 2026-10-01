@@ -1,6 +1,6 @@
-const CACHE="ilama-bloom-v4";
+const CACHE="ilama-bloom-v5";
 const LEGACY_PREFIXES=["ilama-bloom-"];
-const OFFLINE=["/manifest.webmanifest"];
+const OFFLINE=["/","/manifest.webmanifest","/icon.svg","/ilama-bloom-logo.svg"];
 
 self.addEventListener("install",event=>{
   event.waitUntil(
