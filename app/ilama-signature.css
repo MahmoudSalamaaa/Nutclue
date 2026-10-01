@@ -80,3 +80,17 @@
  .atlasGrid article{min-height:300px!important;padding:1.6rem!important}
 }
 @media(prefers-reduced-motion:reduce){.rootedWayGrid img,.rootedFounderPhoto img,:where(.rootedHeroCopy,.rootedWayGrid,.rootedResultGrid,.atlasGrid,.kidsGroupGrid) button{transition:none!important;transform:none!important}}
+
+/* Digital card — Ilama Bloom editorial finish */
+.digitalCardPage{background:radial-gradient(circle at 12% 12%,rgba(230,187,98,.26),transparent 26%),radial-gradient(circle at 88% 78%,rgba(217,154,150,.28),transparent 30%),var(--ib-cream)!important}
+.digitalCard:before{content:"BLOOM";position:absolute;right:-.06em;top:25%;font:400 clamp(4.5rem,15vw,9rem)/.8 Georgia,serif;letter-spacing:-.08em;color:rgba(32,55,47,.035);pointer-events:none}
+.dcBrand{border-bottom:1px solid var(--ib-line)!important}.dcBrand>span{letter-spacing:.16em!important;text-transform:uppercase!important}
+.dcPortrait{position:relative!important;overflow:hidden!important}.dcPortrait:after{content:"✦";position:absolute;right:1rem;bottom:1rem;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--ib-sun);color:var(--ib-ink);font-size:1.05rem}
+.dcBody h1{font:400 clamp(2.8rem,6vw,4.8rem)/.92 Georgia,serif!important;letter-spacing:-.055em!important;color:var(--ib-ink)!important}
+.dcBody h2{color:var(--ib-plum)!important;font-weight:500!important}
+.dcPills span{border-radius:999px!important;border:1px solid var(--ib-line)!important;background:transparent!important}
+.dcContact{border-block:1px solid var(--ib-line)!important}.dcContact a{padding-block:.8rem!important}
+.dcActions{gap:0!important}.dcActions button{border-radius:0!important;background:var(--ib-ink)!important;color:white!important}.dcActions button+button{background:var(--ib-petal-soft)!important;color:var(--ib-ink)!important}
+.dcWebsite{background:var(--ib-sun)!important;color:var(--ib-ink)!important;border-radius:0!important}
+.dcFooter{background:var(--ib-ink)!important;color:white!important}.dcFooter em{color:var(--ib-petal)!important}
+@media(max-width:560px){.digitalCard{border-inline:0!important}.dcBody h1{font-size:clamp(2.8rem,14vw,4rem)!important}.dcPortrait:after{width:38px;height:38px}}
