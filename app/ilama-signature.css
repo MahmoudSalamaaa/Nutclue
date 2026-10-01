@@ -130,3 +130,27 @@
 .authBack{font-size:.68rem!important;font-weight:900!important;letter-spacing:.14em!important;color:var(--ib-ink)!important}
 @media(max-width:900px){.authPage{grid-template-columns:1fr!important}.authEditorial{min-height:36svh!important;padding:1.5rem!important}.authEditorialCopy{padding:4rem 0 2rem!important}.authEditorialCopy h2{font-size:clamp(3.2rem,12vw,5.4rem)!important;max-width:620px}.authEditorialCopy p,.authEditorialNote{display:none}.authEditorial:after{width:50vw;right:-12%;top:6%}.authPetal{right:8%;top:28%}.authPanel{min-height:64svh!important;padding:5rem 1.5rem 3rem!important}.authPanelTop{position:absolute;top:calc(36svh + 1.25rem);left:1.5rem;right:1.5rem;width:auto}.authPanel .authForm>.authLang{top:-4.2rem}.authPanel .authForm h1{font-size:clamp(3rem,13vw,4.6rem)!important}}
 @media(max-width:520px){.authEditorial{min-height:31svh!important}.authEditorialCopy{padding:3.2rem 0 1rem!important}.authEditorialCopy small{font-size:.58rem!important}.authEditorialCopy h2{font-size:clamp(2.8rem,13vw,4rem)!important}.authEditorialBrand{width:150px}.authPetal{display:none}.authPanel{min-height:69svh!important;padding-top:5.4rem!important}.authPanelTop{top:calc(31svh + 1.2rem)}.authSocial>div{grid-template-columns:1fr!important}.authPanel .authForm h1{font-size:clamp(2.8rem,14vw,4rem)!important}}
+
+/* Auth clean reset — intentionally overrides the editorial experiment */
+.authPage.authPageClean{min-height:100svh!important;display:grid!important;grid-template-columns:1fr!important;place-items:center!important;padding:clamp(1rem,4vw,3rem)!important;background:var(--ib-cream)!important}
+.authPageClean .authCardClean{width:min(100%,620px)!important;min-height:auto!important;padding:clamp(1.5rem,4vw,3.25rem)!important;background:var(--ib-milk)!important;border:1px solid var(--ib-line)!important;box-shadow:none!important}
+.authPageClean .authCleanTop{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:2rem!important;padding-bottom:2rem!important;margin-bottom:3rem!important;border-bottom:1px solid var(--ib-line)!important}
+.authPageClean .authCleanLogo{display:block!important;width:180px!important}.authPageClean .authCleanLogo img{display:block!important;width:100%!important;height:auto!important}
+.authPageClean .authPanel,.authPageClean .authEditorial{display:none!important}
+.authPageClean .authForm{position:relative!important;width:100%!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important}
+.authPageClean .authForm:before{content:none!important}
+.authPageClean .authForm>.authLang{position:absolute!important;top:-4.8rem!important;right:0!important}
+.authPageClean .authForm h1{margin:0 0 .8rem!important;font:400 clamp(2.8rem,7vw,4.7rem)/.95 Georgia,serif!important;letter-spacing:-.055em!important;color:var(--ib-ink)!important}
+.authPageClean .authForm>p{margin:0 0 2.4rem!important;max-width:440px!important;color:#68736d!important;line-height:1.65!important}
+.authPageClean .authForm label{display:grid!important;gap:.5rem!important;margin-bottom:1.25rem!important;font-size:.76rem!important;font-weight:800!important;letter-spacing:.06em!important;text-transform:none!important}
+.authPageClean .authForm input{width:100%!important;min-height:54px!important;padding:.75rem 1rem!important;border:1px solid var(--ib-line)!important;border-radius:0!important;background:#fffdf8!important;font-size:1rem!important}
+.authPageClean .authForm input:focus{outline:2px solid rgba(217,154,150,.28)!important;border-color:var(--ib-petal)!important;box-shadow:none!important}
+.authPageClean .authForm form>button{width:100%!important;min-height:54px!important;margin-top:.35rem!important;border:0!important;border-radius:0!important;background:var(--ib-ink)!important;color:white!important}
+.authPageClean .authSocial{margin-top:2rem!important;padding-top:1.5rem!important;border-top:1px solid var(--ib-line)!important}
+.authPageClean .authSocial>div{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:.5rem!important}
+.authPageClean .authSocial button{min-height:46px!important;border:1px solid var(--ib-line)!important;background:transparent!important;color:var(--ib-ink)!important}
+.authPageClean .authSwitch{margin-top:1.8rem!important;color:var(--ib-plum)!important}
+.authPageClean .authCleanFooter{display:flex!important;justify-content:space-between!important;gap:1rem!important;margin-top:3rem!important;padding-top:1.25rem!important;border-top:1px solid var(--ib-line)!important;font-size:.62rem!important;letter-spacing:.12em!important;color:#7a817d!important}
+.authPageClean[dir="rtl"] .authForm>.authLang,.authPageClean :dir(rtl).authForm>.authLang{right:auto!important;left:0!important}
+@media(max-width:600px){.authPage.authPageClean{place-items:start center!important;padding:0!important;background:var(--ib-milk)!important}.authPageClean .authCardClean{min-height:100svh!important;width:100%!important;padding:1.4rem!important;border:0!important}.authPageClean .authCleanTop{margin-bottom:3rem!important}.authPageClean .authCleanLogo{width:150px!important}.authPageClean .authSocial>div{grid-template-columns:1fr!important}.authPageClean .authCleanFooter{margin-top:2.5rem!important}}
+.siteAr .authPageClean .authForm h1,.authPageClean .authForm[dir="rtl"] h1{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important}
