@@ -16,11 +16,11 @@ export default function HomeEditorial({go,entries,ar}:{go:(v:View)=>void;entries
   <section className="edHero">
    <div className="edHeroText"><small>ILAMA BLOOM · FOOD · BODY · CONTEXT</small><h1>{ar?<>المعرفة<br/><em>تنمو</em> معك.</>:<>Knowledge<br/>that <em>blooms</em><br/>with you.</>}</h1><p>{ar?"استكشفي الأكل، افهمي جسمك، وابني عادات صحية تنمو معك في كل عمر.":"Explore food, understand your body, build healthier habits, and grow — at every age."}</p><button onClick={()=>go("learn")}>{ar?"ابدئي رحلتك":"Begin Your Journey"} <span>→</span></button><div className="edArabic">المعرفة تنمو معك</div></div>
    <div className="edHeroArt">
-    <div className="edPaper edPaperCity"><span>context</span><b>{ar?"العائلة · النوم · البيئة · التوتر":"culture · family · lifestyle · environment · sleep · stress"}</b></div>
-    <div className="edPomegranate"><i></i><b>FOOD</b></div>
+    <div className="edPaper edPaperCity"><img src="https://images.pexels.com/photos/71241/pexels-photo-71241.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Cairo context"/><span>context</span><b>{ar?"العائلة · النوم · البيئة · التوتر":"culture · family · lifestyle · environment · sleep · stress"}</b></div>
+    <div className="edPomegranate"><img src="https://images.rawpixel.com/image_png_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGQ1LWNoaW0tamotMDA3YS5wbmc.png" alt="Pomegranate botanical illustration"/><b>FOOD</b></div>
     <div className="edBotanical edBotanicalA">❧</div><div className="edBotanical edBotanicalB">❧</div>
     <div className="edPortrait"><img src="/dina-hassan-about.webp?v=2" alt="Dr. Dina Hassan"/></div>
-    <div className="edFig">◒</div><div className="edGrain">〽</div>
+    <div className="edFig"><img src="https://cdn.imgbin.com/4/10/20/watercolor-fig-realistic-figs-with-leaves-illustration-cRPit02M.jpg" alt="Fig botanical illustration"/></div><div className="edGrain"><img src="https://images.pexels.com/photos/4110256/pexels-photo-4110256.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Grains"/></div>
     <div className="edAnatomy"><span>BODY</span><b>♡</b><small>digestion<br/>immunity<br/>hormones<br/>energy<br/>mood</small></div>
     <div className="edNote n1">Food is<br/>a story.<i>↘</i></div><div className="edNote n2">Your body<br/>is a world.<i>↘</i></div><div className="edNote n3">Context changes<br/>everything.<i>↙</i></div><div className="edNote n4">And you are at the<br/>center of it all.</div>
    </div>
@@ -37,7 +37,7 @@ export default function HomeEditorial({go,entries,ar}:{go:(v:View)=>void;entries
   </section>
   <section className="edAtlasPreview">
    <header><h2>{ar?"مذاق من أطلس الأكل":"A Taste of the Food Atlas"}</h2><p>{ar?"كل أكلة لها حكاية. هنا بعض الصفحات من دليلنا.":"Every food has a story. Here are a few from our table."}</p><button onClick={()=>go("atlas")}>{ar?"استكشفي أطلس الأكل":"Explore the Food Atlas"} →</button></header>
-   <div className="edFoodStrip">{foods.map(([n,name,emoji,carbs,portion])=><article key={n}><small>No. {n}</small><h3>{name}</h3><div className="edFoodVisual">{emoji}</div><p><b>{carbs}</b><br/>{portion}</p></article>)}</div>
+   <div className="edFoodStrip">{foods.map(([n,name,emoji,carbs,portion])=><article key={n}><small>No. {n}</small><h3>{name}</h3><div className="edFoodVisual"><img src={emoji} alt={name}/></div><p><b>{carbs}</b><br/>{portion}</p></article>)}</div>
   </section>
   <section className="edDina">
    <div className="edDinaCollage"><div className="edDinaPhoto"><img src="/dina-hassan-about.webp?v=2" alt="Dr. Dina Hassan"/></div><div className="edQuote">“Useful knowledge<br/>should feel usable.”</div><div className="edDinaLabel"><b>Dr. Dina<br/>Hassan</b><span>Pediatrician &<br/>Clinical Nutritionist</span></div></div>
