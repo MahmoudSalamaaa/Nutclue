@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "prebuild": "node scripts/vendor-nourio-css.mjs"
+    "prebuild": "node scripts/vendor-nourio-css.mjs",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@neondatabase/auth": "latest",
