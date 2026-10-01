@@ -22,6 +22,10 @@ export async function GET(){
  html=html.replace(/<meta[^>]+name=["']generator["'][^>]*>/gi,"");
  html=html.replace(/<link[^>]+rel=["']alternate["'][^>]*>/gi,"");
  html=html.replace("</head>",'<style>.ilama-wordmark{display:inline-flex;flex-direction:column;justify-content:center;line-height:1;color:inherit;font-family:Georgia,serif;font-size:30px;letter-spacing:.08em;white-space:nowrap}.ilama-wordmark small{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.28em;margin-top:7px;text-align:center;font-weight:600}@media(max-width:767px){.ilama-wordmark{font-size:22px}.ilama-wordmark small{font-size:6px}}</style></head>');
+ html=html.replace(/<script[^>]+src=["']https?:\\/\\/(?:dev266\\.kodesolution\\.com|static\\.cloudflareinsights\\.com)[^"']*["'][^>]*><\\/script>/gi,"");
+ html=html.replace(/<link[^>]+href=["']https?:\\/\\/(?:fonts\\.googleapis\\.com|dev266\\.kodesolution\\.com)[^"']*["'][^>]*>/gi,"");
+ html=html.replace(/href=["']https?:\\/\\/dev266\\.kodesolution\\.com\\/nourio[^"']*["']/gi,'href="#"');
+ html=html.replace(/(?:https?:)?\\/\\/dev266\\.kodesolution\\.com\\/nourio\\/wp-admin\\/admin-ajax\\.php/gi,"/api/disabled-wordpress");
  html=html.replace("</body>",bridge+"</body>");
  html=html.replace(/<div class="three-layer-loaderbg" id="preloader">[\s\S]*?<\/div>\s*<!-- Header -->/i,"<!-- Header -->");
  html=html.replace(/<style>\s*<style>/gi,"<style>");
