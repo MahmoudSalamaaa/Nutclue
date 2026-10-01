@@ -1,5 +1,5 @@
 "use client";
-// Nourio production shell
+// Nourio production shell — production trigger
 import {useEffect,useMemo,useState} from "react";
 import {authClient} from "../lib/auth/client";
 import FoodAtlasLive from "./FoodAtlasLive";
