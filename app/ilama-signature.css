@@ -154,3 +154,34 @@
 .authPageClean[dir="rtl"] .authForm>.authLang,.authPageClean :dir(rtl).authForm>.authLang{right:auto!important;left:0!important}
 @media(max-width:600px){.authPage.authPageClean{place-items:start center!important;padding:0!important;background:var(--ib-milk)!important}.authPageClean .authCardClean{min-height:100svh!important;width:100%!important;padding:1.4rem!important;border:0!important}.authPageClean .authCleanTop{margin-bottom:3rem!important}.authPageClean .authCleanLogo{width:150px!important}.authPageClean .authSocial>div{grid-template-columns:1fr!important}.authPageClean .authCleanFooter{margin-top:2.5rem!important}}
 .siteAr .authPageClean .authForm h1,.authPageClean .authForm[dir="rtl"] h1{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important}
+
+/* Auth V3 — restrained editorial, no card UI */
+.authV3{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;background:var(--ib-cream);color:var(--ib-ink)}
+.authV3Header{height:96px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(1.5rem,5vw,5rem);border-bottom:1px solid var(--ib-line)}
+.authV3Logo{width:176px}.authV3Logo img{display:block;width:100%;height:auto}
+.authV3Home{font:800 .67rem/1 Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--ib-ink)}
+.authV3Stage{width:min(1240px,100%);margin:auto;display:grid;grid-template-columns:minmax(300px,.82fr) minmax(420px,1fr);gap:clamp(4rem,9vw,9rem);align-items:center;padding:clamp(4rem,8vh,7rem) clamp(1.5rem,5vw,5rem)}
+.authV3Story{align-self:center;padding-right:clamp(1rem,4vw,4rem);border-right:1px solid var(--ib-line)}
+.authV3Story>span{font:800 .65rem/1 Arial,sans-serif;letter-spacing:.19em;color:var(--ib-petal)}
+.authV3Story h2{margin:1.2rem 0 1.5rem;font:400 clamp(3.2rem,5.4vw,5.8rem)/.9 Georgia,serif;letter-spacing:-.055em}
+.authV3Story h2 em{font-weight:400;color:var(--ib-plum)}
+.authV3Story p{max-width:360px;margin:0;color:#66736d;line-height:1.75}
+.authV3Form{width:100%;max-width:520px}
+.authV3 .authForm{position:relative!important;width:100%!important;margin:0!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important;overflow:visible!important}
+.authV3 .authForm:before{content:none!important}
+.authV3 .authForm>.authLang{position:absolute!important;right:0!important;top:.25rem!important;padding:.55rem .8rem!important;border:1px solid var(--ib-line)!important;border-radius:999px!important;background:transparent!important;color:var(--ib-ink)!important}
+.authV3 .authForm h1{max-width:80%;margin:0 0 .85rem!important;font:400 clamp(3rem,5vw,4.7rem)/.94 Georgia,serif!important;letter-spacing:-.055em!important;color:var(--ib-ink)!important}
+.authV3 .authForm>p{max-width:420px;margin:0 0 2.6rem!important;color:#66736d!important;line-height:1.65!important}
+.authV3 .authForm label{display:grid!important;gap:.55rem!important;margin:0 0 1.4rem!important;font-size:.74rem!important;font-weight:800!important;letter-spacing:.04em!important}
+.authV3 .authForm input{width:100%!important;height:56px!important;padding:0!important;border:0!important;border-bottom:1px solid #9ba49f!important;border-radius:0!important;background:transparent!important;font-size:1rem!important;color:var(--ib-ink)!important;outline:0!important}
+.authV3 .authForm input:focus{border-color:var(--ib-petal)!important;box-shadow:0 1px 0 var(--ib-petal)!important}
+.authV3 .authForm form>button{width:100%!important;height:56px!important;margin-top:.5rem!important;border:0!important;border-radius:0!important;background:var(--ib-ink)!important;color:white!important;font-weight:800!important}
+.authV3 .authSocial{margin-top:2rem!important;padding-top:1.6rem!important;border-top:1px solid var(--ib-line)!important}
+.authV3 .authSocial>span{display:block!important;margin-bottom:.8rem!important;color:#7c8580!important;font-size:.72rem!important}
+.authV3 .authSocial>div{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:.5rem!important}
+.authV3 .authSocial button{height:44px!important;border:1px solid var(--ib-line)!important;border-radius:0!important;background:transparent!important;color:var(--ib-ink)!important}
+.authV3 .authSwitch{display:inline-block!important;margin-top:1.8rem!important;color:var(--ib-plum)!important;border-bottom:1px solid currentColor!important}
+.authV3 .authMessage{margin-top:1rem!important;padding:1rem!important;background:#f3e5df!important;color:#70463f!important}
+.authV3Footer{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:0 clamp(1.5rem,5vw,5rem);border-top:1px solid var(--ib-line);font:700 .62rem/1 Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#7c8580}
+.authV3 .authForm[dir="rtl"]{text-align:right}.authV3 .authForm[dir="rtl"]>.authLang{right:auto!important;left:0!important}.authV3 .authForm[dir="rtl"] h1{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important}
+@media(max-width:800px){.authV3Header{height:78px}.authV3Logo{width:150px}.authV3Stage{display:block;padding:3.5rem 1.4rem 4rem}.authV3Story{display:none}.authV3Form{max-width:560px;margin:auto}.authV3 .authForm h1{font-size:clamp(3rem,14vw,4.3rem)!important}.authV3Footer{padding:1.2rem 1.4rem;flex-wrap:wrap}.authV3 .authSocial>div{grid-template-columns:1fr!important}}
