@@ -25,5 +25,5 @@
     "@types/react-dom": "^19",
     "typescript": "^5"
   },
-  "ilamaDeployRevision": "2026-10-02-native-brand-stabilization"
+  "ilamaDeployRevision": "2026-10-02-native-brand-production"
 }
