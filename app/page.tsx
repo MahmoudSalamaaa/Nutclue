@@ -1,5 +1,5 @@
 "use client";
-// Nourio production shell — production trigger
+// Nourio production shell — stylesheet boundary restored
 import {useEffect,useMemo,useState} from "react";
 import {authClient} from "../lib/auth/client";
 import FoodAtlasLive from "./FoodAtlasLive";
