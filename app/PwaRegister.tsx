@@ -25,7 +25,7 @@ export default function PwaRegister(){
         });
 
         navigator.serviceWorker.controller?.postMessage({type:"CLEAR_OLD_CACHES"});
-      }catch{}
+      }catch(error){console.error("service worker registration failed",error)}
     };
 
     register();
