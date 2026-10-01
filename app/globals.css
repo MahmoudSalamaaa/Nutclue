@@ -1379,3 +1379,78 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
  .bloomFooterMain{grid-template-columns:1fr}.bloomFooterNav{grid-template-columns:1fr 1fr;gap:2.5rem 1.5rem}.bloomFooterNav>div:last-child{grid-column:1/-1}
  .bloomFooterBottom{grid-template-columns:1fr auto;gap:1rem;padding-block:1.2rem}.bloomFooterBottom span{grid-column:1/-1;grid-row:1;text-align:start}.bloomFooterBottom small{grid-row:2}.bloomFooterBottom button{grid-row:2}
 }
+
+
+/* ===== ILAMA BLOOM editorial refinement — 2026-10-02 ===== */
+.homePage{--editorial-rule:rgba(18,49,33,.16)}
+.bloomHero{border-bottom:1px solid var(--editorial-rule)}
+.bloomHero .heroInner{position:relative}
+.bloomHero .heroCopy{position:relative;z-index:2}
+.heroPromise{display:flex;flex-wrap:wrap;gap:.55rem 1.15rem;margin-top:2.25rem;padding-top:1.25rem;border-top:1px solid var(--editorial-rule);max-width:610px}
+.heroPromise span{font-size:.65rem;font-weight:850;letter-spacing:.13em;color:var(--color-muted)}
+.heroBotanical{position:relative;min-height:470px;display:grid;place-items:center}
+.heroHalo{position:absolute;width:min(31vw,390px);aspect-ratio:1;border-radius:47% 53% 61% 39%/43% 44% 56% 57%;background:linear-gradient(145deg,rgba(241,228,219,.95),rgba(208,154,152,.18));border:1px solid rgba(155,83,96,.13);transform:rotate(-8deg)}
+.heroBloomSymbol{position:relative;width:min(21vw,250px);filter:drop-shadow(0 22px 26px rgba(18,49,33,.10))}
+.botanicalNote{position:absolute;font:600 .62rem/1 var(--ilama-sans);letter-spacing:.32em;color:rgba(18,49,33,.45);writing-mode:vertical-rl}
+.botanicalNoteOne{inset-inline-start:9%;top:20%}.botanicalNoteTwo{inset-inline-end:7%;bottom:16%}
+
+.editorialManifesto{background:var(--color-cream);padding-block:clamp(72px,9vw,128px)}
+.manifestoGrid{display:grid;grid-template-columns:.55fr 2.15fr 1fr;gap:clamp(1.5rem,5vw,5rem);align-items:start}
+.manifestoGrid blockquote{margin:0;font:400 clamp(2.2rem,4.2vw,4.5rem)/1.04 var(--ilama-serif);letter-spacing:-.035em;color:var(--color-forest)}
+.manifestoGrid>p:last-child{margin:0;padding-top:.4rem;color:var(--color-muted);line-height:1.8;border-top:1px solid var(--editorial-rule)}
+
+.atlasFeature{position:relative;padding-block:clamp(78px,10vw,140px);background:var(--color-cream);overflow:hidden}
+.atlasFeatureGrid{display:grid;grid-template-columns:minmax(220px,.75fr) minmax(0,1.25fr) auto;gap:clamp(2rem,6vw,6rem);align-items:center}
+.atlasLetter{position:relative;min-height:390px;display:grid;place-items:center;border-radius:50% 50% 46% 54%/58% 42% 58% 42%;background:var(--color-blush);border:1px solid rgba(155,83,96,.15)}
+.atlasLetter>span{font:400 clamp(10rem,20vw,18rem)/.75 var(--ilama-serif);color:var(--color-rose);opacity:.8}
+.atlasLetter img{position:absolute;width:86px;bottom:9%;right:9%}
+.atlasFeatureCopy h2,.journalFeatureCopy h2{font:400 clamp(3rem,5.4vw,5.8rem)/.94 var(--ilama-serif);letter-spacing:-.045em;color:var(--color-forest);margin:.4rem 0 1.4rem;text-wrap:balance}
+.atlasFeatureCopy>p:last-of-type,.journalFeatureCopy>p{font-size:1.05rem;line-height:1.8;color:var(--color-muted);max-width:650px}
+.atlasMargin{display:flex;gap:1.2rem;writing-mode:vertical-rl;transform:rotate(180deg);font-size:.58rem;font-weight:850;letter-spacing:.18em;color:rgba(18,49,33,.46)}
+
+.journalFeature{padding-block:clamp(78px,10vw,140px);background:#fff}
+.journalFeatureGrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.72fr);gap:clamp(3rem,8vw,8rem);align-items:center}
+.journalPaper{position:relative;display:grid;place-items:center;min-height:470px}
+.journalPaper:before{content:"";position:absolute;width:80%;height:84%;background:var(--color-blush);transform:rotate(5deg);border-radius:8px}
+.journalPaper>div{position:relative;width:82%;min-height:390px;padding:2rem;background:var(--color-cream);box-shadow:0 24px 60px rgba(18,49,33,.10);transform:rotate(-2deg)}
+.journalPaper small{font-weight:900;letter-spacing:.18em;color:var(--color-rose)}
+.journalPaper span{display:block;height:1px;background:rgba(18,49,33,.13);margin-top:3rem}
+.journalPaper b{display:block;margin-top:3rem;font:400 2rem/1.05 var(--ilama-serif);color:var(--color-forest)}
+
+/* Footer: a calm editorial close, not another dashboard. */
+.bloomFooter{position:relative;overflow:hidden;background:var(--color-forest)!important;color:#fff;padding-top:clamp(82px,10vw,140px)!important}
+.footerBloom{position:absolute;inset-inline-end:-7%;top:-16%;width:min(39vw,520px);opacity:.075;transform:rotate(10deg);pointer-events:none}
+.footerBloom img{width:100%;height:auto;filter:brightness(0) invert(1)}
+.footerEditorial{position:relative;display:grid;grid-template-columns:minmax(280px,1.05fr) minmax(0,1.55fr);gap:clamp(3rem,9vw,9rem);padding-bottom:clamp(68px,8vw,108px)}
+.footerLead{max-width:500px}
+.footerWordmark{display:block;border:0!important;background:transparent!important;padding:0!important;margin:0 0 2rem!important}
+.footerWordmark img{display:block;width:min(270px,72vw);height:auto}
+.footerSlogan{font:400 clamp(2.3rem,4vw,4.2rem)/.98 var(--ilama-serif)!important;letter-spacing:-.035em;color:#fff!important;margin:0 0 1.35rem!important;text-wrap:balance}
+.footerIntro{max-width:440px;color:rgba(255,255,255,.67)!important;line-height:1.75!important;font-size:.98rem!important}
+.footerLinks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.3rem,4vw,3.5rem);padding-top:.5rem}
+.footerLinks nav,.footerClinician{display:flex;flex-direction:column;align-items:flex-start;gap:.8rem;min-width:0}
+.footerLinks span,.footerClinician>span{display:block;margin-bottom:.45rem;color:var(--color-rose-light);font-size:.62rem;font-weight:900;letter-spacing:.16em}
+.footerLinks button,.footerLinks a{border:0!important;background:transparent!important;color:rgba(255,255,255,.82)!important;text-decoration:none!important;padding:.15rem 0!important;font-size:.9rem!important;text-align:start!important;transition:color .18s ease,transform .18s ease}
+.footerLinks button:hover,.footerLinks a:hover{color:#fff!important;transform:translateX(3px)}
+.siteAr .footerLinks button:hover,.siteAr .footerLinks a:hover{transform:translateX(-3px)}
+.footerClinician strong{font:400 1.65rem/1.05 var(--ilama-serif);color:#fff}
+.footerClinician p{margin:0;color:rgba(255,255,255,.62)!important;font-size:.82rem!important;line-height:1.55!important}
+.footerBook{margin-top:.5rem!important;padding:.7rem 1rem!important;border:1px solid rgba(255,255,255,.32)!important;border-radius:999px!important}
+.footerLegal{min-height:76px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:2rem;border-top:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.58);font-size:.72rem}
+.footerLegal p{margin:0!important;text-align:center;color:inherit!important;font-size:inherit!important}
+.footerLegal button{border:0!important;background:transparent!important;color:rgba(255,255,255,.72)!important;padding:.5rem 0!important}
+
+@media(max-width:900px){
+ .manifestoGrid{grid-template-columns:1fr 2fr}.manifestoGrid>p:last-child{grid-column:2}
+ .atlasFeatureGrid{grid-template-columns:.8fr 1.2fr}.atlasMargin{display:none}
+ .footerEditorial{grid-template-columns:1fr}.footerLead{max-width:680px}.footerLinks{max-width:760px}
+}
+@media(max-width:767px){
+ .heroBotanical{min-height:270px}.heroHalo{width:min(76vw,300px)}.heroBloomSymbol{width:min(46vw,190px)}
+ .botanicalNote{display:none}.heroPromise{gap:.55rem .8rem}
+ .manifestoGrid{grid-template-columns:1fr}.manifestoGrid>p:last-child{grid-column:auto}.manifestoGrid blockquote{font-size:clamp(2.4rem,10vw,3.6rem)}
+ .atlasFeatureGrid,.journalFeatureGrid{grid-template-columns:1fr}.atlasLetter{min-height:300px}.atlasLetter>span{font-size:11rem}
+ .journalPaper{min-height:390px}.journalPaper>div{min-height:330px}
+ .footerEditorial{gap:3.5rem}.footerLinks{grid-template-columns:1fr 1fr;gap:2.5rem 1.5rem}.footerClinician{grid-column:1/-1;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.12)}
+ .footerLegal{grid-template-columns:1fr;gap:.55rem;padding-block:1.3rem;text-align:start}.footerLegal p{text-align:start}.footerLegal button{text-align:start}
+}
