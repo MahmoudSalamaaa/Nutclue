@@ -1,4 +1,4 @@
-const CACHE="ilama-bloom-v3";
+const CACHE="ilama-bloom-v4";
 const LEGACY_PREFIXES=["ilama-bloom-"];
 const OFFLINE=["/manifest.webmanifest"];
 
