@@ -1,0 +1,19 @@
+{
+  "name": "ILAMA BLOOM",
+  "short_name": "ILAMA",
+  "description": "Food. Body. Context. Knowledge that blooms with you.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#F5EFE5",
+  "theme_color": "#F5EFE5",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
