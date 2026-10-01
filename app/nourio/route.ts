@@ -19,6 +19,7 @@ export async function GET(){
  html=html.replace(/<img[^>]+class=["'][^"']*logo-(?:default|mobile-version)[^"']*["'][^>]*>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
  html=html.replace(/>\s*Nourio\s*</gi,">ILAMA BLOOM<");
  html=html.replace(/<span class="ilama-wordmark">ILAMA BLOOM<small>FOOD · BODY · CONTEXT<\/small><\/span>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
+ html=html.replace(/(<img class="ilama-brand-logo" src="\\/ilama-bloom-logo\\.svg" alt="ILAMA BLOOM">)\\s*\\1/gi,"$1");
  html=html.replace(/<div class="elementor-element elementor-element-b434a34[\s\S]*?<\/div>\s*<\/div>/i,"");
  html=html.replace(/<div class="elementor-element elementor-element-4166244[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/i,"");
  html=html.replace(/Personalized\s*Nutrition Plans/gi,"Nourish Knowledge. Bloom Health.");
@@ -90,7 +91,7 @@ header#header .ilama-brand-logo{width:210px!important;height:74px!important}
 @media(max-width:1024px){#working-block-holder-489363 .isotope-layout-inner{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:640px){#working-block-holder-489363 .isotope-layout-inner{grid-template-columns:1fr!important}.elementor-element-746bc05{padding:48px 16px!important}}
 @media(max-width:767px){.ilama-brand-logo{width:145px!important;height:54px!important}.elementor-element-dfb9286,.elementor-element-dfb9286>.e-con-inner{min-height:560px!important}}
-</style></head>`);
+\n.tm-sc-service.tm-service-swiper .swiper-wrapper{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:24px!important;transform:none!important;width:100%!important;height:auto!important}.tm-sc-service.tm-service-swiper .swiper-slide{width:auto!important;max-width:100%!important;margin:0!important;transform:none!important}.tm-sc-service.tm-service-swiper .service-block,.tm-sc-service.tm-service-swiper .inner-box{width:100%!important;max-width:100%!important}.tm-sc-service.tm-service-swiper img{max-width:100%!important;height:auto!important}html,body,#wrapper{max-width:100%!important;overflow-x:hidden!important}@media(max-width:1024px){.tm-sc-service.tm-service-swiper .swiper-wrapper{grid-template-columns:repeat(2,minmax(0,1fr))!important}}@media(max-width:767px){.tm-sc-service.tm-service-swiper .swiper-wrapper{grid-template-columns:1fr!important;gap:20px!important}.tm-sc-section-title .title{font-size:clamp(32px,10vw,48px)!important;line-height:1.08!important}}\n</style></head>`);
  html=html.replace("</body>",bridge+"</body>");
  return new NextResponse(html,{headers:{
   "content-type":"text/html; charset=utf-8",
