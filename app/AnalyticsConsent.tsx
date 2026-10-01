@@ -17,5 +17,5 @@ export default function AnalyticsConsent(){
  },[choice]);
  const decide=(value:string)=>{localStorage.setItem(CONSENT_KEY,value);setChoice(value);setVisible(false)};
  if(!visible)return null;
- return <aside className="analyticsConsent" role="dialog" aria-label="Privacy choice"><p>يساعدنا القياس المجهول في تحسين ILAMA BLOOM، بدون اسم أو محتوى سجلاتك الصحية.</p><div><button onClick={()=>decide("no")}>لا، شكرًا</button><button onClick={()=>decide("yes")}>السماح بالقياس المجهول</button></div></aside>
+ return <aside className="analyticsConsent" role="dialog" aria-label="Privacy choice"><p>يساعدنا القياس المجهول في تحسين ILAMA BLOOM، بدون اسم أو محتوى سجلاتك الصحية.</p><div><button type="button" onClick={()=>decide("no")}>لا، شكرًا</button><button type="button" onClick={()=>decide("yes")}>السماح بالقياس المجهول</button></div></aside>
 }
