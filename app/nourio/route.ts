@@ -42,7 +42,7 @@ export async function GET(){
  };
  for(const [from,to] of Object.entries(replacements)) html=html.split(from).join(to);
  html=html.replace(/<meta[^>]+name=["']generator["'][^>]*>/gi,"").replace(/<link[^>]+rel=["']alternate["'][^>]*>/gi,"");
- html=html.replace("</head>",'<link rel="icon" href="/icon.svg" type="image/svg+xml"><style>.ilama-wordmark{display:inline-flex;flex-direction:column;justify-content:center;line-height:1;color:inherit;font-family:Georgia,serif;font-size:30px;letter-spacing:.08em;white-space:nowrap}.ilama-wordmark small{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.28em;margin-top:7px;text-align:center;font-weight:600}@media(max-width:767px){.ilama-wordmark{font-size:22px}.ilama-wordmark small{font-size:6px}}</style></head>');
+ html=html.replace("</head>",'<link rel="icon" href="/icon.svg" type="image/svg+xml"><style>#preloader,.three-layer-loaderbg{display:none!important}body{opacity:1!important;visibility:visible!important}.ilama-wordmark{display:inline-flex;flex-direction:column;justify-content:center;line-height:1;color:inherit;font-family:Georgia,serif;font-size:30px;letter-spacing:.08em;white-space:nowrap}.ilama-wordmark small{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.28em;margin-top:7px;text-align:center;font-weight:600}@media(max-width:767px){.ilama-wordmark{font-size:22px}.ilama-wordmark small{font-size:6px}}</style></head>');
  html=html.replace("</body>",bridge+"</body>");
  return new NextResponse(html,{headers:{
   "content-type":"text/html; charset=utf-8",
