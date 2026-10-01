@@ -1,5 +1,5 @@
 "use client";
-// Nourio production shell — stylesheet boundary restored
+// Nourio production shell — Elementor runtime restored
 import {useEffect,useMemo,useState} from "react";
 import {authClient} from "../lib/auth/client";
 import FoodAtlasLive from "./FoodAtlasLive";
