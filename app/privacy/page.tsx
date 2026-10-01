@@ -7,7 +7,7 @@ const copy={
  ar:{kicker:"الخصوصية · بكلام واضح",title:"بياناتك تفضل ملكك.",intro:"التعلم والألعاب العامة في Ilama Bloom متاحة للجميع. الحساب مطلوب فقط عندما تختار حفظ ملاحظاتك أو أسئلتك أو سياق الزيارة.",store:"إيه اللي بنخزنه؟",storeP:"السجلات المحفوظة ترتبط بحسابك وتشمل التصنيف والملاحظة التي كتبتها والوقت الذي اخترته. لا نستخدم ملاحظاتك في ملف عام أو لوحة ترتيب.",control:"إنت المتحكم",controlP:"تقدر تراجع وتعدل وتمسح سجلاتك من اليوميات، وتصدر نسخة منها. حذف الحساب أو كل البيانات يتم عبر التواصل مع صاحب المشروع.",boundary:"الحد الطبي",boundaryP:"Ilama Bloom تعليمي وتنظيمي. لا يشخّص، ولا يفسر النتائج، ولا يحسب جرعات الإنسولين، ولا يستبدل خطة الرعاية الفردية.",back:"العودة إلى Ilama Bloom ←",lang:"EN"}
 };
 export default function PrivacyPage(){
- const[lang,setLang]=useState<"ar"|"en">("en");useEffect(()=>{const s=localStorage.getItem("ilama-lang");if(s==="ar"||s==="en")setLang(s)},[]);
- const t=copy[lang];const toggle=()=>{const n=lang==="en"?"ar":"en";setLang(n);localStorage.setItem("ilama-lang",n)};
+ const[lang,setLang]=useState<"ar"|"en">("en");useEffect(()=>{const s=localStorage.getItem("ilama-bloom-lang");if(s==="ar"||s==="en")setLang(s)},[]);
+ const t=copy[lang];const toggle=()=>{const n=lang==="en"?"ar":"en";setLang(n);localStorage.setItem("ilama-bloom-lang",n)};
  return <main className="privacyPage" dir={lang==="ar"?"rtl":"ltr"} lang={lang}><section className="privacyCard"><div className="privacyTop"><Link href="/" className="authBrand">ILAMA <span>BLOOM</span></Link><button type="button" className="authLang" onClick={toggle}>{t.lang}</button></div><small>{t.kicker}</small><h1>{t.title}</h1><p>{t.intro}</p><h2>{t.store}</h2><p>{t.storeP}</p><h2>{t.control}</h2><p>{t.controlP}</p><h2>{t.boundary}</h2><p>{t.boundaryP}</p><Link href="/" className="privacyBack">{t.back}</Link></section></main>
 }
