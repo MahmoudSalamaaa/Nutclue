@@ -1556,3 +1556,33 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
 }
 @keyframes v2TypeIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}@keyframes v2SpecimenIn{from{opacity:0;transform:scale(.94) rotate(2deg)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.scrollProgress{display:none}.homePage.v2 [data-reveal]{opacity:1!important;transform:none!important}.v2Specimen,.v2HeroType>*{animation:none!important}}
+
+/* ===== ILAMA V3 — art direction over UI ===== */
+.v3Footer{position:relative;background:#123121;color:#fff;overflow:hidden;padding:clamp(7rem,12vw,13rem) 0 1.5rem}
+.v3FooterStage{position:relative;display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(4rem,9vw,10rem);z-index:1}.v3FooterMark{position:absolute;width:min(44vw,620px);right:-8%;top:-22%;opacity:.055;pointer-events:none}.v3FooterMark img{width:100%}
+.v3FooterStatement small,.v3FooterNav span{font:800 .55rem/1.2 Inter,Arial,sans-serif;letter-spacing:.2em;color:#D09A98}.v3FooterStatement h2{font:400 clamp(4.5rem,8.5vw,9rem)/.8 Georgia,serif;letter-spacing:-.065em;margin:2rem 0 2.5rem;max-width:900px}.v3FooterStatement h2 em{font-weight:400;color:#D09A98}.v3FooterStatement>p{max-width:480px;color:rgba(255,255,255,.62);line-height:1.75}
+.v3FooterNav{display:grid;grid-template-columns:1fr 1fr;gap:3rem 2rem;align-content:start;padding-top:1rem}.v3FooterNav nav,.v3FooterDoctor{display:flex;flex-direction:column;align-items:flex-start;gap:.85rem}.v3FooterNav button,.v3FooterNav a{border:0;background:none;padding:0;color:#fff;text-decoration:none;font:400 1rem/1.4 Inter,Arial,sans-serif;opacity:.78}.v3FooterNav button:hover,.v3FooterNav a:hover{opacity:1}.v3FooterDoctor{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.15);padding-top:2rem}.v3FooterDoctor b{font:400 1.7rem/1.1 Georgia,serif}.v3FooterDoctor p{margin:0;color:rgba(255,255,255,.55)}
+.v3FooterBase{display:grid;grid-template-columns:1fr 2fr auto;gap:2rem;align-items:center;border-top:1px solid rgba(255,255,255,.14);margin-top:clamp(5rem,9vw,9rem);padding-top:1.4rem;font-size:.62rem;letter-spacing:.05em;color:rgba(255,255,255,.48)}.v3FooterBase p{margin:0;text-align:center}.v3FooterBase button{border:0;background:none;color:inherit;padding:0}
+
+.homePage.v2 .v2Hero{position:relative;background:linear-gradient(115deg,#F8F1E7 0%,#F8F1E7 63%,#F4E9DF 63%,#F4E9DF 100%)}
+.homePage.v2 .v2Hero:after{content:"";position:absolute;width:34vw;height:34vw;max-width:520px;max-height:520px;right:4vw;top:14%;border:1px solid rgba(155,83,96,.13);border-radius:50%;pointer-events:none}
+.homePage.v2 .v2HeroType h1{position:relative;z-index:2}.homePage.v2 .v2HeroType h1 span:first-child{font-size:.62em;letter-spacing:-.04em}.homePage.v2 .v2HeroType h1 em{font-style:italic}.homePage.v2 .v2HeroType h1 strong{font-size:.92em}
+.v2Manifesto{position:relative}.v2Manifesto:before{content:"“";position:absolute;left:3vw;top:7%;font:italic 400 12rem/1 Georgia,serif;color:#F1E4DB}
+.v2Chapters .v2Chapter:nth-child(even) h3{font-style:italic;color:#9B5360}.v2ChapterList{max-width:1100px;margin-inline-start:auto}
+.v2Atlas{position:relative}.v2Atlas:before{content:"FIELD / 03";position:absolute;left:2.5vw;top:50%;writing-mode:vertical-rl;transform:rotate(180deg);font-size:.5rem;font-weight:900;letter-spacing:.2em;color:#9B5360}
+.v2Journal{background:linear-gradient(90deg,#fff 0 48%,#F8F1E7 48%)}.v2ClinicalGrid{position:relative}.v2ClinicalGrid:after{content:"ILAMA";position:absolute;right:-2vw;bottom:-8vw;font:400 clamp(8rem,17vw,18rem)/1 Georgia,serif;letter-spacing:-.07em;color:rgba(255,255,255,.025);pointer-events:none}
+.siteAr .v3FooterStatement h2{font-family:"Noto Naskh Arabic",Tajawal,Cairo,serif;letter-spacing:0;line-height:1}.siteAr .v2Manifesto:before{left:auto;right:3vw}
+
+@media(max-width:767px){
+ .brandHeader{min-height:94px!important;padding:12px 18px!important}.brandLogo img{width:150px!important;max-height:72px!important}.menuToggle{width:58px!important;height:58px!important}
+ .homePage.v2 .v2Hero{padding-top:2.5rem;background:#F8F1E7}.homePage.v2 .v2Hero:after{width:72vw;height:72vw;right:-25vw;top:2%;opacity:.8}
+ .v2Specimen{min-height:220px;margin-bottom:-1.5rem}.petalField{width:58vw}.specimenNo{top:2%;left:3%}.v2Specimen>p{display:none}
+ .v2HeroType h1{font-size:clamp(3.7rem,18vw,5.2rem)!important;line-height:.78!important}.v2HeroType h1 span:first-child{font-size:.7em}.v2Kicker{margin-bottom:1.2rem}.v2HeroBottom{margin-top:2rem}.v2HeroBottom p{font-size:.92rem;line-height:1.65}.v2RoundCta{width:70px;height:70px;font-size:.72rem}
+ .v2Manifesto{padding:6rem 0}.v2Manifesto:before{font-size:7rem;top:3%;left:auto;right:4vw}.v2Manifesto h2{font-size:clamp(2.65rem,12vw,3.8rem);line-height:.98}
+ .v2Chapters{padding:5.5rem 0}.v2SectionHead h2{font-size:clamp(2.6rem,11vw,3.7rem)}.v2Chapter{padding:1.5rem 0}.v2Chapter h3{font-size:2rem}
+ .v2Atlas{padding:6rem 0}.v2Atlas:before{display:none}.v2AtlasIndex{min-height:300px;width:88%;margin-inline:auto}.v2AtlasIndex>span{font-size:10rem}.v2AtlasCopy h2,.v2JournalCopy h2{font-size:clamp(2.7rem,12vw,4rem);line-height:.98}
+ .v2Journal{padding:6rem 0;background:#fff}.v2Notebook{min-height:360px;width:92%;margin-inline:auto}.v2JournalCopy{padding-bottom:1rem}
+ .v2Clinical{padding:6rem 0}.v2Portrait{width:76%}.v2Clinical blockquote{font-size:clamp(2.55rem,11vw,3.65rem);line-height:1}.v2ClinicalCopy>div{flex-wrap:wrap}
+ .v2Closing{padding:7rem 0}.v2Closing h2{font-size:clamp(4.7rem,23vw,7rem)}
+ .v3Footer{padding:6rem 0 1.2rem}.v3FooterStage{grid-template-columns:1fr;gap:4rem}.v3FooterStatement h2{font-size:clamp(4rem,18vw,6rem);line-height:.82}.v3FooterMark{width:95vw;right:-40%;top:-6%;opacity:.04}.v3FooterNav{grid-template-columns:1fr 1fr;gap:2.5rem 1.5rem}.v3FooterBase{grid-template-columns:1fr auto;gap:1rem}.v3FooterBase p{grid-column:1/-1;grid-row:2;text-align:start}
+}
