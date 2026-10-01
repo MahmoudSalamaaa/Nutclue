@@ -5,7 +5,7 @@ export const dynamic="force-static";
 
 const bridge=`<script>
 (()=>{const send=(view)=>window.parent!==window?window.parent.postMessage({type:"ilama:navigate",view},"*"):location.assign("/#/"+view);
-const map={"home":"home","explore":"learn","services":"learn","kids":"kids","food atlas":"atlas","atlas":"atlas","journal":"journal","visit":"visit","about":"about","about us":"about","contact us":"visit","book a visit":"visit"};
+const map={"home":"home","explore":"learn","services":"learn","learn":"learn","learning guides":"learn","kids":"kids","kids & family":"kids","food atlas":"atlas","atlas":"atlas","journal":"journal","health tracking":"log","journal & progress":"journal","visit":"visit","visit preparation":"visit","about":"about","about us":"about","about dr. dina":"about","contact us":"visit","book a visit":"visit"};
 document.addEventListener("click",e=>{const a=e.target.closest("a");if(!a)return;const key=(a.textContent||"").trim().toLowerCase().replace(/\\s+/g," ");if(map[key]){e.preventDefault();send(map[key])}},true)})();
 </script>`;
 
