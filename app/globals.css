@@ -1535,3 +1535,24 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
  .v2Closing img{animation:v2Float 8s ease-in-out infinite alternate}
 }
 @keyframes v2Petal1{from{opacity:0;transform:rotate(45deg) scale(.72)}to{opacity:.18;transform:rotate(45deg) scale(1)}}@keyframes v2Petal2{from{opacity:0;transform:rotate(-18deg) scale(.72)}to{opacity:.18;transform:rotate(-18deg) scale(1)}}@keyframes v2Petal3{from{opacity:0;transform:rotate(18deg) scale(.72)}to{opacity:.18;transform:rotate(18deg) scale(1)}}@keyframes v2Float{to{transform:rotate(12deg) translateY(-12px)}}
+
+/* ILAMA native interaction choreography */
+.scrollProgress{position:fixed;z-index:120;top:0;left:0;width:100%;height:2px;pointer-events:none;transform-origin:left}
+.scrollProgress i{display:block;width:100%;height:100%;background:#9B5360;transform-origin:left;will-change:transform}
+[data-reveal]{opacity:1;transform:none}
+@media(prefers-reduced-motion:no-preference){
+ .homePage.v2 [data-reveal]{opacity:0;transform:translateY(34px);transition:opacity .85s cubic-bezier(.2,.72,.2,1),transform .85s cubic-bezier(.2,.72,.2,1)}
+ .homePage.v2 [data-reveal].is-visible{opacity:1;transform:none}
+ .v2Hero[data-reveal]{opacity:1!important;transform:none!important}
+ .v2HeroType>*{animation:v2TypeIn .9s cubic-bezier(.2,.72,.2,1) both}.v2HeroType>h1{animation-delay:.08s}.v2HeroBottom{animation-delay:.2s}
+ .v2Specimen{animation:v2SpecimenIn 1.1s .12s cubic-bezier(.2,.72,.2,1) both}
+ .v2Chapter{position:relative;overflow:hidden}.v2Chapter:after{content:"";position:absolute;inset:0;background:rgba(255,255,255,.42);transform:translateX(-102%);transition:transform .55s cubic-bezier(.2,.72,.2,1);pointer-events:none}.siteAr .v2Chapter:after{transform:translateX(102%)}.v2Chapter:hover:after{transform:translateX(0)}
+ .v2Chapter>*{position:relative;z-index:1}.v2Chapter b{transition:transform .25s ease}.v2Chapter:hover b{transform:translate(5px,-5px)}.siteAr .v2Chapter:hover b{transform:translate(-5px,-5px)}
+ .v2AtlasIndex{transition:transform .55s cubic-bezier(.2,.72,.2,1),border-radius .55s ease}.v2Atlas:hover .v2AtlasIndex{transform:rotate(-2deg) translateY(-8px);border-radius:46% 54% 52% 48%/52% 46% 54% 48%}
+ .v2Notebook{transition:transform .55s cubic-bezier(.2,.72,.2,1),box-shadow .55s ease}.v2Journal:hover .v2Notebook{transform:rotate(.6deg) translateY(-7px);box-shadow:0 38px 90px rgba(18,49,33,.13)}
+ .v2Portrait img{transition:transform 1s cubic-bezier(.2,.72,.2,1),border-radius .7s ease}.v2Portrait{overflow:hidden;border-radius:48% 48% 5% 5%}.v2Clinical:hover .v2Portrait img{transform:scale(1.025)}
+ .v2RoundCta span,.v2TextLink span{transition:transform .25s ease}.v2TextLink:hover span{display:inline-block;transform:translate(4px,-4px)}
+ .brandHeader{transition:min-height .3s ease,background .3s ease,box-shadow .3s ease,backdrop-filter .3s ease}.brandHeader.isCompact{backdrop-filter:blur(14px)}
+}
+@keyframes v2TypeIn{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}@keyframes v2SpecimenIn{from{opacity:0;transform:scale(.94) rotate(2deg)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.scrollProgress{display:none}.homePage.v2 [data-reveal]{opacity:1!important;transform:none!important}.v2Specimen,.v2HeroType>*{animation:none!important}}
