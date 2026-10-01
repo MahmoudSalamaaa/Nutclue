@@ -1,0 +1,24 @@
+/* Ilama Bloom — signature product surfaces */
+.atlasPage .pageHero{background:var(--ib-plum)!important}
+.atlasCats{display:flex!important;gap:0!important;overflow:auto!important;padding:0 max(6vw,calc((100vw - 1240px)/2))!important;background:var(--ib-milk)!important;border-block:1px solid var(--ib-line)!important}
+.atlasCats button{border:0!important;border-inline-end:1px solid var(--ib-line)!important;border-radius:0!important;background:transparent!important;color:var(--ib-ink)!important;padding:1.15rem 1.25rem!important;white-space:nowrap!important}
+.atlasCats button.on{background:var(--ib-sun)!important}
+.atlasGrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:0!important;padding:clamp(4rem,7vw,7rem) max(6vw,calc((100vw - 1240px)/2))!important}
+.atlasGrid article{min-height:420px!important;padding:2.3rem!important;border:1px solid var(--ib-line)!important;border-radius:0!important;background:var(--ib-milk)!important;box-shadow:none!important;overflow:hidden!important}
+.atlasGrid article:nth-child(6n+2),.atlasGrid article:nth-child(6n+5){background:var(--ib-petal-soft)!important}
+.atlasGrid article:nth-child(6n+3){background:#dce4da!important}
+.foodEmoji{font-size:3.3rem!important;filter:saturate(.75)!important}
+.atlasGrid h2{font:400 clamp(2rem,3vw,3.2rem)/.98 Georgia,serif!important;letter-spacing:-.04em!important}
+.foodActions button{background:transparent!important;color:var(--ib-ink)!important;border:0!important;border-bottom:1px solid currentColor!important}
+.atlasBridge{background:var(--ib-ink)!important;color:white!important;padding:clamp(4rem,7vw,7rem) max(6vw,calc((100vw - 1240px)/2))!important}
+.atlasBridge h2{font-size:clamp(2.6rem,5vw,5rem)!important}.atlasBridge button{background:var(--ib-sun)!important;color:var(--ib-ink)!important}
+.journalPage .pageHero{background:var(--ib-leaf)!important}
+.journalDay:nth-child(odd)>h2:before{content:"✦";display:block;color:var(--ib-petal);font-size:1rem;margin-bottom:.8rem}
+.journalDay>article:hover{background:rgba(239,211,202,.2)!important}
+.visitPage .pageHero{background:var(--ib-plum)!important}
+.visitOverview>div:nth-child(2){background:var(--ib-petal-soft)!important}.visitOverview b{color:var(--ib-petal)!important}.visitSheet aside{background:#dce4da!important}
+.kidsPage .pageHero{background:var(--ib-petal)!important}
+.kidsGroupGrid article:nth-child(4n+1){background:#fff4dc!important}.kidsGroupGrid article:nth-child(4n+2){background:#f6ddd7!important}.kidsGroupGrid article:nth-child(4n+3){background:#dfe9df!important}.kidsGroupGrid article:nth-child(4n){background:#eee2e8!important}
+.kidsGroupGrid article{transition:transform .2s ease!important}.kidsGroupGrid article:hover{transform:rotate(-1deg) translateY(-4px)!important}
+@media(max-width:800px){.atlasGrid{grid-template-columns:1fr!important;padding:2rem 1.25rem 4rem!important}.atlasGrid article{min-height:330px!important}}
+.siteAr .atlasGrid h2{font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important}
