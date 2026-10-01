@@ -1,1 +1,29 @@
-{"name":"ilama-bloom","version":"3.0.0","private":true,"scripts":{"dev":"next dev","build":"next build","start":"next start"},"dependencies":{"@neondatabase/auth":"latest","@neondatabase/auth-ui":"latest","@neondatabase/serverless":"latest","better-auth":"^1.7.6","kysely":"^0.29.6","next":"16.3.6","pg":"^8.23.0","react":"19.2.0","react-dom":"19.2.0"},"devDependencies":{"@types/node":"^22","@types/pg":"^8.23.1","@types/react":"^19","@types/react-dom":"^19","typescript":"^5"}}
+{
+  "name": "ilama-bloom",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "prebuild": "node scripts/vendor-nourio-css.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/auth": "latest",
+    "@neondatabase/auth-ui": "latest",
+    "@neondatabase/serverless": "latest",
+    "better-auth": "^1.7.6",
+    "kysely": "^0.29.6",
+    "next": "16.3.6",
+    "pg": "^8.23.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "^8.23.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
