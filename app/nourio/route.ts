@@ -22,6 +22,7 @@ export async function GET(){
  html=html.replace(/<div class="elementor-element elementor-element-b434a34[\s\S]*?<\/div>\s*<\/div>/i,"");
  html=html.replace(/<div class="elementor-element elementor-element-4166244[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/i,"");
  html=html.replace(/Personalized\s*Nutrition Plans/gi,"Nourish Knowledge. Bloom Health.");
+ html=html.replace(/We begin with a comprehensive health assessment to understand/g,(m,offset)=>{const before=html.slice(Math.max(0,offset-500),offset);if(before.includes("Health Assessment"))return "Start with a clear picture of your health, routines, goals, and context.";if(before.includes("Habit Building"))return "Turn useful nutrition knowledge into small habits that fit everyday life.";if(before.includes("Food Analysis"))return "Explore foods, portions, labels, and patterns with practical context.";if(before.includes("Visit Preparation"))return "Collect your questions and notes so your next visit is more focused.";return m});
  const replacements:Record<string,string>={
  "Based on 204 Reviews":"FOOD · BODY · CONTEXT",
  "Nutrition Care You Can Trust":"Knowledge that blooms with you.",
@@ -71,6 +72,23 @@ footer,.main-footer{background:#173d31!important;color:#fbf7ef!important}
 .elementor-element-d4dc29f .tm-text-editor{color:#a94f62!important;font-weight:700!important;letter-spacing:.08em!important;text-transform:uppercase!important}
 .elementor-invisible{visibility:visible!important}
 header#header .ilama-brand-logo{width:210px!important;height:74px!important}
+#header .elementor-widget-tm-ele-site-logo:not(:first-of-type){display:none!important}
+#header .elementor-385>.elementor-element-1a16a16:nth-of-type(n+2){display:none!important}
+.elementor-element-746bc05{padding:72px 20px!important;background:#fbf7ef!important}
+.elementor-element-ffecbb9>.e-con-inner{max-width:1200px!important;margin:auto!important}
+.elementor-element-2ae41b9{margin-bottom:36px!important}
+#working-block-holder-489363 .isotope-layout-inner{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:24px!important;height:auto!important}
+#working-block-holder-489363 .isotope-item{position:relative!important;left:auto!important;top:auto!important;transform:none!important;width:auto!important;margin:0!important}
+.working-block-style3 .inner-block{height:100%!important;min-height:290px!important;padding:34px 24px!important;border:1px solid rgba(23,61,49,.14)!important;border-radius:24px!important;background:#f5efe5!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.working-block-style3 .icon-block{margin-bottom:22px!important}
+.working-block-style3 .icon{color:#a94f62!important;font-size:54px!important}
+.working-block-style3 .working-shape{display:none!important}
+.working-block-style3 .working-title{margin:0 0 12px!important;color:#173d31!important}
+.working-block-style3 .working-details{color:#66746c!important;line-height:1.65!important}
+.elementor-element-d2299e9 .title-wrapper{text-align:center!important}
+.elementor-element-d2299e9 .subtitle{color:#a94f62!important}
+@media(max-width:1024px){#working-block-holder-489363 .isotope-layout-inner{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:640px){#working-block-holder-489363 .isotope-layout-inner{grid-template-columns:1fr!important}.elementor-element-746bc05{padding:48px 16px!important}}
 @media(max-width:767px){.ilama-brand-logo{width:145px!important;height:54px!important}.elementor-element-dfb9286,.elementor-element-dfb9286>.e-con-inner{min-height:560px!important}}
 </style></head>`);
  html=html.replace("</body>",bridge+"</body>");
