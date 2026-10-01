@@ -1,16 +1,16 @@
 {
   "name": "ILAMA BLOOM",
   "short_name": "ILAMA",
-  "description": "Food. Body. Context. Knowledge that blooms with you.",
+  "description": "Good Nutrition Brings a Brighter You.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#F5EFE5",
-  "theme_color": "#F5EFE5",
+  "background_color": "#F8F1E7",
+  "theme_color": "#F8F1E7",
   "lang": "en",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/ilama-symbol.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
