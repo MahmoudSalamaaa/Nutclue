@@ -94,3 +94,39 @@
 .dcWebsite{background:var(--ib-sun)!important;color:var(--ib-ink)!important;border-radius:0!important}
 .dcFooter{background:var(--ib-ink)!important;color:white!important}.dcFooter em{color:var(--ib-petal)!important}
 @media(max-width:560px){.digitalCard{border-inline:0!important}.dcBody h1{font-size:clamp(2.8rem,14vw,4rem)!important}.dcPortrait:after{width:38px;height:38px}}
+
+/* Auth — Ilama Bloom editorial gateway */
+.authPage{min-height:100svh!important;display:grid!important;grid-template-columns:minmax(0,1.08fr) minmax(420px,.92fr)!important;background:var(--ib-cream)!important;color:var(--ib-ink)!important}
+.authEditorial{position:relative;min-height:100svh;padding:clamp(2rem,5vw,5rem)!important;display:flex!important;flex-direction:column!important;justify-content:space-between!important;overflow:hidden!important;background:var(--ib-ink)!important;color:white!important}
+.authEditorial:before{content:"BLOOM";position:absolute;left:-.06em;bottom:.03em;font:400 clamp(7rem,17vw,15rem)/.72 Georgia,serif;letter-spacing:-.09em;color:rgba(255,255,255,.035)}
+.authEditorial:after{content:"";position:absolute;right:-8%;top:10%;width:min(38vw,520px);aspect-ratio:1;border-radius:72% 28% 68% 32%;background:var(--ib-petal);opacity:.9;transform:rotate(24deg)}
+.authEditorialBrand{position:relative;z-index:2;width:min(230px,44%);filter:brightness(0) invert(1)}
+.authEditorialBrand img{display:block;width:100%;height:auto}
+.authEditorialCopy{position:relative;z-index:2;max-width:680px;padding-block:7vh 13vh}
+.authEditorialCopy small,.authEditorialNote{font:700 .68rem/1.2 Arial,sans-serif;letter-spacing:.2em}
+.authEditorialCopy h2{max-width:650px;margin:.8rem 0 1.4rem;font:400 clamp(3.8rem,6.7vw,7.4rem)/.82 Georgia,serif;letter-spacing:-.065em}
+.authEditorialCopy h2 em{color:var(--ib-sun);font-weight:400}
+.authEditorialCopy p{max-width:520px;font-size:1.05rem;line-height:1.75;color:rgba(255,255,255,.74)}
+.authEditorialNote{position:relative;z-index:2;color:rgba(255,255,255,.55)}
+.authPetal{position:absolute;z-index:3;right:9%;top:19%;width:86px;height:86px;display:grid;place-items:center;transform:rotate(10deg)}
+.authPetal i{position:absolute;width:38px;height:53px;background:var(--ib-petal-soft);border-radius:70% 30% 70% 30%;transform-origin:50% 100%}
+.authPetal i:nth-child(1){transform:translateY(-20px)}.authPetal i:nth-child(2){transform:rotate(90deg) translateY(-20px)}.authPetal i:nth-child(3){transform:rotate(180deg) translateY(-20px)}.authPetal i:nth-child(4){transform:rotate(270deg) translateY(-20px)}
+.authPetal b{z-index:1;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--ib-sun);color:var(--ib-ink);font:700 .6rem Arial}
+.authPanel{min-height:100svh;padding:clamp(1.5rem,4vw,4rem)!important;display:flex!important;flex-direction:column!important;justify-content:center!important;background:var(--ib-milk)!important}
+.authPanelTop{position:absolute;right:clamp(1.5rem,4vw,4rem);top:clamp(1.5rem,3vw,3rem);left:auto;display:flex;align-items:center;justify-content:space-between;gap:2rem;width:min(520px,calc(46vw - 6rem))}
+.authPanel .authForm{width:min(520px,100%)!important;margin:auto!important;padding:0!important;border:0!important;background:transparent!important;overflow:visible!important}
+.authPanel .authForm:before{content:"WELCOME";display:block;margin-bottom:1rem;font:800 .65rem/1 Arial,sans-serif;letter-spacing:.18em;color:var(--ib-petal)}
+.authPanel .authForm h1{font-size:clamp(3.5rem,5vw,5.6rem)!important;margin-bottom:1rem!important}
+.authPanel .authForm>p{max-width:430px!important;color:#68736d!important;line-height:1.65!important;margin-bottom:2.5rem!important}
+.authPanel .authForm label{display:grid!important;gap:.55rem!important;margin-bottom:1.25rem!important;font-size:.72rem!important;font-weight:800!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+.authPanel .authForm input{min-height:58px!important;border:0!important;border-bottom:1px solid var(--ib-line)!important;border-radius:0!important;background:transparent!important;padding:.7rem 0!important;font-size:1rem!important;outline:none!important}
+.authPanel .authForm input:focus{border-color:var(--ib-petal)!important;box-shadow:0 1px 0 var(--ib-petal)!important}
+.authPanel .authForm form>button{min-height:58px!important;margin-top:.7rem!important;border:0!important;border-radius:0!important;background:var(--ib-ink)!important;font-weight:800!important;letter-spacing:.08em!important}
+.authLang{border:1px solid var(--ib-line)!important;border-radius:999px!important;background:transparent!important;color:var(--ib-ink)!important;padding:.65rem .9rem!important;font-weight:800!important;cursor:pointer}
+.authPanel .authForm>.authLang{position:absolute;right:0;top:-4.7rem}
+.authSocial{margin-top:2rem!important}.authSocial>span{display:block!important;margin-bottom:.9rem!important;color:#7a817d!important;font-size:.75rem!important}
+.authSocial>div{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:0!important}.authSocial button{min-height:48px!important}
+.authSwitch{display:inline-block!important;margin-top:1.8rem!important;color:var(--ib-plum)!important;border-bottom:1px solid currentColor!important}
+.authBack{font-size:.68rem!important;font-weight:900!important;letter-spacing:.14em!important;color:var(--ib-ink)!important}
+@media(max-width:900px){.authPage{grid-template-columns:1fr!important}.authEditorial{min-height:36svh!important;padding:1.5rem!important}.authEditorialCopy{padding:4rem 0 2rem!important}.authEditorialCopy h2{font-size:clamp(3.2rem,12vw,5.4rem)!important;max-width:620px}.authEditorialCopy p,.authEditorialNote{display:none}.authEditorial:after{width:50vw;right:-12%;top:6%}.authPetal{right:8%;top:28%}.authPanel{min-height:64svh!important;padding:5rem 1.5rem 3rem!important}.authPanelTop{position:absolute;top:calc(36svh + 1.25rem);left:1.5rem;right:1.5rem;width:auto}.authPanel .authForm>.authLang{top:-4.2rem}.authPanel .authForm h1{font-size:clamp(3rem,13vw,4.6rem)!important}}
+@media(max-width:520px){.authEditorial{min-height:31svh!important}.authEditorialCopy{padding:3.2rem 0 1rem!important}.authEditorialCopy small{font-size:.58rem!important}.authEditorialCopy h2{font-size:clamp(2.8rem,13vw,4rem)!important}.authEditorialBrand{width:150px}.authPetal{display:none}.authPanel{min-height:69svh!important;padding-top:5.4rem!important}.authPanelTop{top:calc(31svh + 1.2rem)}.authSocial>div{grid-template-columns:1fr!important}.authPanel .authForm h1{font-size:clamp(2.8rem,14vw,4rem)!important}}
