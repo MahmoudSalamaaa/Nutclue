@@ -39,7 +39,21 @@ export async function GET(){
  };
  for(const [from,to] of Object.entries(replacements)) html=html.split(from).join(to);
  html=html.replace(/<meta[^>]+name=["']generator["'][^>]*>/gi,"").replace(/<link[^>]+rel=["']alternate["'][^>]*>/gi,"");
- html=html.replace("</head>",'<link rel="icon" href="/icon.svg" type="image/svg+xml"><style>#preloader,.three-layer-loaderbg{display:none!important}html,body{opacity:1!important;visibility:visible!important}.ilama-brand-logo{display:block;width:190px;max-width:100%;height:70px;object-fit:contain;object-position:left center}@media(max-width:767px){.ilama-brand-logo{width:145px;height:54px}}</style></head>');
+ html=html.replace("</head>",`<link rel="icon" href="/icon.svg" type="image/svg+xml"><style>
+:root{--theme-color1:#173d31!important;--theme-color2:#a94f62!important;--theme-color3:#a88b55!important;--theme-color4:#efe5d7!important}
+#preloader,.three-layer-loaderbg{display:none!important}
+html,body{opacity:1!important;visibility:visible!important;background:#f5efe5!important;color:#173d31!important}
+body,.page-wrapper,.main-content,.elementor,.elementor-section,.elementor-element{--theme-color1:#173d31!important;--theme-color2:#a94f62!important;--theme-color3:#a88b55!important}
+h1,h2,h3,h4,h5,h6,.title,.section-title,.tm-sc-section-title,.menuzord-menu>li>a{color:#173d31!important}
+.text-theme-colored1,.text-theme-colored2,.text-theme-colored3,a:hover{color:#a94f62!important}
+.bg-theme-colored1,.btn-theme-colored1,.theme-btn,.btn-style-one,.btn-style-two{background-color:#173d31!important;border-color:#173d31!important;color:#fbf7ef!important}
+.bg-theme-colored2,.btn-theme-colored2{background-color:#a94f62!important;border-color:#a94f62!important;color:#fbf7ef!important}
+header,.header-nav,.menuzord,.main-header,.sticky-header{background:#f5efe5!important}
+footer,.main-footer{background:#173d31!important;color:#fbf7ef!important}
+.ilama-brand-logo{display:block!important;width:190px!important;max-width:100%!important;height:70px!important;object-fit:contain!important;object-position:left center!important}
+.logo img:not(.ilama-brand-logo),.logo-box img:not(.ilama-brand-logo),.logo-box-one img:not(.ilama-brand-logo),.header-logo img:not(.ilama-brand-logo){display:none!important}
+@media(max-width:767px){.ilama-brand-logo{width:145px!important;height:54px!important}}
+</style></head>`);
  html=html.replace("</body>",bridge+"</body>");
  return new NextResponse(html,{headers:{
   "content-type":"text/html; charset=utf-8",
