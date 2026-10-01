@@ -19,7 +19,7 @@ export async function GET(){
  html=html.replace(/<img[^>]+class=["'][^"']*logo-(?:default|mobile-version)[^"']*["'][^>]*>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
  html=html.replace(/>\s*Nourio\s*</gi,">ILAMA BLOOM<");
  html=html.replace(/<span class="ilama-wordmark">ILAMA BLOOM<small>FOOD · BODY · CONTEXT<\/small><\/span>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
- html=html.split(`<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">`).reduce((out,part,index)=>out+(index===0?"":`<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">`)+part).replace(/(<img class="ilama-brand-logo"[^>]*>)\s*\1/g,"$1");
+ html=html.replaceAll(`<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">\n\t\t\t\t\t<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">`,`<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">`);
  html=html.replace(/<div class="elementor-element elementor-element-b434a34[\s\S]*?<\/div>\s*<\/div>/i,"");
  html=html.replace(/<div class="elementor-element elementor-element-4166244[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/i,"");
  html=html.replace(/Personalized\s*Nutrition Plans/gi,"Nourish Knowledge. Bloom Health.");
