@@ -18,6 +18,10 @@ export async function GET(){
  html=html.replace(/alt=["']Nourio(?: Logo)?["']/gi,'alt="ILAMA BLOOM"');
  html=html.replace(/<img[^>]+class=["'][^"']*logo-(?:default|mobile-version)[^"']*["'][^>]*>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
  html=html.replace(/>\s*Nourio\s*</gi,">ILAMA BLOOM<");
+ html=html.replace(/<span class="ilama-wordmark">ILAMA BLOOM<small>FOOD · BODY · CONTEXT<\/small><\/span>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
+ html=html.replace(/<div class="elementor-element elementor-element-b434a34[\s\S]*?<\/div>\s*<\/div>/i,"");
+ html=html.replace(/<div class="elementor-element elementor-element-4166244[\s\S]*?<\/div>\s*<\/div>\s*<\/div>/i,"");
+ html=html.replace(/Personalized\s*Nutrition Plans/gi,"Nourish Knowledge. Bloom Health.");
  const replacements:Record<string,string>={
  "Based on 204 Reviews":"FOOD · BODY · CONTEXT",
  "Nutrition Care You Can Trust":"Knowledge that blooms with you.",
@@ -52,7 +56,22 @@ header,.header-nav,.menuzord,.main-header,.sticky-header{background:#f5efe5!impo
 footer,.main-footer{background:#173d31!important;color:#fbf7ef!important}
 .ilama-brand-logo{display:block!important;width:190px!important;max-width:100%!important;height:70px!important;object-fit:contain!important;object-position:left center!important}
 .logo img:not(.ilama-brand-logo),.logo-box img:not(.ilama-brand-logo),.logo-box-one img:not(.ilama-brand-logo),.header-logo img:not(.ilama-brand-logo){display:none!important}
-@media(max-width:767px){.ilama-brand-logo{width:145px!important;height:54px!important}}
+.elementor-element-0a4e24e{background:#efe5d7!important}
+.elementor-element-dfb9286{min-height:680px!important;background:#efe5d7!important;position:relative!important;overflow:hidden!important}
+.elementor-element-dfb9286:before{content:"";position:absolute!important;inset:0!important;background:radial-gradient(circle at 82% 20%,rgba(169,79,98,.14),transparent 30%),radial-gradient(circle at 18% 80%,rgba(168,139,85,.14),transparent 28%)!important;pointer-events:none!important}
+.elementor-element-dfb9286>.e-con-inner{min-height:680px!important;align-items:center!important;position:relative!important;z-index:1!important}
+.elementor-background-video-container{display:none!important}
+.elementor-element-4c5de3d,.elementor-element-422949e,.elementor-element-2068fd9{display:none!important}
+.elementor-element-71244a5 .elementor-spacer-inner{height:18px!important}
+.elementor-element-4302e32{visibility:visible!important;opacity:1!important}
+.elementor-element-4302e32 .tm-text-editor{color:#66746c!important}
+.elementor-element-98fe2ca .title{color:#173d31!important}
+.elementor-element-2f78597{margin-top:28px!important}
+.elementor-element-d24a72c{display:none!important}
+.elementor-element-d4dc29f .tm-text-editor{color:#a94f62!important;font-weight:700!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+.elementor-invisible{visibility:visible!important}
+header#header .ilama-brand-logo{width:210px!important;height:74px!important}
+@media(max-width:767px){.ilama-brand-logo{width:145px!important;height:54px!important}.elementor-element-dfb9286,.elementor-element-dfb9286>.e-con-inner{min-height:560px!important}}
 </style></head>`);
  html=html.replace("</body>",bridge+"</body>");
  return new NextResponse(html,{headers:{
