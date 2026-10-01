@@ -825,3 +825,108 @@ body{background:var(--ib-paper)!important;color:var(--ib-ink)!important}
  .mobileNav button{font-size:.5rem!important;min-width:0!important}.mobileNav b{font-size:.95rem!important}
  .unifiedFooterTop nav{grid-template-columns:1fr!important}
 }
+
+
+/* ========================================================================
+   ILAMA BLOOM × NOURIO — BATCH 2
+   Dense editorial treatment for real product surfaces.
+   ======================================================================== */
+
+/* Quick Log */
+.logBox.newLog,.journalTools,.journal,.rangeSwitch,.visitOverview,.visitActions,.savedQuestions,.visitSheet,.questionPocket,.visitQuestions,.visitNote{
+ width:min(calc(100% - 2.5rem),var(--ib-max))!important;margin-inline:auto!important
+}
+.logBox.newLog{margin-top:clamp(2rem,5vw,5rem)!important;margin-bottom:clamp(4rem,8vw,8rem)!important;padding:0!important;border:1px solid var(--ib-line)!important;border-radius:0!important;background:var(--ib-white)!important;box-shadow:none!important}
+.logProgress{padding:1.25rem clamp(1rem,3vw,2rem)!important;border-bottom:1px solid var(--ib-line)!important;background:var(--ib-cream)!important}
+.logProgress span{border-radius:0!important;background:transparent!important;border:1px solid var(--ib-line)!important;color:var(--ib-muted)!important}
+.logProgress span.done{background:var(--ib-ink)!important;color:#fff!important;border-color:var(--ib-ink)!important}
+.logHint,.logDetail,.storageHint,.logActions{margin-left:clamp(1rem,3vw,2rem)!important;margin-right:clamp(1rem,3vw,2rem)!important}
+.logHint{margin-top:2rem!important;color:var(--ib-rose)!important;font-size:.68rem!important;font-weight:900!important;letter-spacing:.12em!important;text-transform:uppercase!important}
+.typeTiles{padding:0 clamp(1rem,3vw,2rem)!important;display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:0!important}
+.typeTiles button{min-height:112px!important;padding:1rem .5rem!important;border-right:0!important}
+.typeTiles button:last-child{border-right:1px solid var(--ib-line)!important}
+.typeTiles button b{font-size:1.45rem!important}.typeTiles button span{font-size:.68rem!important;text-transform:uppercase!important;letter-spacing:.05em!important}
+.typeTiles button.on{background:var(--ib-green)!important;color:#fff!important}
+.quickPicks{padding:0 clamp(1rem,3vw,2rem)!important;display:flex!important;flex-wrap:wrap!important;gap:.45rem!important}
+.quickPicks button{border:1px solid var(--ib-line)!important;border-radius:0!important;background:transparent!important;color:var(--ib-ink)!important}
+.quickPicks button.on{background:var(--ib-ink)!important;color:#fff!important}
+.logDetail{display:block!important;margin-top:2rem!important}.logDetail textarea{width:100%!important;min-height:130px!important;margin-top:.55rem!important;padding:1rem!important}
+.storageHint{padding:1rem 0!important;color:var(--ib-muted)!important;font-size:.78rem!important;border-top:1px solid var(--ib-line)!important}
+.logActions{padding:1rem 0 2rem!important;display:flex!important;justify-content:flex-end!important;gap:.5rem!important}
+.logActions button{border-radius:0!important;padding:.8rem 1.2rem!important}.logActions .save{background:var(--ib-ink)!important;color:#fff!important}
+
+/* Journal */
+.journalFilters{width:min(calc(100% - 2.5rem),var(--ib-max))!important;margin:2rem auto 0!important;display:flex!important;gap:0!important;overflow-x:auto!important;border-bottom:1px solid var(--ib-line)!important}
+.journalFilters button{border:0!important;border-radius:0!important;background:transparent!important;color:var(--ib-muted)!important;padding:.8rem 1rem!important;white-space:nowrap!important}
+.journalFilters button.on{color:var(--ib-ink)!important;box-shadow:inset 0 -2px 0 var(--ib-rose)!important}
+.journalTools{margin-top:1.2rem!important;padding:1.25rem 0!important;border-bottom:1px solid var(--ib-line)!important;display:flex!important;align-items:center!important;gap:1rem!important}
+.journalTools>div{margin-right:auto!important}.siteAr .journalTools>div{margin-right:0!important;margin-left:auto!important}
+.journalTools>div span{display:block!important;color:var(--ib-muted)!important;font-size:.76rem!important;margin-top:.25rem!important}
+.journalTools button,.confirmBar button{border-radius:0!important;box-shadow:none!important}
+.journal{margin-top:2rem!important;margin-bottom:clamp(4rem,8vw,8rem)!important}
+.journalDay{display:grid!important;grid-template-columns:minmax(150px,.28fr) 1fr!important;border-top:1px solid var(--ib-line)!important}
+.journalDay>h2{grid-row:1 / span 99!important;margin:0!important;padding:1.4rem 1rem 1.4rem 0!important;font:400 1.35rem/1.2 Georgia,serif!important;color:var(--ib-ink)!important}
+.journalDay>h2 span{display:block!important;margin-top:.45rem!important;color:var(--ib-muted)!important;font:700 .62rem/1.4 sans-serif!important;text-transform:uppercase!important;letter-spacing:.08em!important}
+.journalDay article{display:grid!important;grid-template-columns:90px 1fr auto!important;gap:1rem!important;padding:1.25rem!important;border:0!important;border-bottom:1px solid var(--ib-line)!important;border-radius:0!important;background:transparent!important;box-shadow:none!important}
+.journalDay article time{font-size:.68rem!important;color:var(--ib-muted)!important}.journalDay article h3{margin:.25rem 0!important;font:400 1.25rem/1.35 Georgia,serif!important}
+.entryActions button,.entryEditActions button{border-radius:0!important}
+
+/* Visit Prep */
+.rangeSwitch{margin-top:2rem!important;display:flex!important;align-items:center!important;gap:0!important;border-bottom:1px solid var(--ib-line)!important}
+.rangeSwitch>span{margin-right:1rem!important;color:var(--ib-muted)!important;font-size:.7rem!important;text-transform:uppercase!important;letter-spacing:.1em!important}
+.rangeSwitch button{border:0!important;border-radius:0!important;background:transparent!important;padding:.85rem 1rem!important}
+.rangeSwitch button.on{box-shadow:inset 0 -2px 0 var(--ib-rose)!important;color:var(--ib-rose)!important}
+.visitOverview{display:grid!important;grid-template-columns:repeat(3,1fr)!important;border-left:1px solid var(--ib-line)!important}
+.visitOverview>div{padding:clamp(1.5rem,4vw,3rem)!important;border-right:1px solid var(--ib-line)!important;border-bottom:1px solid var(--ib-line)!important;background:var(--ib-white)!important}
+.visitOverview small{color:var(--ib-muted)!important;letter-spacing:.12em!important}.visitOverview b{display:block!important;margin-top:.35rem!important;font:400 clamp(2.4rem,5vw,5rem)/1 Georgia,serif!important;color:var(--ib-ink)!important}
+.visitActions{padding:1rem 0!important;display:flex!important;align-items:center!important;gap:1rem!important}.visitActions button{border-radius:0!important;background:var(--ib-ink)!important;color:#fff!important}.visitActions span{color:var(--ib-muted)!important;font-size:.75rem!important}
+.savedQuestions{margin-top:2rem!important;padding:clamp(1.5rem,4vw,3rem)!important;background:var(--ib-sand)!important}.savedQuestions h2{font:400 clamp(2rem,4vw,3.5rem)/1 Georgia,serif!important}.savedQuestions>p{display:flex!important;gap:1rem!important;border-top:1px solid rgba(21,45,39,.18)!important;padding:1rem 0!important;margin:0!important}
+.visitSheet.upgraded{margin-top:2rem!important;display:grid!important;grid-template-columns:minmax(240px,.32fr) 1fr!important;border:1px solid var(--ib-line)!important}
+.visitSheet aside{padding:2rem!important;background:var(--ib-green)!important;color:#fff!important}.visitSheet aside>span{font-size:.65rem!important;letter-spacing:.14em!important}.visitSheet aside p{display:flex!important;justify-content:space-between!important;border-bottom:1px solid rgba(255,255,255,.18)!important;padding:.8rem 0!important}
+.visitSheet>div{padding:clamp(1.5rem,4vw,3rem)!important;background:var(--ib-white)!important}.visitSheet>div>h2{font:400 clamp(2rem,4vw,3.5rem)/1 Georgia,serif!important}
+.visitFact{display:grid!important;grid-template-columns:140px 1fr auto!important;gap:1rem!important;padding:1rem 0!important;margin:0!important;border-top:1px solid var(--ib-line)!important}
+.visitFact small{color:var(--ib-muted)!important}
+.questionPocket{margin-top:2rem!important;padding:clamp(1.5rem,4vw,3rem)!important;display:grid!important;grid-template-columns:1fr 1fr!important;gap:2rem!important;background:var(--ib-cream)!important;border:1px solid var(--ib-line)!important}
+.questionPocket h2{font:400 clamp(2rem,4vw,3.4rem)/1 Georgia,serif!important}.questionPocket input{width:100%!important;margin-bottom:.5rem!important;padding:.8rem!important}.questionPocket button{width:100%!important;border-radius:0!important;background:var(--ib-ink)!important;color:#fff!important}
+.visitQuestions{margin-top:2rem!important;padding:clamp(1.5rem,4vw,3rem)!important;border-top:1px solid var(--ib-line)!important}.visitQuestions h2{font:400 clamp(2rem,4vw,3.5rem)/1 Georgia,serif!important}.visitQuestions>div{display:grid!important;grid-template-columns:repeat(3,1fr)!important}.visitQuestions p{padding:1.5rem!important;border:1px solid var(--ib-line)!important;border-right:0!important}.visitQuestions p:last-child{border-right:1px solid var(--ib-line)!important}.visitQuestions p b{display:block!important;color:var(--ib-gold)!important;margin-bottom:1rem!important}
+.visitNote{margin-top:2rem!important;margin-bottom:clamp(4rem,8vw,8rem)!important;padding:1.2rem!important;border-left:3px solid var(--ib-gold)!important;background:transparent!important}
+
+/* About / founder — premium editorial biography */
+.aboutNew{background:var(--ib-paper)!important}
+.aboutIntro{position:relative!important;overflow:hidden!important;padding:clamp(4rem,9vw,9rem) max(clamp(1.25rem,7vw,7rem),calc((100vw - var(--ib-max))/2))!important;background:var(--ib-cream)!important}
+.aboutIntro:after{content:"ILAMA";position:absolute;right:-.03em;bottom:-.22em;font:600 clamp(10rem,24vw,24rem)/.8 Georgia,serif;color:rgba(21,45,39,.035)!important}
+.aboutIntro>*{position:relative;z-index:1}.aboutIntro>small{color:var(--ib-rose)!important;letter-spacing:.16em!important;font-weight:900!important}
+.aboutIntro h1{max-width:950px!important;margin:.8rem 0 1.5rem!important;font:400 clamp(4rem,8vw,8.5rem)/.86 Georgia,serif!important;letter-spacing:-.06em!important;color:var(--ib-ink)!important}.aboutIntro h1 em{color:var(--ib-rose)!important}
+.aboutIntro>p{max-width:650px!important;color:var(--ib-muted)!important;line-height:1.8!important}
+.aboutFlow{display:flex!important;align-items:center!important;gap:1rem!important;margin-top:2.5rem!important}.aboutFlow span{font-size:.72rem!important;text-transform:uppercase!important;letter-spacing:.08em!important}.aboutFlow span b{color:var(--ib-gold)!important;margin-right:.45rem!important}
+.founderCard{width:min(calc(100% - 2.5rem),var(--ib-max))!important;margin:clamp(3rem,7vw,7rem) auto!important;display:grid!important;grid-template-columns:minmax(320px,.8fr) 1.2fr!important;gap:0!important;border:1px solid var(--ib-line)!important;background:var(--ib-white)!important;border-radius:0!important;box-shadow:none!important}
+.founderPortrait{min-height:620px!important;background:var(--ib-sand)!important}.founderPortrait img{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important}
+.founderCopy{padding:clamp(2rem,6vw,6rem)!important}.founderCopy>small{color:var(--ib-rose)!important;letter-spacing:.14em!important}.founderCopy h2{margin:.8rem 0 .35rem!important;font:400 clamp(3rem,6vw,6rem)/.9 Georgia,serif!important;letter-spacing:-.05em!important;color:var(--ib-ink)!important}.founderCopy h3{font-size:1rem!important;color:var(--ib-muted)!important}
+.credentialPills{display:flex!important;flex-wrap:wrap!important;gap:0!important;margin:1.5rem 0!important}.credentialPills span{border:1px solid var(--ib-line)!important;border-radius:0!important;padding:.55rem .75rem!important;background:transparent!important;font-size:.68rem!important;letter-spacing:.06em!important}
+.founderCopy>p{max-width:650px!important;line-height:1.85!important;color:var(--ib-muted)!important}.founderPrinciples{display:grid!important;grid-template-columns:repeat(3,1fr)!important;margin-top:2rem!important;border-top:1px solid var(--ib-line)!important}.founderPrinciples span{padding:1rem!important;border-right:1px solid var(--ib-line)!important}.founderPrinciples span:last-child{border-right:0!important}.founderPrinciples b{display:block!important;color:var(--ib-ink)!important;margin-bottom:.35rem!important}
+
+/* Cross-product polish */
+.emptyState{border-radius:0!important;border:1px solid var(--ib-line)!important;background:var(--ib-white)!important;padding:2rem!important}
+.confirmBar{border-radius:0!important;background:var(--ib-sand)!important;color:var(--ib-ink)!important}
+.danger,.dangerQuiet,.entryDelete{box-shadow:none!important}
+.siteAr .aboutIntro h1,.siteAr .founderCopy h2,.siteAr .visitSheet>div>h2,.siteAr .questionPocket h2,.siteAr .visitQuestions h2,.siteAr .journalDay>h2{
+ font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;letter-spacing:0!important
+}
+
+@media(max-width:900px){
+ .typeTiles{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+ .visitSheet.upgraded,.questionPocket,.founderCard{grid-template-columns:1fr!important}
+ .founderPortrait{min-height:480px!important}
+ .visitQuestions>div{grid-template-columns:1fr!important}.visitQuestions p{border-right:1px solid var(--ib-line)!important;border-bottom:0!important}.visitQuestions p:last-child{border-bottom:1px solid var(--ib-line)!important}
+}
+@media(max-width:650px){
+ .typeTiles{grid-template-columns:repeat(2,minmax(0,1fr))!important}.typeTiles button{min-height:92px!important}
+ .journalTools{align-items:flex-start!important;flex-wrap:wrap!important}.journalTools>div{width:100%!important}
+ .journalDay{display:block!important}.journalDay>h2{padding:1rem 0!important}.journalDay article{grid-template-columns:64px 1fr!important}.journalDay article>.entryActions{grid-column:2!important}
+ .visitOverview>div{padding:1.2rem .8rem!important}.visitOverview b{font-size:2.5rem!important}
+ .visitFact{grid-template-columns:1fr!important;gap:.25rem!important}
+ .questionPocket{gap:1rem!important}
+ .founderCard{width:calc(100% - 2rem)!important}.founderPortrait{min-height:390px!important}.founderCopy{padding:1.5rem!important}
+ .founderPrinciples{grid-template-columns:1fr!important}.founderPrinciples span{border-right:0!important;border-bottom:1px solid var(--ib-line)!important}
+ .aboutFlow{gap:.45rem!important;flex-wrap:wrap!important}
+}
