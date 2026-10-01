@@ -16,7 +16,7 @@ export async function GET(){
  html=html.replace(/<link[^>]+rel=["'](?:shortcut icon|apple-touch-icon)["'][^>]*>/gi,"");
  html=html.replace(/<title>[\s\S]*?<\/title>/i,"<title>ILAMA BLOOM — Food · Body · Context</title>");
  html=html.replace(/alt=["']Nourio(?: Logo)?["']/gi,'alt="ILAMA BLOOM"');
- html=html.replace(/<img[^>]+class=["'][^"']*logo-(?:default|mobile-version)[^"']*["'][^>]*>/gi,'<span class="ilama-wordmark">ILAMA BLOOM<small>FOOD · BODY · CONTEXT</small></span>');
+ html=html.replace(/<img[^>]+class=["'][^"']*logo-(?:default|mobile-version)[^"']*["'][^>]*>/gi,'<img class="ilama-brand-logo" src="/ilama-bloom-logo.svg" alt="ILAMA BLOOM">');
  html=html.replace(/>\s*Nourio\s*</gi,">ILAMA BLOOM<");
  const replacements:Record<string,string>={
  "Based on 204 Reviews":"FOOD · BODY · CONTEXT",
@@ -39,7 +39,7 @@ export async function GET(){
  };
  for(const [from,to] of Object.entries(replacements)) html=html.split(from).join(to);
  html=html.replace(/<meta[^>]+name=["']generator["'][^>]*>/gi,"").replace(/<link[^>]+rel=["']alternate["'][^>]*>/gi,"");
- html=html.replace("</head>",'<link rel="icon" href="/icon.svg" type="image/svg+xml"><style>#preloader,.three-layer-loaderbg{display:none!important}html,body{opacity:1!important;visibility:visible!important}.ilama-wordmark{display:inline-flex;flex-direction:column;justify-content:center;line-height:1;color:inherit;font-family:Georgia,serif;font-size:30px;letter-spacing:.08em;white-space:nowrap}.ilama-wordmark small{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.28em;margin-top:7px;text-align:center;font-weight:600}@media(max-width:767px){.ilama-wordmark{font-size:22px}.ilama-wordmark small{font-size:6px}}</style></head>');
+ html=html.replace("</head>",'<link rel="icon" href="/icon.svg" type="image/svg+xml"><style>#preloader,.three-layer-loaderbg{display:none!important}html,body{opacity:1!important;visibility:visible!important}.ilama-brand-logo{display:block;width:190px;max-width:100%;height:70px;object-fit:contain;object-position:left center}@media(max-width:767px){.ilama-brand-logo{width:145px;height:54px}}</style></head>');
  html=html.replace("</body>",bridge+"</body>");
  return new NextResponse(html,{headers:{
   "content-type":"text/html; charset=utf-8",
