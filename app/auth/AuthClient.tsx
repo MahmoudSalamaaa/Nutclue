@@ -12,7 +12,7 @@ const copy={
 export function AuthClient({path}:{path:string}){
  const {data:session}=authClient.useSession();const [lang,setLang]=useState<"ar"|"en">("en");const t=copy[lang];
  const signUp=path.includes("sign-up");const [email,setEmail]=useState("");const [password,setPassword]=useState("");const [name,setName]=useState("");const [message,setMessage]=useState("");const [busy,setBusy]=useState(false);
- const rawNext=typeof window!=="undefined"?new URLSearchParams(window.location.search).get("next"):null;const next=rawNext&&rawNext.startsWith("/")&&!rawNext.startsWith("//")?rawNext:"/";
+ const [next,setNext]=useState("/");useEffect(()=>{const rawNext=new URLSearchParams(window.location.search).get("next");setNext(rawNext&&rawNext.startsWith("/")&&!rawNext.startsWith("//")?rawNext:"/")},[]);
  useEffect(()=>{const saved=localStorage.getItem("ilama-bloom-lang");if(saved==="ar"||saved==="en")setLang(saved);if(session)window.location.replace(next)},[session,next]);
  const changeLang=()=>{const n=lang==="en"?"ar":"en";setLang(n);localStorage.setItem("ilama-bloom-lang",n)};
  if(!path.includes("sign-in")&&!signUp)return <p className="authNotice" dir={lang==="ar"?"rtl":"ltr"}>{t.invalid}</p>;
