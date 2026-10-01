@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 120" role="img" aria-labelledby="t d"><title id="t">Ilama Bloom</title><desc id="d">Three-petal Ilama-inspired bloom</desc><g transform="translate(22 8)"><path d="M48 48C24 35 22 13 45 3c17 17 18 33 3 45Z" fill="#d89aa0"/><path d="M53 48C70 26 88 24 101 38 90 59 72 64 53 48Z" fill="#e7b8b0"/><path d="M43 51C25 68 8 64 2 49c13-17 29-18 41 2Z" fill="#81966b"/><path d="M50 48v34" stroke="#163b31" stroke-width="4" stroke-linecap="round"/></g><text x="130" y="58" fill="#163b31" font-family="Georgia,serif" font-size="37" letter-spacing="3">ILAMA</text><text x="132" y="88" fill="#a94f62" font-family="Arial,sans-serif" font-size="17" letter-spacing="8">BLOOM</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+<title id="title">ILAMA BLOOM</title><desc id="desc">Botanical bloom inspired by the Ilama fruit flower</desc>
+<g transform="translate(180 7)">
+  <path d="M0 57C-22 35-20 14 0 0C20 14 22 35 0 57Z" fill="#A94F62"/>
+  <path d="M-7 60C-39 55-57 37-53 17C-28 18-9 34-7 60Z" fill="#C9858C"/>
+  <path d="M7 60C39 55 57 37 53 17C28 18 9 34 7 60Z" fill="#D7A0A0"/>
+  <path d="M-5 64C-31 69-47 62-58 49C-37 45-18 50-5 64Z" fill="#5F773D"/>
+  <path d="M5 64C31 69 47 62 58 49C37 45 18 50 5 64Z" fill="#748B4A"/>
+  <path d="M0 55V78" stroke="#173D31" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<text x="180" y="112" text-anchor="middle" fill="#173D31" font-family="Georgia,Times New Roman,serif" font-size="40" letter-spacing="12">ILAMA</text>
+<text x="180" y="140" text-anchor="middle" fill="#A94F62" font-family="Arial,sans-serif" font-size="15" letter-spacing="13">BLOOM</text>
+</svg>
