@@ -648,3 +648,180 @@ button,input,select,textarea{font:inherit}
 }
 
 /* deploy trigger: 2026-09-30 */
+
+
+/* ========================================================================
+   ILAMA BLOOM × NOURIO — SITEWIDE CONSOLIDATED VISUAL SYSTEM
+   One shared shell for Explore / Kids / Atlas / Lens / Log / Journal /
+   Visit / About / Sitemap. Business logic remains untouched.
+   ======================================================================== */
+:root{
+ --ib-ink:#152d27;--ib-green:#244b3f;--ib-green-2:#315e4f;--ib-paper:#fbf8f1;
+ --ib-cream:#f4eee3;--ib-sand:#e7d8c3;--ib-gold:#c7a36b;--ib-rose:#c98782;
+ --ib-line:rgba(21,45,39,.14);--ib-muted:#68756f;--ib-white:#fffdf8;
+ --ib-radius:0px;--ib-soft-radius:18px;--ib-max:1380px;
+}
+body{background:var(--ib-paper)!important;color:var(--ib-ink)!important}
+#content{min-height:70vh;background:var(--ib-paper)}
+.skipLink{position:fixed;left:1rem;top:-100px;z-index:9999;background:var(--ib-ink);color:#fff;padding:.7rem 1rem}
+.skipLink:focus{top:1rem}
+
+/* Nourio-like editorial navigation */
+.nav{
+ position:sticky!important;top:0!important;z-index:300!important;min-height:82px!important;
+ padding:0 clamp(1rem,4vw,4rem)!important;background:rgba(251,248,241,.97)!important;
+ border-bottom:1px solid var(--ib-line)!important;box-shadow:none!important;
+ display:flex!important;align-items:center!important;gap:1rem!important
+}
+.brandLogo{width:auto!important;height:auto!important;min-width:178px!important;display:flex!important;align-items:center!important}
+.brandLogo img{display:none!important}
+.brandLogo:after{content:"ILAMA BLOOM";font:600 1.35rem/1 Georgia,"Times New Roman",serif;letter-spacing:.11em;color:var(--ib-ink)}
+.nav>nav{display:flex!important;gap:1.15rem!important;margin-inline:auto!important;background:transparent!important;border:0!important}
+.nav>nav button,.authLink{font-size:.72rem!important;letter-spacing:.075em!important;text-transform:uppercase!important}
+.nav>nav button{padding:1.9rem .15rem!important;border-radius:0!important;border:0!important;background:transparent!important;color:var(--ib-ink)!important}
+.nav>nav button.active,.nav>nav button:hover{color:var(--ib-rose)!important;box-shadow:inset 0 -2px 0 var(--ib-rose)!important}
+.logBtn{border-radius:0!important;background:var(--ib-ink)!important;color:#fff!important;min-height:44px!important;padding:.7rem 1rem!important;box-shadow:none!important}
+.globalLang{border:1px solid var(--ib-line)!important;background:transparent!important;border-radius:0!important}
+.globalLang button{border-radius:0!important;background:transparent!important;color:var(--ib-ink)!important}
+.globalLang button.on{background:var(--ib-ink)!important;color:#fff!important}
+
+/* Every internal page now shares one editorial canvas */
+.page,.siteMapPage,.aboutPage,.visitPage,.journalPage,.logPage,.lensPage,.kidsWorld{
+ width:100%!important;max-width:none!important;margin:0!important;background:var(--ib-paper)!important
+}
+.pageHero,.siteMapHero,.compactHero{
+ position:relative!important;overflow:hidden!important;max-width:none!important;
+ padding:clamp(4rem,8vw,8.5rem) max(clamp(1.25rem,7vw,7rem),calc((100vw - var(--ib-max))/2)) clamp(3rem,6vw,6rem)!important;
+ background:var(--ib-cream)!important;border-bottom:1px solid var(--ib-line)!important
+}
+.pageHero:after,.siteMapHero:after,.compactHero:after{
+ content:"BLOOM";position:absolute;right:-.02em;bottom:-.22em;pointer-events:none;
+ font:600 clamp(8rem,21vw,21rem)/.8 Georgia,serif;letter-spacing:-.07em;color:rgba(21,45,39,.035)
+}
+.pageHero>*,.siteMapHero>*,.compactHero>*{position:relative;z-index:1}
+.pageHero>small,.siteMapHero>small,.compactHero>small{
+ display:block!important;color:var(--ib-rose)!important;font-size:.67rem!important;font-weight:800!important;
+ letter-spacing:.16em!important;text-transform:uppercase!important;margin-bottom:1rem!important
+}
+.pageHero h1,.siteMapHero h1,.compactHero h1{
+ max-width:900px!important;margin:0!important;color:var(--ib-ink)!important;
+ font:400 clamp(3.6rem,7.5vw,8rem)/.86 Georgia,"Times New Roman",serif!important;letter-spacing:-.055em!important
+}
+.pageHero h1 em,.siteMapHero h1 em,.compactHero h1 em{color:var(--ib-rose)!important;font-weight:400!important}
+.pageHero>p,.siteMapHero>p,.compactHero>p{max-width:640px!important;margin:1.4rem 0 0!important;color:var(--ib-muted)!important;font-size:1rem!important;line-height:1.75!important}
+
+/* Search / utility controls */
+.topicSearch{max-width:700px!important;margin:2rem 0 0!important;border:1px solid var(--ib-line)!important;border-radius:0!important;background:var(--ib-white)!important;box-shadow:none!important}
+.topicSearch input{background:transparent!important;color:var(--ib-ink)!important;min-height:56px!important}
+.exploreStarts,.resultMeta,.libraryGrid,.exploreBridge,.lensLayout,.lensNote,
+.atlasToolbar,.atlasGrid,.journalGrid,.visitGrid,.logGrid,.siteMapGrid{
+ width:min(calc(100% - 2.5rem),var(--ib-max))!important;margin-inline:auto!important
+}
+.exploreStarts{display:flex!important;flex-wrap:wrap!important;gap:.5rem!important;padding:2rem 0 1rem!important}
+.exploreStarts button{border:1px solid var(--ib-line)!important;border-radius:0!important;background:transparent!important;color:var(--ib-ink)!important;padding:.65rem .9rem!important}
+.exploreStarts button:hover{background:var(--ib-ink)!important;color:#fff!important}
+.resultMeta{padding:.5rem 0 1.5rem!important;color:var(--ib-muted)!important;font-size:.72rem!important;letter-spacing:.08em!important;text-transform:uppercase!important}
+
+/* Editorial cards: fewer bubbles, stronger grid rhythm */
+.libraryGrid,.atlasGrid,.siteMapGrid{gap:0!important;border-top:1px solid var(--ib-line)!important;border-left:1px solid var(--ib-line)!important}
+.libraryGrid article,.atlasGrid article,.siteMapGrid>section{
+ border:0!important;border-right:1px solid var(--ib-line)!important;border-bottom:1px solid var(--ib-line)!important;
+ border-radius:0!important;background:var(--ib-white)!important;box-shadow:none!important;padding:clamp(1.25rem,3vw,2.4rem)!important
+}
+.libraryGrid article:hover,.atlasGrid article:hover{background:#f6f0e6!important;transform:none!important}
+.libraryGrid h2,.atlasGrid h2,.siteMapGrid h2{font-family:Georgia,serif!important;font-weight:400!important;color:var(--ib-ink)!important}
+.libraryGrid article>span{color:var(--ib-gold)!important;font-family:Georgia,serif!important}
+.libraryGrid article>small{color:var(--ib-rose)!important;letter-spacing:.13em!important}
+.libraryGrid article>button,.atlasGrid article>button,.siteMapGrid button{
+ border-radius:0!important;box-shadow:none!important;color:var(--ib-ink)!important
+}
+.guideDetail{border-radius:0!important;background:var(--ib-cream)!important;border-left:3px solid var(--ib-gold)!important}
+.exploreBridge{
+ margin-top:clamp(3rem,6vw,6rem)!important;margin-bottom:clamp(3rem,6vw,6rem)!important;
+ padding:clamp(2rem,5vw,4.5rem)!important;background:var(--ib-green)!important;color:#fff!important;border-radius:0!important
+}
+.exploreBridge h2{font:400 clamp(2rem,4vw,4rem)/1 Georgia,serif!important;color:#fff!important}
+.exploreBridge button{background:transparent!important;border:1px solid rgba(255,255,255,.45)!important;color:#fff!important;border-radius:0!important}
+
+/* Forms, logging, journal, visit prep */
+:where(.logPage,.journalPage,.visitPage,.lensPage) input,
+:where(.logPage,.journalPage,.visitPage,.lensPage) textarea,
+:where(.logPage,.journalPage,.visitPage,.lensPage) select{
+ border:1px solid var(--ib-line)!important;border-radius:0!important;background:var(--ib-white)!important;color:var(--ib-ink)!important;
+ box-shadow:none!important;min-height:48px!important
+}
+:where(.logPage,.journalPage,.visitPage,.lensPage) button{box-shadow:none!important}
+.typeTiles button,.quickTiles button{
+ border:1px solid var(--ib-line)!important;border-radius:0!important;background:var(--ib-white)!important;color:var(--ib-ink)!important
+}
+.typeTiles button:hover,.quickTiles button:hover,.typeTiles button.active{background:var(--ib-ink)!important;color:#fff!important}
+.lensLayout{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr)!important;gap:0!important;margin-top:clamp(2rem,5vw,5rem)!important;margin-bottom:2rem!important;border:1px solid var(--ib-line)!important}
+.lensCard,.lensResult{border:0!important;border-radius:0!important;box-shadow:none!important;padding:clamp(1.5rem,4vw,3.5rem)!important}
+.lensCard{background:var(--ib-white)!important}.lensResult{background:var(--ib-green)!important;color:#fff!important}
+.lensResult strong{font-family:Georgia,serif!important;font-weight:400!important}
+.lensNote{margin-bottom:clamp(3rem,7vw,7rem)!important;border-radius:0!important;border:1px solid var(--ib-line)!important;background:transparent!important}
+
+/* Sitemap becomes a real directory */
+.siteMapGrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;margin-top:clamp(2rem,5vw,5rem)!important;margin-bottom:clamp(4rem,8vw,8rem)!important}
+.siteMapGrid>section>span{display:block;color:var(--ib-rose)!important;font-size:.66rem!important;font-weight:900!important;letter-spacing:.14em!important;margin-bottom:1.4rem!important}
+.siteMapGrid button{position:relative!important;width:100%!important;display:block!important;text-align:left!important;padding:1rem 2rem 1rem 0!important;border:0!important;border-top:1px solid var(--ib-line)!important;background:transparent!important}
+.siteMapGrid button i{position:absolute;right:0;top:1rem!important}.siteMapGrid button p{color:var(--ib-muted)!important}
+
+/* Kids: playful content, grown-up shell */
+.kidsWorld{background:var(--ib-paper)!important}
+.kidsHero{border-radius:0!important;background:var(--ib-sand)!important;color:var(--ib-ink)!important}
+.gameWorldTabs button,.kidsMission,.miniGame,.plateGame,.nutritionCard{
+ border-radius:0!important;box-shadow:none!important;border:1px solid var(--ib-line)!important
+}
+.gameWorldTabs button{background:var(--ib-white)!important;color:var(--ib-ink)!important}
+.gameWorldTabs button.active{background:var(--ib-green)!important;color:#fff!important}
+
+/* Unified footer in the same printed-editorial language */
+.unifiedFooter{margin:0!important;padding:0!important;background:var(--ib-ink)!important;color:#f8f1e6!important;border:0!important}
+.unifiedFooterTop{width:min(calc(100% - 2.5rem),var(--ib-max))!important;margin:auto!important;padding:clamp(3rem,7vw,6rem) 0!important;display:flex!important;justify-content:space-between!important;gap:2rem!important;border-bottom:1px solid rgba(255,255,255,.16)!important}
+.unifiedFooterBrand{background:transparent!important;border:0!important;color:#fff!important;font:400 clamp(2.4rem,5vw,5rem)/1 Georgia,serif!important;letter-spacing:-.04em!important}
+.unifiedFooterBrand em{color:var(--ib-rose)!important;font-weight:400!important}
+.unifiedFooterTop nav{display:grid!important;grid-template-columns:repeat(2,minmax(120px,1fr))!important;gap:.5rem 2rem!important}
+.unifiedFooterTop nav button,.unifiedFooterBottom button{background:transparent!important;border:0!important;color:#f8f1e6!important;text-align:left!important}
+.unifiedFooterBottom{width:min(calc(100% - 2.5rem),var(--ib-max))!important;margin:auto!important;padding:1.2rem 0 1.8rem!important;display:flex!important;justify-content:space-between!important;gap:1rem!important;color:#c9d0cc!important;font-size:.68rem!important;letter-spacing:.1em!important}
+
+/* RTL is a first-class layout, not mirrored English typography */
+.siteAr .pageHero h1,.siteAr .siteMapHero h1,.siteAr .compactHero h1{
+ font-family:"Cairo","Noto Sans Arabic",Tahoma,sans-serif!important;font-weight:800!important;letter-spacing:0!important;line-height:1.15!important
+}
+.siteAr .siteMapGrid button{text-align:right!important;padding:1rem 0 1rem 2rem!important}
+.siteAr .siteMapGrid button i{right:auto!important;left:0!important}
+.siteAr .guideDetail{border-left:0!important;border-right:3px solid var(--ib-gold)!important}
+
+/* Mobile: one deliberate hierarchy */
+@media(max-width:800px){
+ body{padding-bottom:calc(72px + env(safe-area-inset-bottom))!important}
+ .nav{min-height:64px!important;padding:.35rem .85rem!important}
+ .brandLogo{min-width:0!important}.brandLogo:after{font-size:1rem!important;letter-spacing:.08em!important}
+ .nav>nav,.nav>.logBtn,.nav>.authLink{display:none!important}
+ .globalLang{margin-inline-start:auto!important}
+ .mobileNav{
+  position:fixed!important;left:0!important;right:0!important;bottom:0!important;z-index:500!important;
+  height:72px!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  background:rgba(251,248,241,.98)!important;border-top:1px solid var(--ib-line)!important;
+  box-shadow:0 -8px 30px rgba(21,45,39,.08)!important;padding-bottom:env(safe-area-inset-bottom)!important
+ }
+ .mobileNav button{background:transparent!important;color:var(--ib-muted)!important;border:0!important;border-radius:0!important}
+ .mobileNav button.active{color:var(--ib-ink)!important;background:var(--ib-cream)!important}
+ .mobileNav button.log{background:var(--ib-ink)!important;color:#fff!important}
+ .pageHero,.siteMapHero,.compactHero{padding:3.4rem 1rem 2.8rem!important}
+ .pageHero h1,.siteMapHero h1,.compactHero h1{font-size:clamp(3rem,15vw,5rem)!important;line-height:.9!important}
+ .siteAr .pageHero h1,.siteAr .siteMapHero h1,.siteAr .compactHero h1{font-size:clamp(2.5rem,12vw,4rem)!important;line-height:1.16!important}
+ .pageHero:after,.siteMapHero:after,.compactHero:after{font-size:34vw!important}
+ .exploreStarts,.resultMeta,.libraryGrid,.exploreBridge,.lensLayout,.lensNote,.atlasToolbar,.atlasGrid,.journalGrid,.visitGrid,.logGrid,.siteMapGrid{width:calc(100% - 2rem)!important}
+ .libraryGrid,.atlasGrid,.siteMapGrid{grid-template-columns:1fr!important}
+ .lensLayout{grid-template-columns:1fr!important}
+ .lensResult{min-height:280px!important}
+ .unifiedFooterTop{display:block!important;width:calc(100% - 2rem)!important}
+ .unifiedFooterTop nav{margin-top:2rem!important}
+ .unifiedFooterBottom{width:calc(100% - 2rem)!important;flex-direction:column!important}
+}
+@media(max-width:430px){
+ .mobileNav button{font-size:.5rem!important;min-width:0!important}.mobileNav b{font-size:.95rem!important}
+ .unifiedFooterTop nav{grid-template-columns:1fr!important}
+}
