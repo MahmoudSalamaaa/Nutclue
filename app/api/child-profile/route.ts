@@ -1,7 +1,7 @@
 import {neon} from "@neondatabase/serverless";
 import {currentUser} from "../../../lib/auth/server";
 
-function db(){const url=process.env.DATABASE_URL||process.env.POSTGRES_URL||process.env.NutClueDB_DATABASE_URL||process.env.NutClueDB_POSTGRES_URL;if(!url)throw new Error("Database is not configured");return neon(url)}
+function db(){const url=process.env.DATABASE_URL||process.env.POSTGRES_URL||process.env.ILAMA_BLOOM_DATABASE_URL||process.env.ILAMA_BLOOM_POSTGRES_URL||process.env.NutClueDB_DATABASE_URL||process.env.NutClueDB_POSTGRES_URL;if(!url)throw new Error("Database is not configured");return neon(url)}
 
 async function ensure(sql:any){await sql`CREATE TABLE IF NOT EXISTS public.child_profiles (id text PRIMARY KEY DEFAULT md5(random()::text || clock_timestamp()::text), user_id text NOT NULL, nickname text NOT NULL, age_band text NOT NULL, consent_at timestamptz NOT NULL, created_at timestamptz NOT NULL DEFAULT now(), updated_at timestamptz NOT NULL DEFAULT now())`;await sql`CREATE UNIQUE INDEX IF NOT EXISTS child_profiles_user_idx ON public.child_profiles (user_id)`}
 const json=(body:unknown,status=200)=>Response.json(body,{status,headers:{"Cache-Control":"no-store"}});
