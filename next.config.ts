@@ -3,6 +3,14 @@ import type { NextConfig } from "next";
 const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      { source: "/n", destination: "/", permanent: true },
+      { source: "/n/:path*", destination: "/", permanent: true },
+      { source: "/nourio", destination: "/", permanent: true },
+      { source: "/nourio/:path*", destination: "/", permanent: true },
+    ];
+  },
   images: { unoptimized: true },
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
