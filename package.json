@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "rm -rf public/nourio-static && unzip -q ilama-nourio-static.zip -d public",
     "build": "next build",
     "start": "next start"
   },
@@ -25,5 +26,5 @@
     "@types/react-dom": "^19",
     "typescript": "^5"
   },
-  "ilamaDeployRevision": "2026-10-01-no-actions-retry"
+  "ilamaDeployRevision": "2026-10-01-nourio-static-zip"
 }
