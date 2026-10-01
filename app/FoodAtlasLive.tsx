@@ -8,7 +8,7 @@ const arabicPortions:{[key:string]:string}={"1 medium piece":"قطعة متوس�
 const arabicSources:{[key:string]:string}={estimated:"تقدير تعليمي",variable:"يختلف حسب الوصفة",label:"راجع البطاقة"};
 export default function FoodAtlasLive({add,go,ar}:{add:(t:string,v:string)=>Promise<boolean>|boolean;go:(v:any)=>void;ar:boolean}){
  const [foods,setFoods]=useState<Food[]>([]),[q,setQ]=useState(""),[category,setCategory]=useState("All"),[loading,setLoading]=useState(true),[error,setError]=useState(false),[savedId,setSavedId]=useState<string|null>(null);
- useEffect(()=>{fetch("/api/foods").then(r=>r.ok?r.json():null).then(data=>{if(Array.isArray(data?.foods))setFoods(data.foods);else setError(true)}).catch(()=>setError(true)).finally(()=>setLoading(false))},[]);
+ useEffect(()=>{let active=true;fetch("/api/foods").then(r=>r.ok?r.json():null).then(data=>{if(!active)return;if(Array.isArray(data?.foods))setFoods(data.foods);else setError(true)}).catch(()=>active&&setError(true)).finally(()=>active&&setLoading(false));return()=>{active=false}},[]);
  const categories=useMemo(()=>["All",...Array.from(new Set(foods.map(f=>f.category)))],[foods]);
  const shown=foods.filter(f=>(category==="All"||f.category===category)&&`${f.name} ${englishNames[f.name]||""} ${f.category}`.toLowerCase().includes(q.toLowerCase()));
  const label=(f:Food)=>ar?f.name:(f.name_en||englishNames[f.name]||f.name),portion=(f:Food)=>ar?(f.portion_ar||arabicPortions[f.portion]||f.portion):f.portion;
