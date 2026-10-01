@@ -37,39 +37,7 @@ export default function Page(){
  {view==="visit"&&<Visit entries={entries} add={add} ar={ar}/>}
  {view==="about"&&<About ar={ar}/>} {view==="privacy"&&<Privacy ar={ar}/>} {view==="sitemap"&&<SiteMap go={go} ar={ar}/>}</div>
  {scrolled&&<button type="button" className="backToTop" onClick={()=>scrollTo({top:0,behavior:"smooth"})} aria-label={ar?"العودة إلى أعلى الصفحة":"Back to top"}><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6.5 10.5 12 5l5.5 5.5"/></svg></button>}
- <div className="scrollProgress" aria-hidden="true"><i style={{transform:`scaleX(${scrollProgress})`}}/></div><footer className="siteFooter bloomFooter">
-  <div className="footerBloom" aria-hidden="true"><img src="/ilama-symbol.svg" alt=""/></div>
-  <div className="siteContainer footerEditorial">
-    <div className="footerLead">
-      <button type="button" className="footerWordmark" onClick={()=>go("home")} aria-label="ILAMA BLOOM home"><img src="/ilama-logo-reversed-green.svg" alt="ILAMA BLOOM"/></button>
-      <p className="footerSlogan">{ar?"تغذية أفضل .. لحياة أكثر إشراقا":"Good Nutrition Brings a Brighter You"}</p>
-      <p className="footerIntro">{ar?"مساحة هادئة لفهم الطعام، بناء عادات أفضل، والاحتفاظ بالسياق الصحي الذي يهمك.":"A calmer place to understand food, build healthier habits, and keep the health context that matters to you."}</p>
-    </div>
-    <div className="footerLinks">
-      <nav aria-label={ar?"روابط الموقع":"Footer navigation"}>
-        <span>{ar?"اكتشف":"DISCOVER"}</span>
-        <button onClick={()=>go("learn")}>{ar?"التغذية":"Nutrition"}</button>
-        <button onClick={()=>go("atlas")}>{ar?"دليل الأكل":"Food Atlas"}</button>
-        <button onClick={()=>go("kids")}>{ar?"الأطفال والألعاب":"Kids & Games"}</button>
-        <button onClick={()=>go("about")}>{ar?"عن إيلاما":"About"}</button>
-      </nav>
-      <nav aria-label={ar?"أدواتك":"Your tools"}>
-        <span>{ar?"مساحتك":"YOUR SPACE"}</span>
-        <button onClick={()=>go("journal")}>{ar?"اليوميات":"Journal"}</button>
-        <button onClick={()=>go("visit")}>{ar?"تجهيز الزيارة":"Visit Prep"}</button>
-        <a href="/account">{ar?"الحساب":"Account"}</a>
-        <button onClick={()=>go("privacy")}>{ar?"الخصوصية":"Privacy"}</button>
-      </nav>
-      <div className="footerClinician">
-        <span>{ar?"الصوت الطبي":"CLINICAL VOICE"}</span>
-        <strong>{ar?"د. دينا حسن":"Dr. Dina Hassan"}</strong>
-        <p>{ar?"طبيبة أطفال وتغذية علاجية":"Pediatrician & Clinical Nutritionist"}</p>
-        <a className="footerBook" href="https://calendly.com/dr-dinahassan388" target="_blank" rel="noreferrer">{ar?"احجز موعدًا":"Book an appointment"}</a>
-      </div>
-    </div>
-  </div>
-  <div className="siteContainer footerLegal"><span>© 2026 ILAMA BLOOM</span><p>{ar?"المحتوى للتثقيف والمعلومات، وليس بديلاً عن الاستشارة الطبية.":"Educational information, not medical advice."}</p><button onClick={()=>go("sitemap")}>{ar?"خريطة الموقع":"Sitemap"}</button></div>
-</footer></main>
+ <div className="scrollProgress" aria-hidden="true"><i style={{transform:`scaleX(${scrollProgress})`}}/></div><footer className="siteFooter v3Footer"><div className="siteContainer v3FooterStage"><div className="v3FooterMark" aria-hidden="true"><img src="/ilama-symbol.svg" alt=""/></div><div className="v3FooterStatement"><small>ILAMA BLOOM · EST. 2026</small><h2>{ar?<>تغذية أفضل.<br/><em>حياة أكثر إشراقًا.</em></>:<>Nourish well.<br/><em>Bloom brighter.</em></>}</h2><p>{ar?"معرفة غذائية أوضح، أدوات يومية أهدأ، ومساحة تحترم سياقك.":"Clearer nutrition knowledge, calmer everyday tools, and a space that respects your context."}</p></div><div className="v3FooterNav"><nav><span>{ar?"اكتشف":"EXPLORE"}</span><button onClick={()=>go("learn")}>{ar?"التغذية":"Nutrition"}</button><button onClick={()=>go("atlas")}>{ar?"دليل الأكل":"Food Atlas"}</button><button onClick={()=>go("kids")}>{ar?"الأطفال":"Kids"}</button><button onClick={()=>go("about")}>{ar?"عن إيلاما":"About"}</button></nav><nav><span>{ar?"مساحتك":"YOUR SPACE"}</span><button onClick={()=>go("journal")}>{ar?"اليوميات":"Journal"}</button><button onClick={()=>go("visit")}>{ar?"تجهيز الزيارة":"Visit Prep"}</button><a href="/account">{ar?"الحساب":"Account"}</a><button onClick={()=>go("privacy")}>{ar?"الخصوصية":"Privacy"}</button></nav><div className="v3FooterDoctor"><span>{ar?"الصوت الطبي":"CLINICAL VOICE"}</span><b>{ar?"د. دينا حسن":"Dr. Dina Hassan"}</b><p>{ar?"طب الأطفال · التغذية العلاجية":"Pediatrics · Clinical Nutrition"}</p><a href="https://calendly.com/dr-dinahassan388" target="_blank" rel="noreferrer">{ar?"احجز موعدًا ↗":"Book an appointment ↗"}</a></div></div></div><div className="siteContainer v3FooterBase"><span>© 2026 ILAMA BLOOM</span><p>{ar?"المحتوى للتثقيف والمعلومات، وليس بديلاً عن الاستشارة الطبية.":"Educational information, not medical advice."}</p><button onClick={()=>go("sitemap")}>{ar?"خريطة الموقع":"Sitemap"}</button></div></footer></main>
 }
 
 function Home({go,ar}:{go:(v:View)=>void;ar:boolean}){const chapters=ar?[
