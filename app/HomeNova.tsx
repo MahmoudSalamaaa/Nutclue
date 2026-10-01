@@ -13,7 +13,7 @@ export default function HomeNova({go,entries,ar}:{go:(v:View)=>void;entries:Entr
   <section className="novaHero">
    <div className="novaKicker"><span>ILAMA BLOOM</span><i>FOOD · BODY · CONTEXT</i></div>
    <div className="novaHeadline"><h1>{ar?<>افهم <em>الأكل.</em><br/>اقرأ <em>جسمك.</em><br/>عِش السياق.</>:<>Know <em>food.</em><br/>Read <em>your body.</em><br/>Live the context.</>}</h1></div>
-   <div className="novaHeroImage"><img src="https://media-assets.lacucinaitaliana.it/photos/68c1335c9d07ccc44f8c821e/1:1/w_1414,h_1414,c_limit/GettyImages-995409590.jpg" alt="Pomegranate, figs, grains and seasonal food"/><span className="novaIndex">FIELD NOTE / 001</span></div>
+   <div className="novaHeroImage"><img src="/nourio-static/wp-content/uploads/2025/06/home-video-1-1.jpg" alt="Pomegranate, figs, grains and seasonal food"/><span className="novaIndex">FIELD NOTE / 001</span></div>
    <div className="novaHeroAside"><p>{ar?"مساحة لفهم التغذية بعيدًا عن القواعد الصارمة. استكشف الطعام، جسمك، والعادات التي تناسب حياتك.":"A place to understand nutrition without turning life into rules. Explore food, your body, and the habits that fit your real context."}</p><button onClick={()=>go("atlas")}>{ar?"ابدأ من الطعام":"Start with food"} ↗</button></div>
    <div className="novaMarquee" aria-hidden="true"><span>FOOD IS INFORMATION</span><span>BODY IS CONTEXT</span><span>CURIOSITY OVER RULES</span></div>
   </section>
@@ -22,7 +22,7 @@ export default function HomeNova({go,entries,ar}:{go:(v:View)=>void;entries:Entr
    <div>{routes.map(r=><button key={r.k} onClick={()=>go(r.v)}><small>{r.k}</small><strong>{ar?r.a:r.n}</strong><p>{ar?r.da:r.d}</p><i>↗</i></button>)}</div>
   </section>
   <section className="novaFeature">
-   <div className="novaFeaturePhoto"><img src="https://sceneeats.com/Content/Admin/Uploads/Articles/ArticlesMainPhoto/4828/d758336e-c35c-4aed-8537-c24b5df7da41.jpg" alt="Egyptian food table"/></div>
+   <div className="novaFeaturePhoto"><img src="/nourio-static/wp-content/uploads/2025/06/service1.jpg" alt="Egyptian food table"/></div>
    <div className="novaFeatureCopy"><small>THE EGYPTIAN TABLE / 01</small><h2>{ar?"الأكل الذي تعرفه يستحق أن يُفهم.":"The food you know deserves to be understood."}</h2><p>{ar?"عيش بلدي، فول، ملوخية، رز، فطير، تمر — نبدأ من أكل حقيقي ومن الحياة اليومية، ثم نفهم الصورة الأكبر.":"Baladi bread, ful, molokhia, rice, feteer, dates — start with real food and everyday life, then follow the threads into the bigger picture."}</p><button onClick={()=>go("atlas")}>{ar?"ادخل أطلس الأكل":"Enter the Food Atlas"} →</button></div>
    <aside><b>LOCAL FOOD</b><span>+</span><b>NUTRITION</b><span>+</span><b>CULTURE</b><span>+</span><b>CONTEXT</b></aside>
   </section>
