@@ -19,6 +19,26 @@ export async function GET(){
  html=html.replace(/alt=["']Nourio(?: Logo)?["']/gi,'alt="ILAMA BLOOM"');
  html=html.replace(/<img[^>]+class=["'][^"']*logo-(?:default|mobile-version)[^"']*["'][^>]*>/gi,'<span class="ilama-wordmark">ILAMA BLOOM<small>FOOD · BODY · CONTEXT</small></span>');
  html=html.replace(/>\s*Nourio\s*</gi,">ILAMA BLOOM<");
+ const contentReplacements: Record<string,string> = {
+  "Based on 204 Reviews":"FOOD · BODY · CONTEXT",
+  "Nutrition Care You Can Trust":"Knowledge that blooms with you.",
+  "Build a healthier future with personalized nutrition and expert diet guidance evidence-based approach helps you improve":"Explore food, understand your body, build healthier habits, and grow — at every age.",
+  "Healthy eating solutions tailored to your unique lifestyle":"Explore food, understand your body, and build healthier habits",
+  "Healthy Habits":"Food Atlas","Digestive Wellness":"Kids & Family","Holistic Wellness":"Learning Guides","Health Monitoring":"Health Tracking",
+  "Experience Expert Roofing Service –":"Practical tools for everyday health","View All Services":"Explore All Tools",
+  "Expert nutrition solutions that fit tour health":"Nourish Knowledge. Bloom Health.","Wellness Journey":"Journal & Progress","Health Coaching":"Visit Preparation",
+  "More About Us":"Meet Dr. Dina","Evidence based nutrition solutions for long term health":"Pediatric and clinical nutrition guidance with clearer, calmer health education.",
+  "Years of work experience":"Pediatric & nutrition care","Wellness Coaching":"Clinical Nutrition","Nutrition Education":"Pediatric Care",
+  "Meet the team behind your device repairs":"Meet Dr. Dina Hassan",
+  "Backed by 10+ years of experience, 500+ devices repaired daily, and 99% customer satisfaction, our team delivers reliable and professional repairs.":"Pediatrician · Clinical Nutritionist · MRCPCH · Diploma in Clinical Nutrition NNI",
+  "Daniel carter":"Food Atlas","Emily carter":"Health Tracking","Michael turner":"Kids & Family","Emma wilson":"Learning Guides",
+  "Experience Expert Gadget Repairing –":"Food · Body · Context","View All Member":"About Dr. Dina",
+  "Support for Nutritionist Services Work +00-1100-2222":"Prepare for your visit",
+  "About Comapany":"ILAMA BLOOM","Company":"Explore","Our mission":"About","Our Blogs":"Learning Guides","Help Center":"Kids & Family",
+  "1901 Thornridge Cir. Shiloh Hawaii 81063":"Food · Body · Context","+880 1998-900100 [email protected]":"Book a visit with Dr. Dina Hassan",
+  "© Copyright 2026 by Company.com":"© 2026 ILAMA BLOOM"
+ };
+ for(const [from,to] of Object.entries(contentReplacements)) html=html.split(from).join(to);
  html=html.replace(/<meta[^>]+name=["']generator["'][^>]*>/gi,"");
  html=html.replace(/<link[^>]+rel=["']alternate["'][^>]*>/gi,"");
  html=html.replace("</head>",'<style>.ilama-wordmark{display:inline-flex;flex-direction:column;justify-content:center;line-height:1;color:inherit;font-family:Georgia,serif;font-size:30px;letter-spacing:.08em;white-space:nowrap}.ilama-wordmark small{font-family:Arial,sans-serif;font-size:8px;letter-spacing:.28em;margin-top:7px;text-align:center;font-weight:600}@media(max-width:767px){.ilama-wordmark{font-size:22px}.ilama-wordmark small{font-size:6px}}</style></head>');
