@@ -1,6 +1,7 @@
 import {NextResponse} from "next/server";
 
 const SOURCE="https://dev266.kodesolution.com/nourio/home-video1/";
+const FALLBACK_SOURCE="http://dev266.kodesolution.com/nourio/home-video1/";
 const replacements:[RegExp,string][]=[
  [/Nourio/g,"ILAMA BLOOM"],
  [/Nutrition Care You Can Trust/g,"Knowledge that blooms with you."],
@@ -17,8 +18,10 @@ const replacements:[RegExp,string][]=[
 ];
 
 export async function GET(){
- const upstream=await fetch(SOURCE,{next:{revalidate:3600}});
- if(!upstream.ok)return new NextResponse("Template unavailable",{status:502});
+ const requestInit={cache:"no-store" as const,headers:{"user-agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/148.0.0.0 Safari/537.36","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8","accept-language":"en-US,en;q=0.9"}};
+ let upstream=await fetch(SOURCE,requestInit).catch(()=>null);
+ if(!upstream?.ok)upstream=await fetch(FALLBACK_SOURCE,requestInit).catch(()=>null);
+ if(!upstream?.ok)return new NextResponse("Nourio source is temporarily unreachable",{status:502});
  let html=await upstream.text();
  for(const [pattern,value] of replacements)html=html.replace(pattern,value);
  html=html.replace("<head>","<head><base href=\""+SOURCE+"\">");
