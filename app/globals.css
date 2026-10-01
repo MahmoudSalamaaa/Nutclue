@@ -1136,3 +1136,154 @@ html,body{background:var(--color-cream);color:var(--color-ink)}body{font-family:
 @keyframes ilamaFloat{0%,100%{transform:translate3d(0,0,0) rotate(-1deg)}50%{transform:translate3d(0,-12px,0) rotate(1deg)}}@keyframes ilamaPulseLine{0%,100%{transform:scaleX(.55);opacity:.45}50%{transform:scaleX(1);opacity:1}}
 [data-reveal]{opacity:0;transform:translate3d(0,34px,0);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}[data-reveal].is-visible{opacity:1;transform:none}.servicesGrid .serviceCard:nth-child(2){transition-delay:.08s}.servicesGrid .serviceCard:nth-child(3){transition-delay:.16s}.servicesGrid .serviceCard:nth-child(4){transition-delay:.24s}.botanicalFloat{animation:ilamaFloat 7s ease-in-out infinite}.heroCopy .eyebrow:after,.sectionIntro .eyebrow:after{content:"";display:inline-block;width:58px;height:1px;margin-inline-start:14px;vertical-align:middle;background:var(--color-rose);transform-origin:left center;animation:ilamaPulseLine 3.8s ease-in-out infinite}.serviceCard{transition-property:opacity,transform,box-shadow,border-color!important;transition-duration:.75s,.75s,.28s,.28s!important}.serviceCard:hover{transform:translateY(-8px)!important;box-shadow:0 24px 52px rgba(18,49,33,.13)!important}.serviceCard button{transition:gap .25s ease,color .25s ease;display:inline-flex;align-items:center;gap:8px}.serviceCard button:hover{gap:14px;color:var(--color-rose)!important}.primaryCta,.secondaryCta,.signInPill{transition:transform .22s ease,background-color .22s ease,border-color .22s ease,color .22s ease,box-shadow .22s ease}.primaryCta:hover,.secondaryCta:hover,.signInPill:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(18,49,33,.12)}.brandLogo img{transition:transform .35s cubic-bezier(.2,.7,.2,1)}.brandLogo:hover img{transform:scale(1.025)}.brandDrawer{will-change:transform,opacity}
 @media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1!important;transform:none!important;transition:none!important}.botanicalFloat,.heroCopy .eyebrow:after,.sectionIntro .eyebrow:after{animation:none!important}.serviceCard,.primaryCta,.secondaryCta,.signInPill,.brandLogo img{transition:none!important}}
+
+
+/* ==========================================================================
+   ILAMA BLOOM — OFFICIAL BRAND BOARD FINAL CASCADE
+   Native application shell. The board palette and editorial rhythm win here.
+   ========================================================================== */
+:root{
+  --color-forest:#123121;
+  --color-rose:#9B5360;
+  --color-rose-board:#AE666A;
+  --color-rose-light:#D09A98;
+  --color-blush:#F1E4DB;
+  --color-cream:#F8F1E7;
+  --color-leaf:#4F7A4A;
+  --color-ink:#1F2A24;
+  --color-muted:#526158;
+  --color-white:#FFFFFF;
+  --ilama-max:1200px;
+  --ilama-pad:clamp(20px,4vw,40px);
+  --ilama-serif:Georgia,"Times New Roman",serif;
+  --ilama-sans:Inter,Jost,Arial,"Helvetica Neue",sans-serif;
+  --ilama-shadow:0 18px 50px rgba(18,49,33,.08);
+}
+html{background:var(--color-cream);overflow-x:clip}
+body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilama-sans);overflow-x:clip}
+.siteContainer{width:min(100%,calc(var(--ilama-max) + (var(--ilama-pad) * 2)));margin-inline:auto;padding-inline:var(--ilama-pad)}
+.skipLink{inset-inline-start:12px;left:auto;background:var(--color-forest);color:#fff;border-radius:999px;z-index:1000}
+:where(button,a):focus-visible{outline:3px solid var(--color-rose)!important;outline-offset:3px!important}
+
+/* One branded header, compacting after meaningful scroll. */
+.brandHeader{
+  min-height:84px;height:auto;padding:10px var(--ilama-pad)!important;
+  background:color-mix(in srgb,var(--color-cream) 94%,transparent)!important;
+  border-bottom:1px solid rgba(18,49,33,.10)!important;
+  box-shadow:none!important;backdrop-filter:blur(14px);
+  transition:min-height .22s ease,padding .22s ease,box-shadow .22s ease,background-color .22s ease!important
+}
+.brandHeader.isCompact{min-height:68px;padding-block:6px!important;box-shadow:0 8px 28px rgba(18,49,33,.07)!important;background:rgba(248,241,231,.97)!important}
+.brandLogo{width:174px!important;min-width:0!important;margin-inline-end:auto!important;margin-right:0!important}
+.brandLogo img{width:100%;height:auto;max-height:62px;object-fit:contain;object-position:left center}
+.siteAr .brandLogo img{object-position:right center}
+.desktopBrandNav{display:flex;align-items:center;justify-content:center;gap:clamp(.25rem,1vw,.9rem);min-width:0}
+.desktopBrandNav button{border:0!important;background:transparent!important;color:var(--color-ink)!important;padding:.65rem .55rem!important;font-size:.78rem!important;font-weight:700!important}
+.desktopBrandNav button:hover{color:var(--color-rose)!important;opacity:1!important}
+.headerActions{display:flex;align-items:center;gap:.6rem;min-width:0}
+.globalLang{display:flex!important;border:1px solid rgba(18,49,33,.2)!important;padding:3px!important;border-radius:999px!important}
+.globalLang button{border:0;background:transparent;color:var(--color-muted);border-radius:999px;padding:.45rem .58rem;font-size:.7rem;font-weight:800}
+.globalLang button.on{background:var(--color-forest);color:#fff}
+.authLink{text-decoration:none;color:var(--color-forest)!important;font-weight:800}
+.signInPill{background:var(--color-rose)!important;color:#fff!important;border-radius:999px;padding:.62rem .9rem!important}
+.menuToggle{display:none;border:0;background:transparent;width:44px;height:44px;padding:10px;border-radius:50%}
+.menuToggle span{display:block;height:1.5px;background:var(--color-forest);margin:5px 0}
+.brandDrawer{display:none}
+
+/* Homepage: board-led editorial composition, not a template. */
+.homePage{background:var(--color-cream);overflow:hidden}
+.homeHero{position:relative;min-height:clamp(600px,76svh,820px);display:grid;align-items:center;background:var(--color-cream);isolation:isolate}
+.homeHero:before,.homeHero:after{content:"";position:absolute;z-index:-1;pointer-events:none;border-radius:55% 45% 58% 42%}
+.homeHero:before{width:min(42vw,610px);aspect-ratio:1;inset-inline-end:-12%;top:-20%;background:var(--color-blush);opacity:.72;transform:rotate(18deg)}
+.homeHero:after{width:min(28vw,390px);aspect-ratio:1;inset-inline-start:-12%;bottom:-20%;border:1px solid rgba(155,83,96,.18);transform:rotate(-18deg)}
+.heroInner{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(280px,.88fr);align-items:center;gap:clamp(2rem,7vw,7rem);padding-block:clamp(4rem,9vw,8rem)}
+.heroCopy{max-width:720px}
+.eyebrow{display:flex;align-items:center;gap:.8rem;margin:0 0 1.2rem;color:var(--color-rose)!important;font-size:.68rem!important;font-weight:800!important;letter-spacing:.16em!important;text-transform:uppercase}
+.eyebrow:before{content:"";width:44px;height:1px;background:var(--color-rose);transform-origin:left;animation:ilamaDivider .8s ease both}
+.siteAr .eyebrow:before{transform-origin:right}
+.heroCopy h1,.sectionIntro h2,.trustSection h2{font-family:var(--ilama-serif)!important;font-weight:400!important;color:var(--color-forest)!important;letter-spacing:-.045em!important;text-wrap:balance}
+.heroCopy h1{font-size:clamp(3.5rem,7.2vw,7.2rem)!important;line-height:.88!important;margin:.2rem 0 1.4rem!important;max-width:850px}
+.heroLead{max-width:570px;color:var(--color-muted)!important;font-size:clamp(1.05rem,1.5vw,1.25rem)!important;line-height:1.7!important}
+.heroActions{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.primaryCta,.secondaryCta{min-height:50px;border-radius:999px!important;padding:.8rem 1.25rem!important;font-weight:800!important;transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease!important}
+.primaryCta{background:var(--color-rose)!important;color:#fff!important;border:1px solid var(--color-rose)!important;box-shadow:0 10px 28px rgba(155,83,96,.18)}
+.secondaryCta{background:transparent!important;color:var(--color-forest)!important;border:1px solid rgba(18,49,33,.28)!important}
+.heroMark{justify-self:center;width:min(30vw,340px);aspect-ratio:1;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.42);border:1px solid rgba(155,83,96,.14)}
+.heroMark img{width:64%;height:auto}
+.privacyCue{margin-top:1.2rem;color:var(--color-muted)!important;font-size:.78rem!important;line-height:1.55!important;max-width:580px}
+
+.servicesSection{padding-block:clamp(64px,8vw,110px);background:var(--color-blush)}
+.sectionIntro{max-width:800px;margin-bottom:clamp(2rem,5vw,4rem)}
+.sectionIntro h2{font-size:clamp(2.7rem,5vw,5rem)!important;line-height:.96!important;margin:.4rem 0 1.2rem}
+.sectionIntro>p:last-child{max-width:680px;color:var(--color-muted);line-height:1.7}
+.servicesGrid{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:18px!important}
+.serviceCard{min-width:0;padding:clamp(1.5rem,3vw,2.2rem)!important;border:1px solid rgba(18,49,33,.11)!important;border-radius:28px!important;background:rgba(255,255,255,.82)!important;box-shadow:0 12px 34px rgba(18,49,33,.045)!important;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease!important}
+.serviceCard>span{color:var(--color-rose);font:400 1rem/1 var(--ilama-serif)}
+.serviceCard h3{font:400 clamp(1.8rem,2.5vw,2.5rem)/1 var(--ilama-serif)!important;color:var(--color-forest)!important;margin:1.2rem 0 .8rem!important}
+.serviceCard p{color:var(--color-muted)!important;line-height:1.7!important}
+.serviceCard button,.textCta{border:0!important;border-bottom:1px solid currentColor!important;border-radius:0!important;background:transparent!important;color:var(--color-forest)!important;padding:.45rem 0!important;font-weight:800!important}
+@media(hover:hover){.serviceCard:hover{transform:translateY(-6px)!important;border-color:rgba(155,83,96,.4)!important;box-shadow:var(--ilama-shadow)!important}.primaryCta:hover,.secondaryCta:hover{transform:translateY(-2px)}}
+
+.trustSection{padding-block:clamp(72px,9vw,120px);background:var(--color-forest);color:#fff}
+.trustGrid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);gap:clamp(2.5rem,7vw,7rem);align-items:center}
+.trustSection .eyebrow{color:var(--color-rose-light)!important}.trustSection .eyebrow:before{background:var(--color-rose-light)}
+.trustSection h2{color:#fff!important;font-size:clamp(2.8rem,5vw,5.2rem)!important;line-height:.96!important;margin:.5rem 0 1.2rem}
+.trustSection p{color:rgba(255,255,255,.78)!important;line-height:1.75!important}
+.trustSection .textCta{color:#fff!important}
+.reviewCard{display:grid;grid-template-columns:minmax(120px,.72fr) minmax(0,1.28fr);align-items:center;overflow:hidden;border-radius:30px;background:var(--color-cream);color:var(--color-ink);box-shadow:0 24px 70px rgba(0,0,0,.16)}
+.reviewCard img{width:100%;height:100%;min-height:300px;object-fit:cover;object-position:center 18%}
+.reviewCard>div{padding:clamp(1.3rem,3vw,2.4rem)}
+.reviewCard small{color:var(--color-rose);font-weight:900;letter-spacing:.12em}
+.reviewCard h3{font:400 clamp(2rem,3vw,3rem)/1 var(--ilama-serif);color:var(--color-forest);margin:.65rem 0}
+.reviewCard p{color:var(--color-muted)!important;font-size:.9rem!important}
+
+/* Drawer + floating utility. */
+.backToTop{position:fixed;z-index:220;inset-inline-end:max(20px,env(safe-area-inset-right));bottom:max(22px,env(safe-area-inset-bottom));width:50px;height:50px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:var(--color-rose);color:#fff;box-shadow:0 12px 30px rgba(18,49,33,.18);display:grid;place-items:center}
+.backToTop svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.unifiedFooter{background:var(--color-forest)!important}
+.unifiedFooterBrand img{display:block;width:min(260px,48vw);height:auto}
+
+/* Arabic gets editorial Arabic typography and logical spacing. */
+.siteAr{font-family:Tajawal,Cairo,Tahoma,Arial,sans-serif}
+.siteAr .heroCopy h1,.siteAr .sectionIntro h2,.siteAr .trustSection h2,.siteAr .serviceCard h3{font-family:"Noto Naskh Arabic",Tajawal,Cairo,Tahoma,serif!important;letter-spacing:0!important;line-height:1.16!important}
+.siteAr .eyebrow{letter-spacing:0!important}
+
+/* Tablet and mobile card rules are explicit: 2 columns then 1. */
+@media(max-width:1024px){
+ .desktopBrandNav{display:none}
+ .menuToggle{display:block}
+ .brandDrawer{position:fixed;z-index:180;top:68px;inset-inline:var(--ilama-pad);display:grid;gap:0;padding:.7rem;background:rgba(248,241,231,.985);border:1px solid rgba(18,49,33,.12);border-radius:22px;box-shadow:var(--ilama-shadow);transform:translateY(-12px);opacity:0;visibility:hidden;pointer-events:none;transition:transform .2s ease,opacity .2s ease,visibility .2s ease}
+ .brandDrawer.open{transform:none;opacity:1;visibility:visible;pointer-events:auto}
+ .brandDrawer button{min-height:48px;border:0;border-bottom:1px solid rgba(18,49,33,.09);background:transparent;color:var(--color-forest);text-align:start;font-weight:750}
+ .servicesGrid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ .heroInner{grid-template-columns:minmax(0,1fr) minmax(230px,.55fr)}
+}
+@media(max-width:767px){
+ body{padding-bottom:0!important}
+ .brandHeader{min-height:68px!important;padding:6px 20px!important}
+ .brandLogo{width:142px!important}
+ .globalLang{display:none!important}
+ .headerActions{gap:.3rem}
+ .authLink{font-size:.72rem}
+ .menuToggle{display:block}
+ .brandDrawer{inset-inline:20px}
+ .heroInner{grid-template-columns:1fr;gap:2.5rem;padding-block:64px}
+ .heroCopy h1{font-size:clamp(3.25rem,16vw,5.3rem)!important}
+ .heroMark{width:min(64vw,280px);grid-row:1;opacity:.92}
+ .heroCopy{grid-row:2}
+ .heroActions{display:grid;grid-template-columns:1fr}
+ .primaryCta,.secondaryCta{width:100%}
+ .servicesGrid{grid-template-columns:1fr!important}
+ .trustGrid{grid-template-columns:1fr}
+ .reviewCard{grid-template-columns:1fr}
+ .reviewCard img{min-height:0;aspect-ratio:4/3}
+ .backToTop{bottom:max(18px,env(safe-area-inset-bottom));inset-inline-end:18px;width:46px;height:46px}
+ .unifiedFooterBottom>button{display:none!important}
+}
+@keyframes ilamaDivider{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+ [data-reveal]{opacity:1!important;transform:none!important}
+ .botanicalFloat{animation:none!important}
+}
