@@ -1,4 +1,4 @@
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt magna aliqua.</p> </div>
+<p>Explore food, understand your body, and use practical tools for everyday health decisions.</p> </div>
 </div>
 </div>
 <div class="elementor-element elementor-element-4a1b24d elementor-widget elementor-widget-tm-ele-theme-button" data-e-type="widget" data-element_type="widget" data-id="4a1b24d" data-widget_type="tm-ele-theme-button.skin-style2">
@@ -142,16 +142,16 @@
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1086"><a class="menu-item-link" href="#pages" title="Pages"><span>Pages</span> </a>
 <ul class="dropdown">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1087"><a class="menu-item-link" href="#" title="About"><span>About</span></a> </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1098"><a class="menu-item-link" href="#" title="Team"><span>Team</span></a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1098"><a class="menu-item-link" href="#" title="About"><span>About</span></a>
 <ul class="dropdown">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1094"><a class="menu-item-link" href="#" title="Team Grid"><span>Team Grid</span></a> </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1095"><a class="menu-item-link" href="#" title="Team Details"><span>Team Details</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1094"><a class="menu-item-link" href="#" title="About Dr. Dina"><span>About Dr. Dina</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1095"><a class="menu-item-link" href="#" title="About Dr. Dina"><span>About Dr. Dina</span></a> </li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1096"><a class="menu-item-link" href="#" title="Testimonials"><span>Testimonials</span></a> </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1092"><a class="menu-item-link" href="#" title="Pricing Plan"><span>Pricing Plan</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1096"><a class="menu-item-link" href="#" title="Journal"><span>Journal</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1092"><a class="menu-item-link" href="#" title="Food Atlas"><span>Food Atlas</span></a> </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1090"><a class="menu-item-link" href="#" title="Contact Us"><span>Contact Us</span></a> </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1091"><a class="menu-item-link" href="#" title="Faq’s"><span>Faq’s</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1091"><a class="menu-item-link" href="#" title="Kids & Family"><span>Kids & Family</span></a> </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2297"><a class="menu-item-link" href="#" title="Shop"><span>Shop</span></a>
 <ul class="dropdown">
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2296"><a class="menu-item-link" href="#" title="All Products"><span>All Products</span></a> </li>
@@ -178,10 +178,10 @@
 <li class="menu-item menu-item-type-post_type menu-item-object-projects menu-item-1108"><a class="menu-item-link" href="#" title="Project Details"><span>Project Details</span></a> </li>
 </ul>
 </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1109"><a class="menu-item-link" href="#" title="Blog"><span>Blog</span> </a>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1109"><a class="menu-item-link" href="#" title="Learn"><span>Learn</span> </a>
 <ul class="dropdown">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a class="menu-item-link" href="#" title="Blog Grid"><span>Blog Grid</span></a> </li>
-<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1111"><a class="menu-item-link" href="#" title="Blog Details"><span>Blog Details</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1110"><a class="menu-item-link" href="#" title="Learning Guides"><span>Learning Guides</span></a> </li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1111"><a class="menu-item-link" href="#" title="Learning Guides"><span>Learning Guides</span></a> </li>
 </ul>
 </li>
 </ul></nav> </div>
