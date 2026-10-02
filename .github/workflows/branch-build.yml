@@ -1,7 +1,7 @@
 name: Branch build diagnostic
 on:
-  push:
-    branches: [feature/my-ilama-profile]
+  pull_request:
+    branches: [main]
   workflow_dispatch:
 jobs:
   build:
