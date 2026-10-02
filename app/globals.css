@@ -1799,3 +1799,32 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
 .v3FooterBase{border-top:1px solid rgba(255,255,255,.2)!important;margin-top:4rem!important;padding:1.25rem 0 2rem!important;display:grid!important;grid-template-columns:auto 1fr auto!important;gap:2rem!important;align-items:center!important;font:700 .58rem Arial!important;letter-spacing:.06em!important;color:#cbd4ce!important}.v3FooterBase p{margin:0!important;text-align:center!important}.v3FooterBase button{background:none!important;border:0!important;color:inherit!important;font:inherit!important}
 @media(max-width:900px){.desktopBrandNav{display:none!important}.brandHeader{grid-template-columns:auto 1fr auto!important}.headerActions{grid-column:3}.v3FooterStage{grid-template-columns:1fr!important}.v3FooterMark{width:90px!important}.v3FooterNav{grid-template-columns:1fr 1fr!important}.v3FooterBase{grid-template-columns:1fr!important;text-align:center!important;gap:.7rem!important}.v3FooterBase p{text-align:center!important}}
 @media(max-width:520px){.brandHeader{height:64px!important;padding-inline:14px!important;gap:.5rem!important}.brandLogo{width:116px!important}.authLink{display:none!important}.globalLang button{min-width:32px!important;padding:0 .35rem!important}.v3FooterNav{grid-template-columns:1fr!important}.v3FooterStatement h2{font-size:clamp(3rem,14vw,4.6rem)!important}}
+
+
+/* ILAMA BIG BATCH — CONTEXT / WORLDS / KITCHEN / LIFE STAGES */
+.contextRibbon{padding:1.2rem 0 2.5rem;border-top:1px solid rgba(24,56,47,.16);display:grid;grid-template-columns:180px 1fr;gap:2rem;align-items:start}
+.contextRibbon>small{font:800 .58rem Arial,sans-serif;letter-spacing:.14em;padding-top:.45rem}
+.contextRibbon>div{display:flex;flex-wrap:wrap;gap:.55rem}
+.contextRibbon span{border:1px solid rgba(24,56,47,.28);border-radius:999px;padding:.55rem .82rem;font:700 .68rem Arial,sans-serif;background:rgba(255,255,255,.2)}
+.worldPrelude{background:#f5efe5;padding:clamp(6rem,10vw,10rem) 0;overflow:hidden}
+.worldOrbit{height:min(70vw,780px);max-width:1050px;margin:2.5rem auto 0;position:relative}
+.worldNode{position:absolute;width:clamp(150px,17vw,230px);aspect-ratio:1;border:1px solid rgba(24,56,47,.38);border-radius:50%;background:rgba(245,239,229,.78);color:#18382f;padding:1.4rem;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:transform .25s,background .25s,color .25s;backdrop-filter:blur(7px)}
+.worldNode:hover{transform:scale(1.06) rotate(-2deg);background:#18382f;color:#fff;z-index:10}
+.worldNode small{font:800 .55rem Arial;letter-spacing:.14em}.worldNode h3{font:400 clamp(1.6rem,2.5vw,2.7rem)/.95 Georgia,serif;margin:.45rem 0}.worldNode p{font-size:.72rem;line-height:1.35;max-width:150px}.worldNode b{position:absolute;right:17%;bottom:15%;font-size:1rem}
+.worldNode.n1{left:4%;top:9%}.worldNode.n2{left:25%;top:0}.worldNode.n3{left:47%;top:8%}.worldNode.n4{right:5%;top:1%}.worldNode.n5{left:10%;bottom:4%}.worldNode.n6{left:34%;bottom:0}.worldNode.n7{right:24%;bottom:5%}.worldNode.n8{right:2%;bottom:12%}
+.kitchenPrelude{background:#b96676;color:#fff;padding:clamp(6rem,10vw,10rem) 0}
+.kitchenPreludeGrid{display:grid;grid-template-columns:1.1fr .9fr;gap:8vw;align-items:center}
+.kitchenPrelude h2{font:400 clamp(3.5rem,6.5vw,7rem)/.86 Georgia,serif;letter-spacing:-.06em;margin:1rem 0 1.8rem}.kitchenPrelude p{max-width:600px;font-size:1rem;line-height:1.7}
+.kitchenEquation{min-height:430px;border:1px solid rgba(255,255,255,.55);border-radius:48% 48% 9% 9%;padding:3rem;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.55rem;text-align:center}
+.kitchenEquation span{font:800 .7rem Arial;letter-spacing:.12em}.kitchenEquation i{font:400 2.4rem Georgia}.kitchenEquation strong{margin-top:1rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.45);font:400 1.3rem Georgia}
+.lifeStages{background:#dce89d;color:#18382f;padding:clamp(6rem,9vw,9rem) 0;overflow:hidden}
+.lifeStages h2{font:400 clamp(3.5rem,7vw,7.5rem)/.86 Georgia,serif;letter-spacing:-.06em;max-width:1000px;margin:1rem 0 3rem}.lifeStages>div>p{max-width:620px;line-height:1.65;margin-top:2rem}
+.lifeTape{display:flex;width:max-content;gap:0;transform:rotate(-2deg) translateX(-3%);border:1px solid #18382f;background:#f5efe5}
+.lifeTape span{font:800 clamp(.8rem,1.4vw,1.2rem) Arial;letter-spacing:.08em;padding:1.1rem 2rem;border-right:1px solid #18382f;white-space:nowrap}
+.clinicalBloom{aspect-ratio:1;position:relative;display:grid;place-items:center;max-width:440px;margin:auto}.clinicalBloom i{position:absolute;width:42%;height:58%;border:1px solid #b96676;border-radius:50% 50% 44% 56%;transform-origin:50% 82%;background:rgba(233,184,176,.22)}.clinicalBloom i:nth-child(1){transform:rotate(0deg) translateY(-23%)}.clinicalBloom i:nth-child(2){transform:rotate(72deg) translateY(-23%)}.clinicalBloom i:nth-child(3){transform:rotate(144deg) translateY(-23%)}.clinicalBloom i:nth-child(4){transform:rotate(216deg) translateY(-23%)}.clinicalBloom i:nth-child(5){transform:rotate(288deg) translateY(-23%)}.clinicalBloom span{position:relative;z-index:2;font:400 clamp(1.8rem,4vw,3.6rem) Georgia;color:#18382f;letter-spacing:.12em}
+@media(max-width:800px){
+ .contextRibbon{grid-template-columns:1fr;gap:.8rem}.contextRibbon>div{flex-wrap:nowrap;overflow-x:auto;padding-bottom:.45rem;scrollbar-width:none}.contextRibbon span{white-space:nowrap}
+ .worldOrbit{height:auto;display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-top:2rem}.worldNode,.worldNode.n1,.worldNode.n2,.worldNode.n3,.worldNode.n4,.worldNode.n5,.worldNode.n6,.worldNode.n7,.worldNode.n8{position:relative;inset:auto;width:100%;aspect-ratio:1;min-height:170px}.worldNode h3{font-size:clamp(1.8rem,8vw,2.8rem)}
+ .kitchenPreludeGrid{grid-template-columns:1fr}.kitchenEquation{min-height:320px;max-width:440px}.lifeTape{overflow:visible}.lifeStages h2{font-size:clamp(3.2rem,14vw,5.5rem)}
+}
+@media(max-width:430px){.worldOrbit{grid-template-columns:1fr}.worldNode{aspect-ratio:auto!important;min-height:160px!important;border-radius:90px!important}}
