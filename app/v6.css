@@ -25,3 +25,55 @@
 @media(max-width:800px){.bloomFinal .siteContainer{width:min(100% - 28px,1240px)!important}.bloomFinal .v2Hero{min-height:auto!important;padding-top:30px!important}.bloomFinal .v2HeroGrid{grid-template-columns:1fr!important;min-height:auto!important;gap:38px!important}.bloomFinal .v2HeroType h1{font-size:clamp(62px,20vw,104px)!important;line-height:.78!important}.bloomFinal .v2HeroType h1 em,.bloomFinal .v2HeroType h1 strong{margin-inline-start:0!important}.bloomFinal .v2HeroBottom{grid-template-columns:1fr!important}.bloomFinal .v2Specimen{display:block!important;min-height:0!important}.bloomFinal .v4HeroPhoto{position:relative!important;inset:auto!important;aspect-ratio:4/5!important;border-radius:180px 180px 14px 14px!important}.contextRibbon{grid-template-columns:1fr!important}.contextRibbon>div{flex-wrap:nowrap!important;overflow-x:auto!important;padding-bottom:6px!important}.contextRibbon span{white-space:nowrap!important}.bloomFinal .v4ManifestoMedia{grid-template-columns:1fr!important}.bloomFinal .v4ManifestoMedia figure{grid-column:1!important;width:84%!important;margin:0 auto!important}.bloomFinal .v2ManifestoGrid{grid-template-columns:1fr!important}.bloomFinal .v2Manifesto h2{font-size:clamp(46px,14vw,72px)!important}.bloomFinal .v2Manifesto p{border:0!important;padding:0!important}.worldOrbit{grid-template-columns:1fr 1fr!important}.worldNode,.worldNode.n1,.worldNode.n2,.worldNode.n3,.worldNode.n4,.worldNode.n5,.worldNode.n6,.worldNode.n7,.worldNode.n8{height:220px!important}.worldNode:nth-child(2n){border-inline-end:0!important}.worldNode:nth-child(-n+6){border-bottom:1px solid var(--v6-line)!important}.worldNode h3{font-size:30px!important;margin-top:48px!important}.bloomFinal .v2ChapterList{grid-template-columns:1fr 1fr!important}.bloomFinal .v2Chapter{min-height:220px!important}.kitchenPreludeGrid,.bloomFinal .v2AtlasGrid,.bloomFinal .v2JournalGrid,.bloomFinal .v2ClinicalGrid{grid-template-columns:1fr!important}.kitchenPrelude h2,.lifeStages h2,.bloomFinal .v2AtlasCopy h2,.bloomFinal .v2JournalCopy h2,.bloomFinal .v2ClinicalCopy blockquote{font-size:clamp(48px,14vw,76px)!important}.kitchenEquation{min-height:340px!important;max-width:440px!important}.editorialPhotoBand{grid-template-columns:1fr!important;gap:20px!important;padding:54px 0!important}.editorialPhotoBand figure{aspect-ratio:4/3!important;border-radius:12px 70px 12px 12px!important}.bloomFinal .v2Portrait{max-width:440px!important}.bloomFinal .v2Closing h2{font-size:clamp(76px,22vw,120px)!important}}
 @media(max-width:460px){.worldOrbit,.bloomFinal .v2ChapterList{grid-template-columns:1fr!important}.worldNode,.worldNode.n1,.worldNode.n2,.worldNode.n3,.worldNode.n4,.worldNode.n5,.worldNode.n6,.worldNode.n7,.worldNode.n8{height:170px!important;border-inline-end:0!important;border-bottom:1px solid var(--v6-line)!important}.worldNode h3{margin-top:28px!important}.bloomFinal .v2Chapter{min-height:180px!important;border-inline-end:0!important;border-bottom:1px solid var(--v6-line)!important}}
 @media(prefers-reduced-motion:reduce){.bloomFinal *{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+
+/* V6.1 — RECTANGLE RESET / EDITORIAL IMAGE INTEGRATION */
+.bloomFinal .v4HeroPhoto,
+.bloomFinal .v4ManifestoMedia figure,
+.editorialPhotoBand figure,
+.bloomFinal .v2Portrait,
+.kitchenEquation{border-radius:0!important}
+
+.bloomFinal .v2HeroGrid{grid-template-columns:minmax(0,.92fr) minmax(460px,.82fr)!important;gap:clamp(24px,4vw,64px)!important}
+.bloomFinal .v2Specimen{min-height:680px!important;margin-inline-end:calc((100vw - min(1240px,calc(100vw - 48px)))/-2)!important}
+.bloomFinal .v4HeroPhoto{inset:0!important;height:100%!important}
+.bloomFinal .v4HeroPhoto img{object-position:center!important}
+.bloomFinal .v4HeroPhoto:after{background:linear-gradient(90deg,rgba(247,241,232,.16),transparent 28%),linear-gradient(0deg,rgba(24,56,47,.28),transparent 38%)!important}
+.bloomFinal .v4HeroPhoto figcaption{left:32px!important;bottom:28px!important}
+.bloomFinal .v2HeroType h1{position:relative!important;z-index:4!important}
+
+.bloomFinal .v2Manifesto{position:relative!important;overflow:hidden!important}
+.bloomFinal .v4ManifestoMedia{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;display:block!important}
+.bloomFinal .v4ManifestoMedia figure{width:46vw!important;max-width:none!important;height:min(72vw,850px)!important;aspect-ratio:auto!important;margin:0 0 72px auto!important}
+[dir="rtl"] .bloomFinal .v4ManifestoMedia figure{margin:0 auto 72px 0!important}
+.bloomFinal .v4ManifestoMedia figcaption{left:28px!important;bottom:26px!important}
+
+.editorialPhotoBand{width:100%!important;max-width:none!important;margin:0!important;padding:0 0 90px!important;grid-template-columns:minmax(0,1.65fr) minmax(280px,.35fr)!important;gap:0!important}
+.editorialPhotoBand figure{aspect-ratio:16/7!important}
+.editorialPhotoBand aside{align-self:end!important;margin:0 clamp(28px,5vw,84px) 18px!important;padding-top:18px!important}
+.atlasPhotoBand figure{margin-inline-start:0!important}
+.journalPhotoBand{grid-template-columns:minmax(280px,.35fr) minmax(0,1.65fr)!important}
+.journalPhotoBand figure{grid-column:2!important;grid-row:1!important}
+.journalPhotoBand aside{grid-column:1!important;grid-row:1!important}
+.editorialPhotoBand figure:after{inset:58% 0 0!important}
+
+.kitchenEquation{border:0!important;border-top:1px solid rgba(255,255,255,.72)!important;border-bottom:1px solid rgba(255,255,255,.72)!important;background:transparent!important;min-height:420px!important;padding:44px 10px!important}
+
+.bloomFinal .v2Portrait{aspect-ratio:3/4!important}
+.bloomFinal .v2Portrait>span{left:0!important;bottom:0!important;background:var(--v6-cream)!important;padding:10px 14px!important}
+
+.contextRibbon span{border-radius:0!important;border-width:0 0 1px!important;padding:8px 2px!important}
+.lifeTape{transform:none!important}
+.bloomFinal .v2RoundCta{border-radius:50%!important}
+
+@media(max-width:800px){
+ .bloomFinal .v2HeroGrid{grid-template-columns:1fr!important}
+ .bloomFinal .v2Specimen{margin-inline:calc((100vw - min(100% - 28px,1240px))/-2)!important;min-height:0!important}
+ .bloomFinal .v4HeroPhoto{height:auto!important;aspect-ratio:4/5!important}
+ .bloomFinal .v4ManifestoMedia figure{width:88vw!important;height:118vw!important;max-height:720px!important;margin:0 0 48px auto!important}
+ [dir="rtl"] .bloomFinal .v4ManifestoMedia figure{margin:0 auto 48px 0!important}
+ .editorialPhotoBand,.journalPhotoBand{grid-template-columns:1fr!important;padding-bottom:58px!important}
+ .editorialPhotoBand figure,.journalPhotoBand figure{grid-column:1!important;grid-row:1!important;aspect-ratio:4/3!important}
+ .editorialPhotoBand aside,.journalPhotoBand aside{grid-column:1!important;grid-row:2!important;margin:20px 28px 0!important}
+ .kitchenEquation{min-height:280px!important}
+}
