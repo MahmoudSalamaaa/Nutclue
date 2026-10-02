@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
 
-const nextConfig: NextConfig = {\n  generateBuildId: async () => "ilama-v3-20261002-domain-repair",
+const nextConfig: NextConfig = {
   async redirects() {
     return [
       { source: "/n", destination: "/", permanent: true },
