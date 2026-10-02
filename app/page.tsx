@@ -1,4 +1,4 @@
-"use client";
+"use client";\n\n// deployment: 2026-10-02-elegance-production
 // ILAMA BLOOM native application shell
 import {useEffect,useMemo,useState} from "react";
 import {authClient} from "../lib/auth/client";
