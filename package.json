@@ -25,5 +25,5 @@
     "@types/react-dom": "^19",
     "typescript": "^5"
   },
-  "ilamaDeployRevision": "2026-10-02-v3-art-direction"
+  "ilamaDeployRevision": "2026-10-02-v3-production-retry-2"
 }
