@@ -1866,3 +1866,6 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
  .v4ManifestoMedia figure{width:78%;margin:0 auto!important}
  .editorialPhotoBand{grid-template-columns:1fr}.editorialPhotoBand figure{aspect-ratio:4/3;border-radius:1rem 5rem 1rem 1rem}.editorialPhotoBand aside{max-width:100%}
 }
+
+/* V1 accessibility preferences */
+html.ilama-large-text{font-size:112.5%}html.ilama-high-contrast body{filter:contrast(1.12)}html.ilama-high-contrast a,html.ilama-high-contrast button{text-decoration-thickness:2px}html.ilama-less-motion *,html.ilama-less-motion *:before,html.ilama-less-motion *:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
