@@ -1835,3 +1835,34 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
 .noPhotoPortrait .clinicalBloom,.noPhotoFounder .clinicalBloom{width:min(82%,430px)!important}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.worldNode:hover,.v2RoundCta:hover{transform:none!important}}
 .brandHeader button:focus-visible,.brandHeader a:focus-visible,.brandDrawer button:focus-visible,.bloomFinal button:focus-visible,.bloomFinal a:focus-visible,.siteFooter button:focus-visible,.siteFooter a:focus-visible{outline:3px solid #b96676!important;outline-offset:4px!important}
+
+/* ILAMA PHOTO EDITORIAL PASS — photography is an active brand layer */
+.bloomFinal .v4HeroPhoto,.bloomFinal .v4ManifestoMedia{display:block!important}
+.v4HeroMedia{overflow:visible!important}
+.v4HeroPhoto{position:absolute!important;inset:7% -7% 18% 10%!important;margin:0!important;overflow:hidden!important;border-radius:48% 48% 9% 9%!important;transform:rotate(2deg);box-shadow:0 30px 70px rgba(24,56,47,.15);z-index:1}
+.v4HeroPhoto img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(.94)}
+.v4HeroPhoto:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(24,56,47,.35))}
+.v4HeroPhoto figcaption,.editorialPhotoBand figcaption,.v4ManifestoMedia figcaption{position:absolute;left:1rem;bottom:1rem;z-index:2;color:#fff;font:800 .58rem Arial,sans-serif;letter-spacing:.13em}
+.v4HeroMedia .petalField{position:relative;z-index:2;transform:scale(.55) translate(35%,-34%);transform-origin:bottom right;opacity:.9}
+.v4HeroMedia>p{position:relative;z-index:3}
+.v4ManifestoMedia{margin-bottom:clamp(2rem,5vw,5rem)!important}
+.v4ManifestoMedia figure{position:relative;width:min(48%,540px);aspect-ratio:4/5;margin-left:auto;overflow:hidden;border-radius:52% 52% 8% 8%;transform:rotate(-2deg)}
+[dir="rtl"] .v4ManifestoMedia figure{margin-left:0;margin-right:auto}
+.v4ManifestoMedia img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.85)}
+.editorialPhotoBand{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(220px,.55fr);gap:clamp(1rem,4vw,4rem);align-items:end;padding-top:clamp(3rem,7vw,7rem);padding-bottom:clamp(2rem,5vw,5rem)}
+.editorialPhotoBand figure{position:relative;aspect-ratio:16/8;overflow:hidden;border-radius:1.2rem 8rem 1.2rem 1.2rem;margin:0}
+[dir="rtl"] .editorialPhotoBand figure{border-radius:8rem 1.2rem 1.2rem 1.2rem}
+.editorialPhotoBand img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.82) contrast(.96)}
+.editorialPhotoBand figure:after{content:"";position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(24,56,47,.5))}
+.editorialPhotoBand aside{border-top:1px solid currentColor;padding-top:1rem;max-width:330px}
+.editorialPhotoBand aside small{font:800 .58rem Arial,sans-serif;letter-spacing:.14em}
+.editorialPhotoBand aside p{font:400 clamp(1.4rem,2.2vw,2.2rem)/1.05 Georgia,serif;margin:.8rem 0}
+.atlasPhotoBand{color:#f5efe5}.journalPhotoBand{color:#18382f}
+.v2Portrait img,.founderPortrait img{display:block!important;width:100%!important;height:100%!important;object-fit:cover!important;object-position:center top!important;filter:saturate(.8) contrast(.96)!important}
+.v2Portrait{overflow:hidden!important}.v2Portrait>span{position:absolute!important;left:1rem!important;bottom:1rem!important;z-index:2!important;background:#f5efe5!important;color:#18382f!important;padding:.55rem .7rem!important}
+@media(max-width:800px){
+ .v4HeroPhoto{position:relative!important;inset:auto!important;width:100%!important;aspect-ratio:4/5!important;transform:none!important;border-radius:48% 48% 8% 8%!important}
+ .v4HeroMedia .petalField{display:none!important}
+ .v4ManifestoMedia figure{width:78%;margin:0 auto!important}
+ .editorialPhotoBand{grid-template-columns:1fr}.editorialPhotoBand figure{aspect-ratio:4/3;border-radius:1rem 5rem 1rem 1rem}.editorialPhotoBand aside{max-width:100%}
+}
