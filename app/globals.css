@@ -1586,3 +1586,39 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
  .v2Closing{padding:7rem 0}.v2Closing h2{font-size:clamp(4.7rem,23vw,7rem)}
  .v3Footer{padding:6rem 0 1.2rem}.v3FooterStage{grid-template-columns:1fr;gap:4rem}.v3FooterStatement h2{font-size:clamp(4rem,18vw,6rem);line-height:.82}.v3FooterMark{width:95vw;right:-40%;top:-6%;opacity:.04}.v3FooterNav{grid-template-columns:1fr 1fr;gap:2.5rem 1.5rem}.v3FooterBase{grid-template-columns:1fr auto;gap:1rem}.v3FooterBase p{grid-column:1/-1;grid-row:2;text-align:start}
 }
+
+/* ===== ILAMA PDF QA HOTFIX — mobile typography, reveal safety, print ===== */
+.skipLink{position:fixed!important;top:-120px!important;inset-inline-start:12px!important;left:auto!important;opacity:0!important;pointer-events:none!important}
+.skipLink:focus{top:12px!important;opacity:1!important;pointer-events:auto!important}
+.homePage.v2 :where(h1,h2,h3,blockquote,p,button,a){word-spacing:normal}
+.homePage.v2 :where(h1,h2,h3,blockquote){text-wrap:balance}
+.homePage.v2 [data-reveal]{min-height:0}
+@media(max-width:767px){
+ .homePage.v2{overflow:visible}
+ .homePage.v2 [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}
+ .v2HeroGrid{display:flex!important;flex-direction:column!important;gap:1.25rem!important}
+ .v2Specimen{order:0!important;width:100%;min-height:210px!important;margin:0!important}
+ .v2HeroType{order:1!important;width:100%}
+ .v2HeroType h1{display:block!important;font-size:clamp(3.5rem,17vw,5rem)!important;line-height:.88!important;letter-spacing:-.055em!important}
+ .v2HeroType h1 span,.v2HeroType h1 em,.v2HeroType h1 strong{display:block!important;margin:0!important;white-space:normal!important}
+ .v2HeroType h1 em{margin-inline-start:12%!important}
+ .v2HeroType h1 strong{margin-inline-start:4%!important}
+ .v2HeroBottom{display:grid!important;grid-template-columns:1fr 70px!important;align-items:end!important}
+ .v2Manifesto,.v2Chapters,.v2Atlas,.v2Journal,.v2Clinical,.v2Closing{min-height:0!important}
+ .v2ManifestoGrid,.v2SectionHead,.v2AtlasGrid,.v2JournalGrid,.v2ClinicalGrid{display:grid!important;grid-template-columns:minmax(0,1fr)!important}
+ .v2Manifesto h2,.v2SectionHead h2,.v2AtlasCopy h2,.v2JournalCopy h2,.v2Clinical blockquote{word-break:normal!important;overflow-wrap:normal!important;hyphens:none!important}
+ .v2Manifesto h2{font-size:clamp(2.65rem,11.5vw,3.7rem)!important;line-height:1.02!important;letter-spacing:-.045em!important}
+ .v2SectionHead h2{font-size:clamp(2.6rem,11vw,3.6rem)!important;line-height:1.02!important}
+ .v2Chapter{grid-template-columns:28px minmax(0,1fr) 22px!important}.v2Chapter p{grid-column:2/-1!important}
+ .v2AtlasGrid{gap:2.5rem!important}.v2AtlasIndex{order:2!important}.v2AtlasCopy{order:1!important}.v2AtlasNote{order:3!important}
+ .v2AtlasCopy h2,.v2JournalCopy h2{font-size:clamp(2.65rem,11.5vw,3.75rem)!important;line-height:1.01!important}
+ .v2JournalGrid{gap:2.5rem!important}.v2JournalCopy{order:1!important}.v2Notebook{order:2!important}
+ .v2ClinicalGrid{gap:3rem!important}.v2Portrait{order:2!important}.v2ClinicalCopy{order:1!important}
+ .v2Clinical blockquote{font-size:clamp(2.55rem,10.8vw,3.55rem)!important;line-height:1.02!important}
+ .v2Closing h2{font-size:clamp(4.4rem,21vw,6.6rem)!important;line-height:.82!important}
+}
+@media print{
+ .skipLink,.scrollProgress,.brandHeader,.brandDrawer,.backToTop{display:none!important}
+ .homePage.v2 [data-reveal]{opacity:1!important;transform:none!important}
+ .v2Hero,.v2Manifesto,.v2Chapters,.v2Atlas,.v2Journal,.v2Clinical,.v2Closing,.v3Footer{break-inside:avoid;min-height:auto!important}
+}
