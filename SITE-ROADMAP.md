@@ -1,73 +1,85 @@
-# NutClue — Site Improvement Roadmap
+# ILAMA BLOOM — Product & Experience Roadmap
 
-Last updated: 2026-09-27
+Last updated: 2026-10-02
 
-## Goal
-Turn the current editorial prototype into a production-ready, easy-to-use nutrition education experience for adults, parents and children, while keeping the visual identity distinctive and calm.
+## Product idea
+ILAMA BLOOM is a bilingual nutrition and healthy-living experience built around **Food · Body · Context**. It should help people understand what is useful for the life they actually have rather than impose a perfect routine.
 
-## Ground rules
-- Do not rename the product until the replacement name is cleared.
-- Mobile-first usability before decorative polish.
-- Every primary action must be obvious without explanation.
-- Educational content must not drift into diagnosis or treatment.
-- Kids content stays visually distinct but remains part of the same product.
-- Avoid duplicate sections and marketing copy written for the project team rather than visitors.
+Official brand line:
+- **Good Nutrition Brings a Brighter You**
+- **تغذية أفضل .. لحياة أكثر إشراقا**
 
-## Phase 1 — Navigation & core UX
-1. Replace hash-view behavior with a clearer navigation experience while preserving static export compatibility.
-2. Add a proper mobile navigation instead of hiding the main nav below 800px.
-3. Make the primary journeys obvious: Explore, Kids, Log, Journal, Visit.
-4. Add active-state navigation and consistent back/next actions.
-5. Improve keyboard focus, labels, contrast and touch targets.
+## Release gate — mandatory
+Before any new feature, design batch, content expansion or refactor:
+1. Check the latest Vercel production deployment.
+2. If it is not successfully **READY**, stop feature work.
+3. Diagnose and repair the failed build/deployment first.
+4. Verify a successful READY production deployment.
+5. Only then begin the next coherent batch.
+6. Prefer substantial tested batches and one production deployment instead of many tiny deployments.
 
-## Phase 2 — Home page
-1. Reduce oversized editorial typography on smaller screens.
-2. Make the first screen explain the product in seconds.
-3. Replace generic stock-photo dependence with a consistent image system.
-4. Tighten repeated messages across hero, statement, feature and final CTA.
-5. Surface the most useful actions earlier.
+## Experience principles
+- Premium editorial, botanical and tactile — not SaaS, not a generic clinic template.
+- Feminine and sophisticated without becoming childish or ornamental.
+- Mobile-first, accessible and calm.
+- Arabic and English are complete parallel experiences, never mixed-language filler.
+- No dependency on an external template for the visual identity.
+- Prefer native/local brand assets over fragile external stock-image dependencies.
+- Preserve useful APIs, data and business logic while continuously replacing legacy presentation.
+- Health education should provide context, not diagnosis or treatment decisions.
 
-## Phase 3 — Explore
-1. Turn placeholder topic cards into real browsable content.
-2. Add categories, search and practical examples.
-3. Build Food A–Z as a useful reference rather than a static card.
-4. Keep language plain and evidence-aware.
+## Product universe
 
-## Phase 4 — Logging & Journal
-1. Replace one free-text box with quick structured logging plus optional notes.
-2. Support meal, water, sleep, medication, smoking, work/activity, chronic conditions and previous operations where appropriate.
-3. Make journal entries editable/deletable.
-4. Add useful filtering and visit-summary selection.
-5. Keep data local until a deliberate persistence/privacy model is chosen.
+### 1. My Day / Context Engine
+Start with the person's real day: normal, busy, work, travel, exam, recovery, Ramadan or night shift. Context can influence what content and tools are surfaced without judging the user.
 
-## Phase 5 — Kids
-1. Preserve the playful Kids visual system.
-2. Validate carb examples and distinguish estimates from label-derived values.
-3. Improve navigation through the long guide.
-4. Make portions, carb locations and label reading highly visual.
-5. Avoid insulin-dose or treatment calculations.
+### 2. Eight Worlds
+**Nourish · Move · Rest · Feel · Grow · Care · Learn · Journal**
 
-## Phase 6 — Visit
-1. Convert the current visit view into a clean preparation summary.
-2. Let users choose which journal items to include.
-3. Add printable/exportable output later.
-4. Clearly separate user-entered facts from educational prompts.
+These are the conceptual map of ILAMA BLOOM. Existing tools should gradually be organized into these worlds rather than accumulating unrelated menu items.
 
-## Phase 7 — About & trust
-1. Verify the founder portrait asset and path on both Vercel and GitHub Pages.
-2. Keep founder credentials concise and accurate.
-3. Add editorial principles, source policy and content-review dates.
-4. Keep safety language visible but not intrusive.
+### 3. ILAMA Kitchen
+A practical meal-thinking experience based on:
+- what is available
+- budget
+- time
+- energy
+- who is eating
+- health/life context
 
-## Phase 8 — Production hardening
-1. Remove fragile external image dependencies where practical.
-2. Check GitHub Pages and Vercel base paths.
-3. Add metadata, favicon, social cards and basic SEO.
-4. Test responsive layouts at common mobile widths.
-5. Test build/deploy before every release.
+Food Atlas and label education feed into Kitchen.
 
-## Start here
-Start with **Phase 1: Navigation & core UX**. The current mobile CSS hides the primary navigation entirely, so fixing navigation gives the highest immediate usability return and creates the structure needed for every later section.
+### 4. Life Stages
+Kids, Teens, Adult Life, Women, Men, WellAge and Family. The same content should not be presented identically to every age or life context.
 
-## Naming
-Keep **NutClue** as the working name until a replacement passes practical collision screening. Do not block UX/product work on naming.
+### 5. Living With
+Condition-aware education including diabetes, hypertension, heart health, PCOS, pregnancy, IBS, kidney health, celiac disease, food allergy, iron-related nutrition, migraine and chronic pain. Content must remain educational and evidence-aware.
+
+### 6. Care / Learn / AI
+Visit preparation, understandable health education, saved learning, audio/read-aloud where useful, and future AI guidance with explicit boundaries and source transparency.
+
+### 7. Real Life Egypt
+Egyptian foods, familiar portions, local eating patterns, family meals, affordability and realistic substitutions belong in the core product — not as an afterthought.
+
+### 8. Family & Kids
+Learning-by-doing games, family context and age-appropriate explanations. No public child profiles, punitive streaks, weight goals, calorie morality or competitive leaderboards.
+
+## Current build priorities
+1. Stabilize the global ILAMA shell and design system.
+2. Complete the context-first homepage and Eight Worlds.
+3. Make ILAMA Kitchen and Food Atlas feel like one product journey.
+4. Redesign Learn, Journal, Visit Prep, Kids and About using the same visual language.
+5. Remove obsolete NutClue copy, stale visual layers, literal newline artifacts and dead CSS.
+6. Remove unnecessary external image dependencies.
+7. Verify Arabic RTL, typography, mobile layouts, focus states and touch targets.
+8. Improve sitemap/navigation so all important experiences are discoverable.
+9. Harden production build and verify Vercel after every merged batch.
+
+## Data & privacy direction
+- Private journal data belongs to the signed-in account.
+- Support edit, delete and export.
+- Keep analytics focused on product quality rather than raw health values.
+- Future child/family accounts require explicit consent, deletion/export controls and careful data minimization.
+
+## Deployment discipline
+Work on a non-production branch for large batches. Review the complete diff, then merge/push to main once. Do not knowingly stack new work on top of a failed production deployment.
