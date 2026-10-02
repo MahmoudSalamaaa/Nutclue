@@ -1828,3 +1828,10 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
  .kitchenPreludeGrid{grid-template-columns:1fr}.kitchenEquation{min-height:320px;max-width:440px}.lifeTape{overflow:visible}.lifeStages h2{font-size:clamp(3.2rem,14vw,5.5rem)}
 }
 @media(max-width:430px){.worldOrbit{grid-template-columns:1fr}.worldNode{aspect-ratio:auto!important;min-height:160px!important;border-radius:90px!important}}
+
+/* BIG BATCH QA — no-photo clinical identity + accessibility */
+.noPhotoPortrait,.noPhotoFounder{background:radial-gradient(circle at 50% 42%,rgba(233,184,176,.38),transparent 48%),#efe6d8!important;min-height:clamp(300px,38vw,520px)!important;display:grid!important;place-items:center!important;overflow:hidden!important}
+.noPhotoFounder{min-height:360px!important}
+.noPhotoPortrait .clinicalBloom,.noPhotoFounder .clinicalBloom{width:min(82%,430px)!important}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.worldNode:hover,.v2RoundCta:hover{transform:none!important}}
+.brandHeader button:focus-visible,.brandHeader a:focus-visible,.brandDrawer button:focus-visible,.bloomFinal button:focus-visible,.bloomFinal a:focus-visible,.siteFooter button:focus-visible,.siteFooter a:focus-visible{outline:3px solid #b96676!important;outline-offset:4px!important}
