@@ -1869,3 +1869,5 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
 
 /* V1 accessibility preferences */
 html.ilama-large-text{font-size:112.5%}html.ilama-high-contrast body{filter:contrast(1.12)}html.ilama-high-contrast a,html.ilama-high-contrast button{text-decoration-thickness:2px}html.ilama-less-motion *,html.ilama-less-motion *:before,html.ilama-less-motion *:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+
+.readAloud{border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;padding:.35rem .1rem;cursor:pointer;font-size:.72rem;letter-spacing:.05em}@media(max-width:900px){.readAloud{display:none}}
