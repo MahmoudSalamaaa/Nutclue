@@ -1686,3 +1686,67 @@ body{background:var(--color-cream);color:var(--color-ink);font-family:var(--ilam
 @media(max-width:900px){.bloomFinal .v2HeroGrid{grid-template-columns:1fr 1fr;gap:2.5rem}.bloomFinal .v2HeroType h1{font-size:clamp(4rem,9vw,6rem)}.bloomFinal .v2ManifestoGrid{grid-template-columns:1fr 2fr}.bloomFinal .v2ManifestoGrid>p{grid-column:2}.bloomFinal .v2AtlasGrid{grid-template-columns:.7fr 1.3fr}.bloomFinal .v2AtlasNote{grid-column:2}.bloomFinal .v2JournalGrid,.bloomFinal .v2ClinicalGrid{grid-template-columns:1fr 1fr}}
 @media(max-width:767px){.bloomFinal .v2Hero{padding-top:2rem;min-height:0}.bloomFinal .v2HeroGrid{display:flex!important;flex-direction:column!important;gap:2rem!important}.bloomFinal .v2HeroType{order:1!important}.bloomFinal .v4HeroMedia{order:2!important;min-height:500px!important}.bloomFinal .v2HeroType h1{font-size:clamp(4rem,17vw,5.8rem)!important;line-height:.8!important}.bloomFinal .v2HeroBottom{grid-template-columns:1fr 78px!important}.bloomFinal .v2RoundCta{width:78px;height:78px}.bloomFinal .v4HeroPhoto{border-radius:130px 130px 10px 10px}.bloomFinal .v2HeroRule{margin-top:2.5rem}.bloomFinal .v4ManifestoMedia{margin:0 0 3rem}.bloomFinal .v4ManifestoMedia figure{width:78vw;height:380px;margin-left:auto}.siteAr .bloomFinal .v4ManifestoMedia figure{margin-left:0;margin-right:auto}.bloomFinal .v2ManifestoGrid{grid-template-columns:1fr!important}.bloomFinal .v2ManifestoGrid>p{grid-column:auto}.bloomFinal .v2Manifesto h2{font-size:clamp(3.3rem,13vw,4.7rem)!important}.bloomFinal .v2SectionHead{grid-template-columns:1fr}.bloomFinal .v2SectionHead h2{font-size:clamp(3.4rem,13vw,4.7rem)!important}.bloomFinal .v2Chapter{grid-template-columns:34px 1fr auto!important;gap:.8rem!important}.bloomFinal .v2Chapter p{grid-column:2/4!important}.bloomFinal .v4FoodStrip{grid-template-columns:1fr}.bloomFinal .v4FoodMain{height:470px;border-radius:4px 100px 4px 4px}.bloomFinal .v2AtlasGrid{grid-template-columns:1fr!important}.bloomFinal .v2AtlasCopy{order:1}.bloomFinal .v2AtlasIndex{order:2;min-height:320px}.bloomFinal .v2AtlasNote{order:3;grid-column:auto}.bloomFinal .v2AtlasCopy h2{font-size:clamp(3.2rem,13vw,4.5rem)!important}.bloomFinal .v4JournalPhoto{margin-bottom:-2rem}.bloomFinal .v4JournalPhoto figure{width:88vw;height:460px}.bloomFinal .v2JournalGrid{grid-template-columns:1fr!important}.bloomFinal .v2JournalCopy{order:1;padding:2.2rem 1.3rem}.bloomFinal .v2Notebook{order:2;min-height:360px}.bloomFinal .v2ClinicalGrid{grid-template-columns:1fr!important}.bloomFinal .v2ClinicalCopy{order:1}.bloomFinal .v2Portrait{order:2;height:520px;border-radius:140px 140px 4px 4px}.bloomFinal .v2Clinical blockquote{font-size:clamp(3.2rem,13vw,4.5rem)!important}.bloomFinal .bloomClosing h2{font-size:clamp(5.5rem,24vw,8rem)!important}}
 @media print{.bloomFinal [data-reveal]{opacity:1!important;transform:none!important}.bloomFinal .v2Hero,.bloomFinal .v2Manifesto,.bloomFinal .v2Chapters,.bloomFinal .v2Atlas,.bloomFinal .v2Journal,.bloomFinal .v2Clinical,.bloomFinal .v2Closing{break-inside:auto!important}.bloomFinal .v4HeroPhoto,.bloomFinal .v4ManifestoMedia figure,.bloomFinal .v4FoodMain,.bloomFinal .v4JournalPhoto figure,.bloomFinal .v2Portrait{break-inside:avoid}}
+
+/* ===== ILAMA ELEGANCE CORRECTION — photography without gimmick framing ===== */
+.bloomFinal .v4HeroPhoto,
+.bloomFinal .v4FoodMain,
+.bloomFinal .v4JournalPhoto figure,
+.bloomFinal .v2Portrait,
+.bloomFinal .v4ManifestoMedia figure{border-radius:0!important;transform:none!important;box-shadow:none!important}
+.bloomFinal .v4HeroMedia{min-height:min(70vh,690px)!important}
+.bloomFinal .v4HeroPhoto{inset:0!important}
+.bloomFinal .v4HeroPhoto img{transform:none!important;transition:opacity .35s ease!important}
+.bloomFinal .v4HeroMedia:hover .v4HeroPhoto img{transform:none!important;opacity:.97}
+.bloomFinal .v4HeroMedia .petalField{display:none!important}
+.bloomFinal .v4HeroMedia .specimenNo{top:auto!important;bottom:1.1rem!important;left:1.1rem!important;background:rgba(248,241,231,.94)!important;padding:.55rem .7rem!important}
+.bloomFinal .v4HeroPhoto figcaption{right:1.1rem!important;left:auto!important;bottom:1.1rem!important;background:transparent!important;padding:0!important}
+.bloomFinal .v2HeroType h1{font-size:clamp(4.7rem,7.2vw,7.9rem)!important;line-height:.82!important;letter-spacing:-.052em!important}
+.bloomFinal .v2HeroType h1 em{margin-inline-start:0!important}
+.bloomFinal .v2HeroBottom{margin-top:2.4rem!important}
+.bloomFinal .v2RoundCta{width:auto!important;height:auto!important;border-radius:0!important;background:transparent!important;color:var(--bf-forest)!important;border-bottom:1px solid var(--bf-forest)!important;padding:.55rem 0!important;align-self:end!important;display:inline-flex!important;flex-direction:row!important;justify-content:flex-start!important;gap:.5rem!important}
+.bloomFinal .v2RoundCta:hover{transform:none!important;background:transparent!important;color:var(--bf-rose)!important;border-color:var(--bf-rose)!important}
+.bloomFinal .v2HeroRule{opacity:.72}
+.bloomFinal .v2Manifesto:before{display:none!important}
+.bloomFinal .v4ManifestoMedia{margin:0 auto clamp(4rem,6vw,6rem)!important;justify-content:flex-start!important}
+.bloomFinal .v4ManifestoMedia figure{width:min(48vw,650px)!important;height:clamp(320px,38vw,500px)!important;border:0!important}
+.bloomFinal .v4ManifestoMedia figcaption{left:0!important;bottom:0!important;background:var(--bf-cream)!important}
+.bloomFinal .v2ManifestoGrid{grid-template-columns:.34fr 1.5fr .62fr!important}
+.bloomFinal .v2Manifesto h2{font-size:clamp(3.5rem,5.6vw,6rem)!important;line-height:.96!important}
+.bloomFinal .bloomExplore{background:#fff!important}
+.bloomFinal .v2Chapter:hover{background:var(--bf-cream)!important}
+.bloomFinal .bloomAtlas{background:var(--bf-cream)!important}
+.bloomFinal .v4FoodStrip{grid-template-columns:minmax(0,1.55fr) minmax(280px,.45fr)!important}
+.bloomFinal .v4FoodMain{height:min(52vw,620px)!important}
+.bloomFinal .v4FoodMain img{transform:none!important;transition:opacity .3s ease!important}
+.bloomFinal .v4FoodMain:hover img{transform:none!important;opacity:.97}
+.bloomFinal .v4FoodMain figcaption{background:#fff!important}
+.bloomFinal .v2AtlasIndex{background:transparent!important;border:0!important;border-top:1px solid rgba(18,49,33,.2)!important;border-bottom:1px solid rgba(18,49,33,.2)!important}
+.bloomFinal .v2AtlasCopy h2{font-size:clamp(3.2rem,4.9vw,5.3rem)!important;line-height:.96!important}
+.bloomFinal .bloomJournal{background:#fff!important}
+.bloomFinal .v4JournalPhoto{margin:0 0 clamp(5rem,8vw,8rem)!important}
+.bloomFinal .v4JournalPhoto figure{width:min(62vw,820px)!important;height:clamp(390px,46vw,610px)!important;margin-inline-start:auto!important}
+.siteAr .bloomFinal .v4JournalPhoto figure{margin-inline-start:0!important;margin-inline-end:auto!important}
+.bloomFinal .v2JournalGrid{align-items:start!important}
+.bloomFinal .v2Notebook{box-shadow:none!important;transform:none!important;border:1px solid rgba(18,49,33,.16)!important;background:var(--bf-cream)!important}
+.bloomFinal .v2JournalCopy{box-shadow:none!important;background:transparent!important;padding:0!important}
+.bloomFinal .v2JournalCopy h2{font-size:clamp(3.3rem,5vw,5.4rem)!important;line-height:.96!important}
+.bloomFinal .bloomClinical{background:var(--bf-cream)!important}
+.bloomFinal .v2Portrait{height:clamp(540px,58vw,720px)!important}
+.bloomFinal .v2Portrait span{background:#fff!important;color:var(--bf-forest)!important}
+.bloomFinal .v2Clinical blockquote{font-size:clamp(3.2rem,5vw,5.4rem)!important;line-height:.98!important}
+.bloomFinal .bloomClosing{background:var(--bf-forest)!important}
+.bloomFinal .bloomClosing h2{font-size:clamp(5.5rem,11vw,11rem)!important;line-height:.78!important}
+.bloomFinal .bloomClosing h2 em{color:#d09a98!important}
+.bloomFinal .bloomClosing img{opacity:.045!important}
+@media(max-width:767px){
+ .bloomFinal .v4HeroMedia{min-height:440px!important}
+ .bloomFinal .v4HeroPhoto{border-radius:0!important}
+ .bloomFinal .v2HeroType h1{font-size:clamp(3.9rem,15.5vw,5.3rem)!important;line-height:.84!important}
+ .bloomFinal .v2HeroBottom{grid-template-columns:1fr!important}
+ .bloomFinal .v2RoundCta{justify-self:start!important}
+ .bloomFinal .v4ManifestoMedia figure{width:88vw!important;height:360px!important;margin:0!important}
+ .bloomFinal .v2ManifestoGrid{grid-template-columns:1fr!important}
+ .bloomFinal .v4FoodMain{height:420px!important}
+ .bloomFinal .v4JournalPhoto figure{width:92vw!important;height:420px!important;margin-inline-start:auto!important}
+ .bloomFinal .v2Portrait{height:500px!important;border-radius:0!important}
+}
