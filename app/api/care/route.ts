@@ -3,6 +3,19 @@ import type {NeonQueryFunction} from "@neondatabase/serverless";
 import {currentUser} from "../../../lib/auth/server";
 function db(){const url=process.env.DATABASE_URL||process.env.POSTGRES_URL||process.env.ILAMA_BLOOM_DATABASE_URL||process.env.ILAMA_BLOOM_POSTGRES_URL||process.env.NutClueDB_DATABASE_URL||process.env.NutClueDB_POSTGRES_URL;if(!url)throw new Error("Database is not configured");return neon(url)}
 async function ensure(sql:NeonQueryFunction<false,false>){
+ await sql`CREATE TABLE IF NOT EXISTS public.family_profiles (
+  id text PRIMARY KEY DEFAULT md5(random()::text || clock_timestamp()::text),
+  owner_user_id text NOT NULL,
+  display_name text NOT NULL,
+  relationship text NOT NULL DEFAULT 'self',
+  life_stage text NOT NULL DEFAULT 'adult',
+  birth_date date,
+  notes text NOT NULL DEFAULT '',
+  is_self boolean NOT NULL DEFAULT false,
+  created_at timestamptz NOT NULL DEFAULT now(),
+  updated_at timestamptz NOT NULL DEFAULT now()
+ )`;
+ await sql`CREATE INDEX IF NOT EXISTS family_profiles_owner_idx ON public.family_profiles (owner_user_id, created_at)`;
  await sql`CREATE TABLE IF NOT EXISTS public.care_records (
   id text PRIMARY KEY DEFAULT md5(random()::text || clock_timestamp()::text),
   user_id text NOT NULL,
