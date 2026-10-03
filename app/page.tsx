@@ -11,7 +11,7 @@ import KidsEditorial from "./KidsEditorial";
 import EverydayEditorial from "./EverydayEditorial";
 type View="home"|"learn"|"kids"|"everyday"|"lens"|"atlas"|"log"|"journal"|"visit"|"about"|"privacy"|"sitemap";
 type Entry={id?:string;type:string;value:string;at:string};
-const typeLabels:{[k:string]:string}={Meal:"وجبة",Water:"مياه",Sleep:"نوم",Medication:"دواء","Work / activity":"نشاط / شغل",Smoking:"تدخين",Condition:"حالة صحية","Previous operation":"عملية سابقة",Feeling:"إحساس",Measurement:"قياس",Note:"ملاحظة","Question for visit":"سؤال للزيارة","Food label":"بطاقة طعام",Food:"أكل","Life mode":"سياق اليوم",Steps:"خطوات",Move:"حركة",Energy:"طاقة","Teen context":"سياق المراهق"};
+const typeLabels:{[k:string]:string}={Meal:"وجبة",Water:"مياه",Sleep:"نوم",Medication:"دواء","Work / activity":"نشاط / شغل",Smoking:"تدخين",Condition:"حالة صحية","Previous operation":"عملية سابقة",Feeling:"إحساس",Measurement:"قياس",Note:"ملاحظة","Question for visit":"سؤال للزيارة","Food label":"بطاقة طعام",Food:"أكل","Life mode":"سياق اليوم",Steps:"خطوات",Move:"حركة",Energy:"طاقة","Teen context":"سياق المراهق","Medication check":"متابعة دواء",Symptom:"عرض","Symptom severity":"شدة العرض"};
 const topics=[
 ["CARBS","Carbohydrates, without the drama.","Understand portions, labels and everyday foods."],
 ["FOOD A–Z","Food you actually know.","Baladi bread, rice, koshari, fruit, nuts and more."],
