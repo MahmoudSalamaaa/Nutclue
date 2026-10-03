@@ -23,13 +23,14 @@ export default function HomeReference({go,ar}:Props){
  const cards=ar?AR:EN;
  return <div className={styles.page}>
   <section className={styles.hero}>
+   <div className={styles.heroBloom} aria-hidden="true"><span>FOOD</span><i>·</i><span>BODY</span><i>·</i><span>CONTEXT</span></div>
    <div className={styles.heroCopy}>
     <p className={styles.eyebrow}>{ar?"تغذية أفضل":"GOOD NUTRITION BRINGS"}</p>
     <h1>{ar?<>لحياة <em>أكثر إشراقًا</em></>:<>A Brighter <em>You</em></>}</h1>
     <p className={styles.lead}>{ar?"معرفة أوضح، اختيارات أفضل، وعادات صغيرة لحياة أكثر صحة وسعادة.":"Knowledge, better choices, and small habits for a healthier, happier life."}</p>
     <button className={styles.primary} onClick={()=>document.getElementById("ilama-world")?.scrollIntoView({behavior:"smooth"})}>{ar?"اكتشف عالمنا":"Explore Our World"} <span>→</span></button>
    </div>
-   <figure className={styles.heroImage}><img src="https://images.pexels.com/photos/5966431/pexels-photo-5966431.jpeg?auto=compress&cs=tinysrgb&w=1800" alt={ar?"فاكهة ومكونات طبيعية على مائدة":"Natural fruit and ingredients on a table"}/></figure>
+   <figure className={styles.heroImage}><div className={styles.heroImageTrack}><img src="https://images.pexels.com/photos/5966431/pexels-photo-5966431.jpeg?auto=compress&cs=tinysrgb&w=1800" alt={ar?"فاكهة ومكونات طبيعية على مائدة":"Natural fruit and ingredients on a table"}/></div><figcaption className={styles.heroCaption}><b>ILAMA / 01</b><span>{ar?"طعام حقيقي · حياة حقيقية":"REAL FOOD · REAL LIFE"}</span></figcaption></figure>
   </section>
 
   <section className={styles.approach} id="ilama-world">
