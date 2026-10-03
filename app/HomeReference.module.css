@@ -41,3 +41,11 @@
 @media(max-width:900px){.heroBloom{top:18px;left:22px}.heroCaption{bottom:14px;left:14px;right:14px}.heroImageTrack{position:absolute;inset:0}}
 [dir="rtl"] .heroBloom{left:auto;right:clamp(28px,5.7vw,88px)}[dir="rtl"] .heroCaption span{text-align:left}
 @media(prefers-reduced-motion:reduce){.heroBloom,.heroCopy .eyebrow,.heroCopy h1,.heroCopy .lead,.heroCopy .primary,.heroImageTrack img{animation:none!important;transform:none!important}}
+
+/* Reference hero bloom ornament — ported from the approved final HTML */
+.petals{position:absolute;inset:0;z-index:4;pointer-events:none;overflow:hidden}
+.petals i{position:absolute;top:-8%;width:.8rem;height:1.1rem;border-radius:100% 0 100% 0;background:linear-gradient(135deg,#FFE3EA,#E7A8B8);opacity:0;animation:fall linear infinite}
+.petals i:nth-child(n+11){display:none}
+@keyframes fall{0%{opacity:0;transform:translate3d(0,0,0) rotate(0)}10%{opacity:.75}100%{opacity:0;transform:translate3d(-9rem,115vh,0) rotate(540deg)}}
+@media(max-width:700px){.petals i{width:.6rem;height:.85rem}}
+@media(prefers-reduced-motion:reduce){.petals{display:none}}
