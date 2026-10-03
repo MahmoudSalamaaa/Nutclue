@@ -1,6 +1,6 @@
-const CACHE="ilama-bloom-v5";
+const CACHE="ilama-bloom-v6";
 const LEGACY_PREFIXES=["ilama-bloom-"];
-const OFFLINE=["/","/manifest.webmanifest","/icon.svg","/ilama-bloom-logo.svg"];
+const OFFLINE=["/","/offline.html","/manifest.webmanifest","/icon.svg","/ilama-bloom-logo.svg","/ilama-symbol.svg"];
 
 self.addEventListener("install",event=>{
   event.waitUntil(
@@ -34,7 +34,7 @@ self.addEventListener("fetch",event=>{
     event.respondWith(
       fetch(req,{cache:"no-store"})
         .then(response=>response)
-        .catch(()=>caches.match(req).then(cached=>cached||caches.match("/")))
+        .catch(()=>caches.match(req).then(cached=>cached||caches.match("/offline.html")||caches.match("/")))
     );
     return;
   }
